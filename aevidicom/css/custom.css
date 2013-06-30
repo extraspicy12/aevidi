@@ -1,0 +1,388 @@
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
+
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+
+::selection {
+	background: #f6ea81; /* Safari */
+	color: blue;
+	}
+::-moz-selection {
+	background: #f6ea81; /* Firefox */	color: #64B557;
+
+}
+
+.no-pad {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+html, body {
+		background: url(../img/grid_noise.png) center top repeat;
+}
+
+.flat {
+	margin: 0 !important;
+	padding: 0;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.page-container {
+	width: 100%;
+	height: auto;
+	margin-top: 0px;
+}
+
+.contact-panel {
+	padding: 15px;
+}
+
+a.social-icons:hover {
+	opacity: .7;
+	filter:alpha(opacity=70);
+}
+
+a, a:active {
+    cursor: pointer;
+    outline: medium none;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out 0s;
+}
+a:hover {
+    outline: 0 none;
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+.row {
+	max-width: 100%;
+	width: 100%;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.nav-container ul li.button {
+  padding-top: 0.75em !important;
+  padding-right: 1.5em !important;
+  padding-bottom: 0.8125em !important;
+  padding-left: 1.5em !important;
+}
+
+.pull-right {
+	float: right;
+	clear: both;
+}
+
+.pull-left {
+	float: left;
+	clear: both;
+}
+
+.navbar {
+	border-bottom: 4px solid #64B557;
+	height: 63px;
+	overflow: hidden;
+	z-index: 99;
+	width: 100%;
+	max-width: 100%;
+	box-shadow: 0px 0px 15px rgba(5,59,9,0.88);
+}
+
+ .background {
+   position:absolute;
+   top:0px;
+   left:0px;
+   width:100%;
+   height:100%;
+   background-color:white;
+   z-index:-1;
+   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+   filter: alpha(opacity=.6);
+   opacity:.6;
+ }
+
+.nav-container {
+	text-align:right;
+	float:right;
+}
+
+.block {
+  text-align: center;
+}
+
+.hidden {
+	height:0;
+	margin-bottom: 63px;
+}
+
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+ }
+
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+ }
+
+ .h-centered {
+	 text-align: center;
+ }
+
+.clear {
+  display: block;
+  clear: both;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.nav-ul {
+	padding: 0;
+	margin: 0;
+}
+
+.nav-link {
+	font-size: 1.5em;
+	padding: 0 1% !important;
+	font-family: 'Carrois Gothic SC', sans-serif, helvetica;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+
+.nav-link a {
+	color: #333333;
+}
+
+.nav-link a:hover {
+	color: #64B557;
+	text-shadow: 0 0 10px #ffffff;
+}
+
+footer.footer {
+	background: url(../img/black_denim.png) center top repeat;
+	border-top: 4px solid #64B557;
+	box-shadow: 0px 0px 15px rgba(5,59,9,0.88);
+
+}
+
+.navbar .container {
+	background: url(../img/header-center.png) bottom center no-repeat;
+}
+
+.footer .container {
+	background: url(../img/footer-center.png) top center no-repeat;
+	padding: 35px 0;
+	text-align: center;
+	font-family: 'Carrois Gothic SC', sans-serif, helvetica;
+	color: #64B557;
+}
+
+.footer .container .row > div {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.tagline {
+	padding-top: 20px;
+	color: #7a7a7a;
+}
+
+.white-band {
+	background: rgba(255,255,255,1);
+/*   box-shadow: 0 10px 12px -12px rgba(0,0,0,.75) inset, 0 -10px 12px -12px rgba(0,0,0,.75) inset; */
+	padding-bottom: 53px;
+	margin-top:0px;
+}
+
+.divider {
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #d9d9d9;
+  padding: 1.25em;
+  background: rgba(245,245,245,1);
+}
+
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.75;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    background: url(../img/icon_top.png) center bottom no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+    z-index: 10;
+}
+
+.divider.bg {
+	background: url(../img/grid_noise.png) center top repeat;
+}
+
+.divider.focus {
+		border-width: 3px 0;
+    border-color: #1A802C;
+    border-style: dashed;
+    padding: .5em;
+    position: relative;
+    background: #64b557;
+}
+
+.big-divider {
+	height: 60px;
+}
+
+.jumbotron {
+		box-shadow: 0 9px 12px -12px rgba(0,0,0,.75) inset, 0 -9px 12px -12px rgba(0,0,0,.75) inset;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.bottom-border {
+	border-bottom: 3px solid #64B557;
+}
+
+.jumbotron.small {
+	height: 75px;
+}
+
+.vert-space {
+	margin-bottom: 20px;
+}
+
+.hero-s {
+	font-size:5.0em;
+	color: #333333;
+}
+
+.hero-s1 {
+	color:#5F99A5;
+}
+
+.hero-s2 {
+	color: #7AB26B;
+}
+
+.show-for-small-only {
+	display: none;
+}
+
+.inline-img {
+	display: inline-block;
+	padding: 10px;
+}
+
+.contact-row {
+	padding-bottom: 15px;
+}
+
+.show-for-large-only {
+	display: inherit;
+}
+
+/** Fixed hero background for stupidly large screens **/
+
+@media (min-width:1850px) {
+	.jumbotron {
+    padding: 150px 0;
+    height: 500px;
+		background: url(../img/hero.png) center bottom scroll no-repeat;
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+	}
+	.jumbotron img {
+		display: none;
+	}
+}
+
+@media (min-width:3000px) {
+	.jumbotron {
+		height: 1000px;
+	}
+}
+
+.jumbotron .row {
+	margin: 0;
+}
+
+/** End fix **/
+
+@media (max-width: 900px) {
+	.no-pad {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.show-for-small-only {
+		display: inherit;
+	}
+	.show-for-large-only {
+		display: none;
+	}
+	.nav-ul {
+		padding-bottom: 10px;
+	}
+	.hero-s {
+		font-size:2.0em;
+	}
+	.small-centered {
+		text-align: center;
+	}
+	.navbar {
+		overflow: visible;
+		border-bottom: none;
+		box-shadow: none;
+	}
+	.navbar .container {
+		padding: 10px 0;
+		background: none;
+	}
+	nav.fixed {
+		position: relative;
+	}
+	.mobile-block-grid-2 > li{
+    padding: 0 0.625em 1.25em;
+    width: 33%;
+	}
+	.mobile-block-grid-2 > li:nth-child(4){
+    padding: 0 0.625em 1.25em;
+    width: 50%;
+	}
+	.mobile-block-grid-2 > li:nth-child(5){
+    padding: 0 0.625em 1.25em;
+    width: 50%;
+	}
+	.navbar { font-size: 1.0em;}
+
+	.background {
+			border-bottom: 4px solid #64B557;
+			background: url(../img/header-center.png) bottom center no-repeat white;
+		box-shadow: 0px 0px 15px black;
+   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+   filter: alpha(opacity=1);
+   opacity:1;
+	}
+}
+
+@media (max-width: 450px) {
+.navbar {font-size:.75em;}
+
+}
