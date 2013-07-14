@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
+<<<<<<< HEAD
+=======
+
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+
 @import url(http://fonts.googleapis.com/css?family=Sanchez);
 
 ::selection {
@@ -115,6 +121,10 @@ a:hover {
 	z-index: 2;
 }
 
+.above {
+	z-index: 2;
+}
+
  .background {
    position:absolute;
    top:0px;
@@ -158,13 +168,24 @@ a:hover {
 */
 
 .centered-box {
+<<<<<<< HEAD
 	padding: 5px 15px;
+=======
+	padding: 10px;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 	background-color: #88c961;
 	color: white;
 	font-family: 'Sanchez', sans-serif, helvetica;
 	position: relative;
+<<<<<<< HEAD
 	margin-top: -12px;
 	display: inline-block;
+=======
+	float:left;
+	width: 100%;
+	margin-top: -14px;
+	box-shadow: 0 5px 6px -6px #6c6c6c;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 #featured-text {
@@ -172,6 +193,7 @@ a:hover {
 	font-family: 'Quicksand', sans-serif, helvetica;
 	color: #B6B6B6;
 	font-size: 1.75em;
+<<<<<<< HEAD
 }
 
 .button.fancy {
@@ -197,6 +219,28 @@ a:hover {
 
 .white-box .button.fancy, #contact-us .button.fancy {
 
+=======
+	text-shadow: 0 0 10px #c9c9c9;
+
+}
+
+.button.fancy {
+	background-color: #92d668;
+	background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+	border-radius: 7.5px;
+	border: 1px solid #88bf6c;
+	font-family: 'Sanchez', sans-serif, helvetica;
+	font-weight: normal;
+	margin: 0;
+	box-shadow: 0 5px 6px -6px #6c6c6c;
+	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
+  transition: background-color 400ms ease 0s;
+}
+
+.white-box .button.fancy, #contact-us .button.fancy {
+	display: block;
+	width: 100%;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 .button.fancy:hover {
@@ -225,11 +269,16 @@ a:hover {
 	font-weight: normal;
 	font-size: 2em;
 	text-align: center;
+<<<<<<< HEAD
 	text-shadow: 0px 2px 1px #ddd;
+=======
+	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 .row.collapse {
 	padding: 14px 14px 0 14px;
+<<<<<<< HEAD
 }
 form > .row.collapse div:first-child label {
 	padding-right: 10px;
@@ -238,11 +287,25 @@ form > .row.collapse div:first-child label {
 }
 form > .row.collapse:hover {
 	background-color: #e4e4e4;
+=======
+	border-radius: 7.5px;
+	-moz-border-radius: 7.5px;
+	-webkit-border-radius: 7.5px;
+}
+
+form > .row.collapse:hover {
+	background-color: #64B557;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 	transition: background-color 300ms ease;
 }
 
 .row.collapse:hover label {
+<<<<<<< HEAD
 
+=======
+	color: white;
+	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 .fancy-header {
@@ -250,7 +313,11 @@ form > .row.collapse:hover {
 	color: #333333;
 	font-weight: normal;
 	font-size: 2.5em;
+<<<<<<< HEAD
 	text-shadow: 0px 2px 1px rgba(109,109,109,0.66);
+=======
+	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 .process-band .fancy-header {
@@ -258,15 +325,20 @@ form > .row.collapse:hover {
 	color: white;
 	font-weight: normal;
 	font-size: 2.5em;
+<<<<<<< HEAD
 	text-shadow: 0px 2px 1px rgba(0,0,0,0.66);
 }
 
 .fancy-header.light {
 	text-shadow: 0px 2px 2px rgba(0,0,0,0.66);
+=======
+	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 
 .fancy-header.medium-font {
+<<<<<<< HEAD
 	font-size: 1.8em;
 }
 .fancy-header.number-icon {
@@ -280,6 +352,9 @@ form > .row.collapse:hover {
 	width: 35px;
 	display: inline-block;
 	text-shadow: none;
+=======
+	font-size: 2.0em;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 .process-band .container {
@@ -319,10 +394,13 @@ form > .row.collapse:hover {
 	background: url(../img/grid_noise.png) center top repeat;
 	font-family: 'Sanchez', sans-serif, helvetica;
 	box-shadow: 0 5px 6px -6px #6c6c6c;
+<<<<<<< HEAD
 }
 
 #contact-form input {
 	font-family: 'Carrois Gothic', helvetica, sans-serif;	
+=======
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 .block:before {
@@ -358,13 +436,22 @@ form > .row.collapse:hover {
 }
 
 .nav-ul > li {
+<<<<<<< HEAD
 	
+=======
+	float:right;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 .nav-link {
 	font-size: 1.5em;
 	padding: 0 1% !important;
 	font-family: 'Carrois Gothic', sans-serif, helvetica;
+<<<<<<< HEAD
+=======
+	float: left;
+	position: relative;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 	list-style: none;
 	display: inline-block;
 }
@@ -393,10 +480,13 @@ footer.footer {
 }
 */
 
+<<<<<<< HEAD
 #footer span {
 	font-family: "Carrois Gothic", helvetica, sans-serif;	
 }
 
+=======
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 #footer > .large-12 {
 		background: url(../img/footer-center.png) top center no-repeat;
 }
@@ -423,14 +513,22 @@ footer.footer {
 }
 
 .band {
+<<<<<<< HEAD
 	padding-bottom: 60px;
+=======
+	padding-bottom: 30px;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 	margin-top:0px;
 }
 
 .contact-band {
 		border-top: 4px solid #64B557;
 		background: url(../img/footer-center.png) top center no-repeat #caecb4;
+<<<<<<< HEAD
 		padding-top: 40px;
+=======
+		padding-top: 30px;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 .about-our-team {
@@ -466,6 +564,7 @@ footer.footer {
 		background: #caecb4;
 		padding-top: 30px;
 }
+<<<<<<< HEAD
 .white-box ul {
 	text-align: left;	
 }
@@ -480,6 +579,19 @@ footer.footer {
 	color: #333333;
 	font-family: 'Carrois Gothic', sans-serif, helvetica;
 	
+=======
+
+.white-box ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-size: 1.25em;
+	padding-left: 2.0em;
+	background: url(../img/check2.png) left center no-repeat;
+	color: #333333;
+	font-family: 'Sanchez', sans-serif, helvetica;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 .band.process.green.arrow {
@@ -509,6 +621,7 @@ footer.footer {
 	background: rgba(255,255,255,1);
 	width: 31.33%;
 	padding: 2%;
+<<<<<<< HEAD
 	float: left;
 	border-radius: 7.5px;
 	-moz-border-radius: 7.5px;
@@ -519,6 +632,13 @@ footer.footer {
 .white-box img {
 	max-width: 175px;
 	height: auto;
+=======
+	float: left !important;
+	border-radius: 7.5px;
+	-moz-border-radius: 7.5px;
+	-webkit-border-radius: 7.5px;
+	box-shadow: 0 5px 6px -6px #6c6c6c;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 }
 
 .white-box.about {
@@ -529,6 +649,7 @@ footer.footer {
 	margin-left: 3%;
 }
 
+<<<<<<< HEAD
 #about-top-band .white-box {
 	padding: 30px 0 0 0;
 	margin-left: 0;
@@ -539,6 +660,8 @@ footer.footer {
 		padding: 10px 10px 10px 15px;	
 	}
 
+=======
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 .divider {
   border-style: solid;
   border-width: 1px 0;
@@ -579,7 +702,11 @@ footer.footer {
 }
 
 .jumbotron {
+<<<<<<< HEAD
 	box-shadow: 0 10px 12px -12px rgba(0,0,0,.75);
+=======
+		box-shadow: 0 10px 12px -12px rgba(0,0,0,.75);
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
     position: relative;
     margin-bottom: 0;
 	margin-left: auto;
@@ -634,10 +761,17 @@ footer.footer {
 	display: inherit;
 }
 
+<<<<<<< HEAD
 /*.img-shadow {
 	position: relative;
 	float: left;
 	overflow: hidden;
+=======
+.img-shadow {
+	position: relative;
+	max-width: 100%;
+	float: left;
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 	}
 
 .img-shadow::before {
@@ -654,7 +788,11 @@ footer.footer {
 
 .img-shadow img {
 	float: left;
+<<<<<<< HEAD
 }*/
+=======
+}
+>>>>>>> c9c3a4278df6e506cd2e31764cd153284543d069
 
 /** Fixed hero background for stupidly large screens **/
 
@@ -778,6 +916,21 @@ footer.footer {
 	
 	.logo-container img {
 		max-width: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.hidden {
+		margin-bottom: 0;
+	}
+	.white-box {
+		padding: 2%;
+		width: 100%;
+		margin: .75em 0;
+		float: inherit;
+	}
+	.white-box:nth-child(2), .white-box:nth-child(3){
+	margin-left: 0;
 	}
 }
 
