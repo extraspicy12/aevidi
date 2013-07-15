@@ -1,34 +1,38 @@
 
 <footer class="row footer" id="footer">
-	<div class="large-12 small-centered columns no-pad">
-		<div class="container">
-			<div class="row">
-				<div class="large-4 columns"> 
-					<!-- WIDGET TITLE --> 
-				</div>
-				<div class="large-4 columns"> 
-					<!-- WIDGET TITLE --> 
-				</div>
-				<div class="large-4 columns"> 
-					<!--  WIDGET TITLE --> 
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-centered small-12 tagline columns">
-					<div class="small-5 columns"> <span class="pull-right">Seeing is Believing.</span> </div>
-					<div class="small-2 columns"><img src="img/grey-eye.png"></div>
-					<div class="small-5 columns"> <span class="pull-left">&copy; aeVidi, LLC</span> </div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
+      <div class="large-12 small-centered columns no-pad">
+		    <div class="container">
+		      <div class="row">
+		        <div class="large-4 columns">
+		          <!-- WIDGET TITLE -->
+		        </div>
+		        <div class="large-4 columns">
+		          <!-- WIDGET TITLE -->
+		        </div>
+		        <div class="large-4 columns">
+		         <!--  WIDGET TITLE -->
+		        </div>
+		      </div>
+		      <div class="row">
+			      <div class="small-centered large-9 tagline columns">
+			        <div class="small-4 columns">
+			          <span class="pull-right">Seeing is Believing.</span>
+		        </div>
+			        <div class="small-4 columns"><img src="img/grey-eye.png"></div>
+			        <div class="small-4 columns">
+			          <span class="pull-left">&copy; aeVidi, LLC</span>
+		        </div>
+			      </div>
+		      </div>
+		    </div>
+      </div>
+  </footer>
 
 <!-- MODALS -->
 
 <div id="template-modal" class="reveal-modal">
 	<div class="row">
-		<div class="large-10 small-centered columns"> <img >
+		<div class="large-10 small-centered columns"> <img src="img/html5.png">
 			<h3>Basic</h3>
 			<hr>
 			<p> HTML websites are still in high demand all over the world. For those who want a website to display their portfolio or run their club and don't want to
@@ -42,7 +46,7 @@
 
 <div id="dynamic-modal" class="reveal-modal">
 	<div class="row">
-		<div class="large-10 small-centered columns"> <img >
+		<div class="large-10 small-centered columns"> <img src="img/wordpress.png">
 			<h3>Dynamic</h3>
 			<hr>
 			<p> Our dynamic websites are based on the Wordpress content management system. This allows us to develop a fantastic custom
@@ -65,7 +69,7 @@
 
 <div id="seo-modal" class="reveal-modal">
 	<div class="row">
-		<div class="large-10 small-centered columns"> <img >
+		<div class="large-10 small-centered columns"> <img src="img/search.png">
 			<h3>SEO</h3>
 			<hr>
 			<p> Marketing is one of the most important aspects of any business. In today's world, the internet is at the forefront of marketing. The best way to get
@@ -76,33 +80,13 @@
 	<a class="close-reveal-modal">&#215;</a>
 </div>
 
-<script src="js/vendor/jquery.js" type="text/javascript"></script> 
-<script src="js/foundation.min.js" type="text/javascript"></script> 
-<script type="text/javascript">
+<script src="js/vendor/jquery.js" type="text/javascript"></script>
+<script src="js/foundation.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
 		$(document).foundation();
 
 		$('#contact-modal').on('opened', function () {
 		  $(this).foundation('section', 'reflow');
-		});
-
-		function updateHero() {
-				var imgs = {
-					small : 'img/hero-450.png',
-					medium : 'img/hero-770.png',
-					large : 'img/hero.png'
-				};
-				var width = $(window).width();
-				if (width < 450) {
-					$(".jumbotron div div #hero").attr('src', imgs['small'])
-				} else if (width < 769) {
-					$(".jumbotron div div #hero").attr('src', imgs['medium'])
-				} else {
-					$(".jumbotron div div #hero").attr('src', imgs['large'])
-				}
-		};
-
-		$(window).resize(function(){
-				updateHero();
 		});
 
 		$(document).ready(function() {

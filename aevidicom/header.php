@@ -17,7 +17,7 @@
 <body>
 <div class="hidden no-margin" id="home"></div>
 <nav class="row fixed" id="navigation">
-	<div class="large-12 small-centered columns no-pad row">
+	<div class="large-12 small-centered columns no-pad row" style="padding: 0 !important;">
 		<div class="navbar">
 			<div class="container">
 				<a href="/">
