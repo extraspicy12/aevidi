@@ -212,7 +212,7 @@ a:hover {
 .button.fancy:active {
 	background-color: #4e8b2c;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
-	box-shadow: 0 5px 4px -4px rgba(0,0,0,0.67) inset, 4px 0px 4px -4px rgba(0,0,0,0.67) inset;	transition: none;
+	box-shadow: 0 5px 4px -4px rgba(0,0,0,0.5) inset, 4px 0px 4px -4px rgba(0,0,0,0.5) inset, -4px 0px 4px -4px rgba(0,0,0,0.5) inset;	transition: none;
 }
 
 .button.fancy.top-margin {
