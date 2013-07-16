@@ -83,21 +83,108 @@
 <script src="js/vendor/jquery.js" type="text/javascript"></script>
 <script src="js/foundation.min.js" type="text/javascript"></script>
   <script type="text/javascript">
+
+  	function validate(id, value) {
+  	var pattern, errorMsg;
+  	var result = true;
+	  	if (id=="yourName") {
+        pattern = /^[a-zA-Z -]{1,50}$/;
+	      errorMsg = "Please enter your name!";
+	      result = pattern.test(value);
+	  	} else if (id=="yourNumber") {
+        pattern = /^\(?[0-9 ]{3}\)? ?-?[0-9]{3} ?-?[0-9]{4}$/;
+	      errorMsg = "Please enter a valid phone number!";
+	      result = pattern.test(value);
+	  	} else if (id=="yourEmail") {
+        pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]+$/;
+	      errorMsg = "Please enter a valid email address!";
+	      result = pattern.test(value);
+	  	} else if (id=="yourMessage") {
+	      pattern = /^.{25,10000}$/;
+	      errorMsg = "Please enter a message between 25 and 10,000 characters!";
+	      result = pattern.test(value);
+	  	} else {
+		  	result = false;
+	  	}
+	  	if (result)
+	  		return "good";
+			else
+				return errorMsg;
+  	}
+
+  	function invalidate(id, msg) {
+	  	$("#"+id+"-error-row").css("display", "inline-block");
+	  	$("#"+id+"-error").html(msg);
+	  	$("#"+id).css("border", "1px solid red");
+  	}
+
+  	function makeValid(id) {
+	  	$("#"+id+"-error-row").css("display", "none");
+	  	$("#"+id).css("border", "1px solid green");
+  	}
+
 		$(document).foundation();
 
-		$('#contact-modal').on('opened', function () {
-		  $(this).foundation('section', 'reflow');
-		});
-
 		$(document).ready(function() {
+			alert('sd');
 
-			updateHero();
+			$('#contact-modal').on('opened', function () {
+			  $(this).foundation('section', 'reflow');
+			});
+
+			$("#contact-form input, textarea").keyup(function() {
+				var validateMsg = validate(this.id, this.value);
+				if (validateMsg != "good")
+					invalidate(this.id, validateMsg);
+				else
+					makeValid(this.id);
+			});
+
+			$("#contact-form").submit(function() {
+				var valid = true;
+				var returnMsg;
+				$("#contact-form input, textarea").each(function(index){
+					returnMsg = validate(this.id, this.value);
+					if (returnMsg != "good") {
+						invalidate(this.id, returnMsg);
+						valid = false;
+					}
+				});
+				if (valid) {
+		      $('#contact-form').html("Sending...");
+				  $.ajax({
+				      type: "POST",
+				      url: "includes/sendEmail.php",
+				      data: {
+				          confirm: 'sendEmail',
+				          name: $("#contact-form #yourName").val(),
+				          number: $("#contact-form #yourNumber").val(),
+				          email: $("#contact-form #yourEmail").val(),
+				          message: $("#contact-form #yourMessage").val()
+				      },
+				      async: true
+				  }).done(function(msg){
+					  if (msg = "sent")
+					      $('#contact-form').html("Your email has been sent! You will hear back from us promptly.");
+					  else
+					      $('#contact-form').html("There was a problem sending your email. Please contact us at <a href=\"mailto:contact@aevidi.com\">contact@aevidi.com</a> instead.");
+				  });
+			  } else {
+
+			  }
+			  return false;
+			});
 
 			$(".scroll").click(function(event){
 				event.preventDefault();
 				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 			});
+
 		});
   </script>
 </body>
 </html>
+
+
+
+

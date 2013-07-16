@@ -1,4 +1,4 @@
-<?php include_once "header.php" ?>
+<?php include_once "includes/header.php" ?>
 <div class="page-container">
 	<div class="row">
 		<div class="large-12 small-centered">
@@ -68,37 +68,61 @@
 				</div>
 				<div class="large-6 columns">
 					<div class="content panel rounded" data-slug="contact-form" id="contact-form-div">
-						<form id="contact-form" class="no-margin" method="post" target="">
+						<form id="contact-form" class="no-margin" method="" target="" id="contact-form">
 							<div class="row collapse">
-								<div class="large-2 columns">
-									<label class="inline">Name</label>
+								<div class="row form-element-holder">
+									<div class="large-2 columns">
+										<label class="inline">Name</label>
+									</div>
+									<div class="large-10 columns">
+										<input type="text" id="yourName" placeholder="Your Name">
+									</div>
 								</div>
-								<div class="large-10 columns">
-									<input type="text" id="yourName" placeholder="Your Name">
+								<div class="row collapse error-row" id="yourName-error-row">
+									<div class="large-offset-2 large-10 columns" id="yourName-error">
+									</div>
 								</div>
 							</div>
 							<div class="row collapse">
-								<div class="large-2 columns">
-									<label class="inline">Phone Number (optional)</label>
+								<div class="row form-element-holder">
+									<div class="large-2 columns">
+										<label class="inline">Phone Number (opt.)</label>
+									</div>
+									<div class="large-10 columns">
+										<input type="text" id="yourNumber" placeholder="(000) 000-0000">
+									</div>
 								</div>
-								<div class="large-10 columns">
-									<input type="text" id="yourNumber" placeholder="(000) 000-0000">
-								</div>
-							</div>
-							<div class="row collapse">
-								<div class="large-2 columns">
-									<label class="inline">Email</label>
-								</div>
-								<div class="large-10 columns">
-									<input type="text" id="yourEmail" placeholder="your@email.com">
+								<div class="row collapse error-row" id="yourNumber-error-row">
+									<div class="large-offset-2 large-10 columns" id="yourNumber-error">
+									</div>
 								</div>
 							</div>
 							<div class="row collapse">
-								<div class="large-2 columns">
-									<label class="inline">Message</label>
+								<div class="row form-element-holder">
+									<div class="large-2 columns">
+										<label class="inline">Email</label>
+									</div>
+									<div class="large-10 columns">
+										<input type="text" id="yourEmail" placeholder="your@email.com">
+									</div>
 								</div>
-								<div class="large-10 columns">
-									<textarea id="yourMessage" rows="6"></textarea>
+								<div class="row collapse error-row" id="yourEmail-error-row">
+									<div class="large-offset-2 large-10 columns" id="yourEmail-error">
+									</div>
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="row form-element-holder">
+									<div class="large-2 columns">
+										<label class="inline">Message</label>
+									</div>
+									<div class="large-10 columns">
+										<textarea id="yourMessage" rows="6"></textarea>
+									</div>
+								</div>
+								<div class="row collapse error-row" id="yourMessage-error-row">
+									<div class="large-offset-2 large-10 columns" id="yourMessage-error">
+									</div>
 								</div>
 							</div>
 							<div class="text-center">
@@ -112,4 +136,4 @@
 	</div>
 </div>
 </div>
-<?php include_once "footer.php" ?>
+<?php include_once "includes/footer.php" ?>
