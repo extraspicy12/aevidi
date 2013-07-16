@@ -1,9 +1,13 @@
-<?php include_once "includes/header.php" ?>
+<?php
+$title = "Home";
+include_once "includes/header.php"
+?>
+
 <div class="page-container">
 	<div class="row">
 		<div class="large-12 small-centered">
 			<div class="preloader"></div>
-			<div class="jumbotron"></div>
+			<div class="jumbotron" id="home-hero"></div>
 		</div>
 	</div>
 </div>

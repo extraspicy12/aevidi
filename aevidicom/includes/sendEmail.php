@@ -14,7 +14,7 @@ if (isset($_POST['confirm']) && $_POST['confirm']=="sendEmail") {
 
 			$to = 'contact@aevidi.com';
 
-			$subject = 'Website Change Reqest';
+			$subject = 'Contact aeVidi';
 
 			$headers = "From: " . $from . "\r\n";
 			$headers .= "Reply-To: ". $from . "\r\n";
