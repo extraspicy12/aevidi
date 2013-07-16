@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="large-12 small-centered">
 			<div class="preloader"></div>
-			<div class="jumbotron"></div>
+			<div class="jumbotron" id="about-hero"></div>
 		</div>
 	</div>
 	<div class="row band bg-band" id="services">

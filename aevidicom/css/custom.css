@@ -598,8 +598,7 @@ footer.footer {
 	margin-left: auto;
 	margin-right: auto;
 	height: 500px;
-	background-image: url(../img/hero.png);
-	background-position: 50%;
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
 
 /*
@@ -607,6 +606,14 @@ footer.footer {
     position: relative;
     margin-bottom: 0;
 */
+}
+
+#home-hero {
+	background-image: url(../img/hero.png);	
+}
+
+#about-hero {
+	background-image: url(../img/about-banner.jpg);	
 }
 
 .hero {
