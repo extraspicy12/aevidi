@@ -190,6 +190,12 @@ a:hover {
 	text-shadow: 0 0 10px #c9c9c9;
 }
 
+#about-our-team h3 {
+	font-family: 'Sanchez', sans-serif, helvetica;
+	font-weight: 500;
+	font-color: #333333;
+}
+
 .button.fancy {
 	background-color: #80bf58;
 	background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
@@ -602,11 +608,11 @@ footer.footer {
 }
 
 #home-hero {
-	background-image: url(../img/hero.png);	
+	background-image: url(../img/hero.png);
 }
 
 #about-hero {
-	background-image: url(../img/about-banner.jpg);	
+	background-image: url(../img/about-banner.jpg);
 }
 
 .hero {
