@@ -1,4 +1,7 @@
-<?php include_once "includes/header.php" ?>
+<?php
+$title = "About Us";
+include_once "includes/header.php"
+?>
 
 <div class="page-container">
 	<div class="row">

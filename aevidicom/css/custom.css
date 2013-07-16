@@ -259,7 +259,6 @@ form > .row.collapse:hover {
 	color: #333333;
 	font-weight: normal;
 	font-size: 2.5em;
-	text-shadow: 0px 2px 1px rgba(109,109,109,0.66);
 	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
 }
 
@@ -270,12 +269,6 @@ form > .row.collapse:hover {
 	font-size: 2.5em;
 	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
 }
-
-.fancy-header.light {
-	text-shadow: 0px 2px 2px rgba(0,0,0,0.66);
-	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
-}
-
 
 .fancy-header.medium-font {
 	font-size: 1.8em;

@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width" name="viewport">
-<title>aeVidi LLC | Seeing is Believing</title>
+<title><?php echo $title; ?> | aeVidi LLC | Seeing is Believing</title>
 <link href="css/normalize.css" rel="stylesheet" type="text/css">
 <link href="css/foundation.css" rel="stylesheet" type="text/css">
 <link href="css/custom.css" rel="stylesheet" type="text/css">

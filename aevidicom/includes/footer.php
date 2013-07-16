@@ -149,16 +149,20 @@
 					}
 				});
 				if (valid) {
+				var name = $("#yourName").val();
+				var number = $("#yourNumber").val();
+				var email = $("#yourEmail").val();
+				var message = $("#yourMessage").val();
 		      $('#contact-form').html("Sending...");
 				  $.ajax({
 				      type: "POST",
 				      url: "includes/sendEmail.php",
 				      data: {
 				          confirm: 'sendEmail',
-				          name: $("#contact-form #yourName").val(),
-				          number: $("#contact-form #yourNumber").val(),
-				          email: $("#contact-form #yourEmail").val(),
-				          message: $("#contact-form #yourMessage").val()
+				          name: name,
+				          number: number,
+				          email: email,
+				          message: message
 				      },
 				      async: true
 				  }).done(function(msg){
