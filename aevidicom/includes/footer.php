@@ -126,8 +126,6 @@
 		$(document).foundation();
 
 		$(document).ready(function() {
-			alert('sd');
-
 			$('#contact-modal').on('opened', function () {
 			  $(this).foundation('section', 'reflow');
 			});
