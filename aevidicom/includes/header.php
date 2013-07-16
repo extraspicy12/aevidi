@@ -31,7 +31,7 @@
 						<li class="nav-link"><a href="about.php">ABOUT</a></li>
 						<li class="nav-link"><a class="scroll" href="#contact-us">CONTACT</a></li>
 						<li class="nav-link"><a class="social-icons" target="_blank" href="https://www.facebook.com/aevidi"><img src="img/fb-round.png" alt="fb-icon" width="32" height="32"></a></li>
-						<li class="nav-link"><a class="social-icons" href="https://twitter.com/aevidiweb"><img src="img/twitter-round.png" alt="tw-icon" width="32" height="32"></a></li>
+						<li class="nav-link"><a class="social-icons" target="_blank" href="https://twitter.com/aevidiweb"><img src="img/twitter-round.png" alt="tw-icon" width="32" height="32"></a></li>
 					</ul>
 				</div>
 			</div>
