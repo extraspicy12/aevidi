@@ -80,7 +80,6 @@
 	<a class="close-reveal-modal">&#215;</a>
 </div>
 
-<script src="js/vendor/jquery.js" type="text/javascript"></script>
 <script src="js/foundation.min.js" type="text/javascript"></script>
   <script type="text/javascript">
 

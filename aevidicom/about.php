@@ -7,7 +7,7 @@ include_once "includes/header.php"
 	<div class="row">
 		<div class="large-12 small-centered">
 			<div class="preloader"></div>
-			<div class="jumbotron" id="about-hero"></div>
+			<div data-stellar-background-ratio="0.5" class="jumbotron" id="about-hero"></div>
 		</div>
 	</div>
 	<div class="row band bg-band" id="services">
@@ -209,4 +209,31 @@ include_once "includes/header.php"
 	</div>
 </div>
 </div>
+
+<script>
+$(document).ready(function() {
+	var width = $(this).width();
+	
+	if(width >= 1400) {
+		$.stellar({
+			horizontalScrolling: false
+		});
+	}
+		
+	$(window).on('resize', function() {
+		width = $(this).width();
+
+		if(width < 1400) {
+			$.stellar('destroy');
+		}
+		else {
+			$.stellar({
+				horizontalScrolling: false
+			});	
+		}
+	});
+	
+	
+});
+</script>
 <?php include_once "includes/footer.php" ?>

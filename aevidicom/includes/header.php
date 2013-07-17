@@ -10,8 +10,10 @@
 <link href="css/custom.css" rel="stylesheet" type="text/css">
 <link href="css/fc-webicons.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="img/favicon.ico">
-<script src="js/vendor/custom.modernizr.js" type="text/javascript">
-</script>
+<script src="js/vendor/custom.modernizr.js" type="text/javascript"></script>
+<script src="js/vendor/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.stellar.min.js" type="text/javascript"></script>
+
 </head>
 
 <body>

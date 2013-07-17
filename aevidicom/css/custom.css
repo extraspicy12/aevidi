@@ -4,11 +4,12 @@
 @import url(http://fonts.googleapis.com/css?family=Sanchez);
 
 ::selection {
-	background: #f6ea81; /* Safari */
-	color: #64B557;
+	background-color: #f6ea81; /* Safari */
+	/*color: #64B557;*/
 }
 ::-moz-selection {
-	background: #f6ea81; /* Firefox */	color: #64B557;
+	background-color: #f6ea81; /* Firefox */
+	/*color: #64B557;*/
 
 }
 
@@ -597,8 +598,10 @@ footer.footer {
 	margin-left: auto;
 	margin-right: auto;
 	height: 500px;
-	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
 
 /*
 		box-shadow: 0 10px 12px -12px rgba(0,0,0,.75);
@@ -613,6 +616,7 @@ footer.footer {
 
 #about-hero {
 	background-image: url(../img/about-banner.jpg);
+	background-position: 0 500px;
 }
 
 .hero {
@@ -707,6 +711,12 @@ footer.footer {
 	}
 	.jumbotron img {
 		display: none;
+	}
+}
+
+@media (max-width:1400px) {
+	#about-hero {
+		background-position: 50% !important;	
 	}
 }
 
