@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width" name="viewport">
-<title><?php echo $title; ?> | aeVidi LLC | Seeing is Believing</title>
+<title><?php echo $title; ?> | aeVidi | Seeing is Believing</title>
 <link href="css/normalize.css" rel="stylesheet" type="text/css">
 <link href="css/foundation.css" rel="stylesheet" type="text/css">
 <link href="css/custom.css" rel="stylesheet" type="text/css">
@@ -29,7 +29,7 @@
 				</a>
 				<div class="nav-container large-8 columns">
 					<ul class="nav-ul">
-						<li class="nav-link"><a href="index.php">HOME</a></li>
+						<li class="nav-link"><a href="/">HOME</a></li>
 						<li class="nav-link"><a href="about.php">ABOUT</a></li>
 						<li class="nav-link"><a class="scroll" href="#contact-us">CONTACT</a></li>
 						<li class="nav-link"><a class="social-icons" target="_blank" href="https://www.facebook.com/aevidi"><img src="img/fb-round.png" alt="fb-icon" width="32" height="32"></a></li>

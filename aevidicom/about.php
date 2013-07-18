@@ -19,7 +19,7 @@ include_once "includes/header.php"
 						completely custom web site designed specifically for them, without having to pay a fortune.</p>
 				</div>
 				<div class="large-4 columns white-box">
-					<div class="row flat small-centered">
+					<div class="row flat small-centered dotted-header">
 							<div class="small-2 columns dotted-line left"></div>
 							<div class="small-8 columns"><div class="centered-box h-centered">OUR WEBSITES</div></div>
 							<div class="small-2 columns dotted-line right"></div>
