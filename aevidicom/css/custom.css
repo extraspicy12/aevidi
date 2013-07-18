@@ -285,7 +285,7 @@ form > .row.collapse:hover {
 	padding: 5px 0 0 11px;
 	border-radius: 17px;
 	background:#64B557;
-	margin-right:.75em;
+	margin-right: 21px;
 	color:#222222;
 	font-size: 1.4em;
 	height: 35px;
@@ -308,6 +308,9 @@ form > .row.collapse:hover {
 	box-shadow: 0 7px 4px -4px rgba(0,0,0,0.67) inset, 3px 0px 4px -4px rgba(0,0,0,0.67) inset, 0 2px 1px -1px rgba(221,221,221,0.1);
 	margin-bottom: 30px !important;
 }
+.process-band .process-content {
+	margin-left: 56px;
+}
 
 #about-top-band {
 	margin-top: 30px;
@@ -327,8 +330,9 @@ form > .row.collapse:hover {
 	box-shadow: 0 5px 6px -6px #6c6c6c;
 }
 
-#contact-form input {
-	font-family: 'Sanchez', helvetica, sans-serif;
+#contact-form input,
+#contact-form textarea {
+	font-family: "Carrois Gothic", helvetica, sans-serif;	
 }
 
 .block:before {
@@ -616,7 +620,7 @@ footer.footer {
 
 #home-hero {
 	background-image: url(../img/hero.png);
-	background-position: 50%;
+	background-position: 50% 0;
 }
 
 #about-hero {
@@ -674,6 +678,9 @@ footer.footer {
 	display: none;
 	text-align: right;
 	float: right
+}
+.error-row * {
+	font-family: "Carrois Gothic", helvetica, sans-serif;	
 }
 
 .form-element-holder {
@@ -848,6 +855,18 @@ footer.footer {
 	}
 	.white-box:nth-child(2), .white-box:nth-child(3){
 		margin-left: 0;
+	}
+	.process-band .process-content {
+		margin-left: 0;
+	}
+	.fancy-header.number-icon {
+		padding: 5px 0 0 0;
+	}
+	.fancy-header {
+		margin: 20px 0;
+	}
+	#about-our-team h3 {
+		margin: 20px 0;	
 	}
 }
 

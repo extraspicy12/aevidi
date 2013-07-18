@@ -7,7 +7,7 @@ include_once "includes/header.php"
 	<div class="row">
 		<div class="large-12 small-centered">
 			<div class="preloader"></div>
-			<div class="jumbotron" id="home-hero"></div>
+			<div data-stellar-background-ratio="0.5" class="jumbotron" id="home-hero"></div>
 		</div>
 	</div>
 </div>
@@ -76,7 +76,7 @@ include_once "includes/header.php"
 							<div class="row collapse">
 								<div class="row form-element-holder">
 									<div class="large-2 columns">
-										<label class="inline">Name</label>
+										<label class="inline" for="yourName">Name</label>
 									</div>
 									<div class="large-10 columns">
 										<input type="text" id="yourName" placeholder="Your Name">
@@ -90,7 +90,7 @@ include_once "includes/header.php"
 							<div class="row collapse">
 								<div class="row form-element-holder">
 									<div class="large-2 columns">
-										<label class="inline">Phone Number (opt.)</label>
+										<label class="inline" for="yourNumber">Phone Number (opt.)</label>
 									</div>
 									<div class="large-10 columns">
 										<input type="text" id="yourNumber" placeholder="(000) 000-0000">
@@ -104,7 +104,7 @@ include_once "includes/header.php"
 							<div class="row collapse">
 								<div class="row form-element-holder">
 									<div class="large-2 columns">
-										<label class="inline">Email</label>
+										<label class="inline" for="yourEmail">Email</label>
 									</div>
 									<div class="large-10 columns">
 										<input type="text" id="yourEmail" placeholder="your@email.com">
@@ -118,7 +118,7 @@ include_once "includes/header.php"
 							<div class="row collapse">
 								<div class="row form-element-holder">
 									<div class="large-2 columns">
-										<label class="inline">Message</label>
+										<label class="inline" for="yourMessage">Message</label>
 									</div>
 									<div class="large-10 columns">
 										<textarea id="yourMessage" rows="6"></textarea>
@@ -140,4 +140,11 @@ include_once "includes/header.php"
 	</div>
 </div>
 </div>
+
+<script>
+$(document).ready(function() {
+	parallax(768);
+});
+</script>
+
 <?php include_once "includes/footer.php" ?>

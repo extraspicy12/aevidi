@@ -51,7 +51,7 @@ include_once "includes/header.php"
 								<div class="large-12 columns"><span class="fancy-header number-icon">1</span><span class="fancy-header medium-font light process-header">Meet</span> </div>
 							</div>
 							<div class="row">
-								<div class="large-11 large-offset-1 columns">
+								<div class="large-11 columns process-content">
 									<p>By using the nifty contact form we have at the bottom of every page, you can send us an outline of everything you would
 										need on a website. Maybe you already have a few images or a logo. Anything that could add to a visual description of your
 										site is helpful. After we get all the information about what your site needs, we will send you a quote for the work. If
@@ -67,7 +67,7 @@ include_once "includes/header.php"
 								<div class="large-12 columns"> <span class="fancy-header number-icon">2</span><span class="fancy-header medium-font light process-header">Mockup</span> </div>
 							</div>
 							<div class="row">
-								<div class="large-11 large-offset-1 columns">
+								<div class="large-11 columns process-content">
 									<p>This is where the real communication happens. We take everything we discussed in the initial modes of communication and
 										create graphical mockups of what our vision of the website would look like. From there, we will engage in a back-and-forth
 										with you to tailor the site to meet your vision. The next step is to develop and design the website from the finalized
@@ -84,7 +84,7 @@ include_once "includes/header.php"
 								<div class="large-12 columns"> <span class="fancy-header number-icon">3</span><span class="fancy-header medium-font light process-header">Deploy</span> </div>
 							</div>
 							<div class="row">
-								<div class="large-11 large-offset-1 columns">
+								<div class="large-11 columns process-content">
 									<p>This is the point in the process where we finally get your website online. We will work with you to purchase a webhost
 										and domain. Then we will configure the site to work with your host and create documentation to allow you to run your
 										website completely self-sufficiently. We also offer the service of a retainer, where we would administrate the site
@@ -145,7 +145,7 @@ include_once "includes/header.php"
 							<div class="row collapse">
 								<div class="row form-element-holder">
 									<div class="large-2 columns">
-										<label class="inline">Name</label>
+										<label class="inline" for="yourName">Name</label>
 									</div>
 									<div class="large-10 columns">
 										<input type="text" id="yourName" placeholder="Your Name">
@@ -159,7 +159,7 @@ include_once "includes/header.php"
 							<div class="row collapse">
 								<div class="row form-element-holder">
 									<div class="large-2 columns">
-										<label class="inline">Phone Number (opt.)</label>
+										<label class="inline" for="yourNumber">Phone Number (opt.)</label>
 									</div>
 									<div class="large-10 columns">
 										<input type="text" id="yourNumber" placeholder="(000) 000-0000">
@@ -173,7 +173,7 @@ include_once "includes/header.php"
 							<div class="row collapse">
 								<div class="row form-element-holder">
 									<div class="large-2 columns">
-										<label class="inline">Email</label>
+										<label class="inline" for="yourEmail">Email</label>
 									</div>
 									<div class="large-10 columns">
 										<input type="text" id="yourEmail" placeholder="your@email.com">
@@ -187,7 +187,7 @@ include_once "includes/header.php"
 							<div class="row collapse">
 								<div class="row form-element-holder">
 									<div class="large-2 columns">
-										<label class="inline">Message</label>
+										<label class="inline" for="yourMessage">Message</label>
 									</div>
 									<div class="large-10 columns">
 										<textarea id="yourMessage" rows="6"></textarea>
@@ -212,28 +212,7 @@ include_once "includes/header.php"
 
 <script>
 $(document).ready(function() {
-	var width = $(this).width();
-	
-	if(width >= 1400) {
-		$.stellar({
-			horizontalScrolling: false
-		});
-	}
-		
-	$(window).on('resize', function() {
-		width = $(this).width();
-
-		if(width < 1400) {
-			$.stellar('destroy');
-		}
-		else {
-			$.stellar({
-				horizontalScrolling: false
-			});	
-		}
-	});
-	
-	
+	parallax(1400);
 });
 </script>
 <?php include_once "includes/footer.php" ?>
