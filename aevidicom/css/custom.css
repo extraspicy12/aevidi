@@ -188,7 +188,7 @@ a:hover {
 	font-family: 'Quicksand', sans-serif, helvetica;
 	color: #B6B6B6;
 	font-size: 1.75em;
-	text-shadow: 0 0 10px #c9c9c9;
+	/*text-shadow: 0 0 10px #c9c9c9;*/
 }
 
 #about-our-team h3 {
@@ -237,7 +237,7 @@ a:hover {
 	font-weight: normal;
 	font-size: 2em;
 	text-align: center;
-	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
+	text-shadow: 0px 3px 3px rgba(109,109,109,0.33);
 }
 
 .row.collapse {
@@ -266,7 +266,7 @@ form > .row.collapse:hover {
 	color: #333333;
 	font-weight: normal;
 	font-size: 2.5em;
-	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
+	text-shadow: 0px 3px 3px rgba(109,109,109,0.33);
 }
 
 .process-band .fancy-header {
@@ -274,7 +274,7 @@ form > .row.collapse:hover {
 	color: white;
 	font-weight: normal;
 	font-size: 2.5em;
-	text-shadow: 0px 3px 4px rgba(109,109,109,0.66);
+	text-shadow: 0px 3px 3px rgba(0,0,0,0.66);
 }
 
 .fancy-header.medium-font {
@@ -292,11 +292,6 @@ form > .row.collapse:hover {
 	width: 35px;
 	display: inline-block;
 	text-shadow: none;
-}
-
-.process-band .container {
-	padding-left: 10px;
-	padding-right: 10px;
 }
 
 .process-band .process-block {
@@ -422,16 +417,15 @@ footer.footer {
 }
 
 .band {
-/* 	padding-bottom: 60px; */
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 	margin-top:0px;
+	/*box-shadow: 0 7px 4px -4px rgba(0,0,0,0.10) inset*/
 }
 
 .contact-band {
 		border-top: 4px solid #64B557;
 		background: url(../img/footer-center.png) top center no-repeat #caecb4;
-/* 		padding-top: 40px; */
-		padding-top: 30px;
+		padding-top: 40px;
 }
 
 .about-our-team {
@@ -759,17 +753,17 @@ footer.footer {
 */
 
 #home-hero {
-	height: 424px;
+	height: 300px;
 	background-image: url(../img/hero-770.png);
-	height: 65%;
+	background-position: 50%;
 }
 	.centered-box {
 		padding: 5px 15px;
 	}
-	.no-pad {
+	/*.no-pad {
 		padding-left: 15px;
 		padding-right: 15px;
-	}
+	}*/
 	.show-for-small-only {
 		display: inherit;
 	}

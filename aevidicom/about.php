@@ -13,7 +13,7 @@ include_once "includes/header.php"
 	<div class="row band bg-band" id="services">
 		<div class="container">
 			<div class="large-12 small-centered columns" id="about-top-band">
-				<div class="large-8 columns">
+				<div class="large-8 columns no-pad">
 					<h4 class="fancy-header">About aeVidi</h4>
 					<p>aeVidi, LLC is a small, start-up web design company run by three University of Maryland students. We aim to provide small businesses the service of having a
 						completely custom web site designed specifically for them, without having to pay a fortune.</p>
