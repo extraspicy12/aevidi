@@ -105,7 +105,7 @@ include_once "includes/header.php"
 					<div class="row">
 						<div class="large-4 columns"> <img src="http://placehold.it/250x250&text=[person]"> </div>
 						<div class="large-8 columns">
-							<h3><a href="mailto:arjun@aevidi.com">Arjun Baradwaj</a> - Business & SEO Specialist</h3>
+							<h3><a href="mailto:arjun@aevidi.com">Arjun Baradwaj</a><span class="about-sep">/</span><span class="title">Business & SEO Specialist</span></h3>
 							<p>Arjun is a sophomore computer science and marketing major at the University of Maryland, College Park. He has been fascinated with web design and development since he was in sixth grade. Arjun has designed websites for companies like AIAA and Core Compliance Services and done web development work at the Johns Hopkins Univeristy Applied Physics Lab. Lately, he has worked more on the business side, focusing on social media in marketing and search engine optimization. Arjun is a huge Chicago sports fan (Cubs, unfortunately) and plays a soccer, baseball, and basketball in his free time.</p>
 						</div>
 					</div>
@@ -113,7 +113,7 @@ include_once "includes/header.php"
 					<div class="row">
 						<div class="large-4 columns push-8"> <img src="http://placehold.it/250x250&text=[person]"> </div>
 						<div class="large-8 columns pull-4">
-							<h3><a href="mailto:eric@aevidi.com">Eric Segev</a> - Development Specialist</h3>
+							<h3><a href="mailto:eric@aevidi.com">Eric Segev</a><span class="about-sep">/</span><span class="title">Development Specialist</span></h3>
 							<p>Eric is a freshman at the University of Maryland, double majoring in Biology and Computer Science. His passion is developing web applications from scratch, using his own Content Management System and MVC layout to create functional, cutting-edge web applications. Eric has developed a volunteer-system web application for his local school system and is currently working on selling that application to the National Honor Society. In addition to backend development, Eric has over 8 years of experience with web design and front-end development. He is also an avid distance runner and enjoys playing the occasional video game.
 </p>
 						</div>
@@ -122,7 +122,7 @@ include_once "includes/header.php"
 					<div class="row">
 						<div class="large-4 columns"> <img src="http://placehold.it/250x250&text=[person]"> </div>
 						<div class="large-8 columns">
-							<h3><a href="mailto:shabai@aevidi.com">Shabai Liu</a> - Design Specialist</h3>
+							<h3><a href="mailto:shabai@aevidi.com">Shabai Liu</a><span class="about-sep">/</span><span class="title">Design Specialist</span></h3>
 							<p>Shabai is currently a sophomore at the University of Maryland, pursuing a degree in computer science. He has been doing graphic design and front-end development since 2007, and has freelanced for a few clients including Billeater and theBarBlogger. As the design specialist, he oversees the mockup process from beginning to end, and ensures the final product is not only a marvel to look at, but fitting with the client's needs. In his spare time, he enjoys playing Minecraft and adding to his Flickr photostream.</p>
 						</div>
 					</div>

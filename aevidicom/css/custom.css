@@ -452,6 +452,14 @@ footer.footer {
 	margin-bottom: 0;
 }
 
+.about-our-team .about-sep {
+	color: #ccc;
+	margin: 0 10px;
+}
+.about-our-team .title {
+	font-family: "Carrois Gothic", helvetica, sans-serif;
+}
+
 .process-band .arrow {
 		background: url(../img/footer-center.png) top center no-repeat;		padding-top: 30px;
 }
@@ -859,8 +867,15 @@ footer.footer {
 	.fancy-header {
 		margin: 20px 0;
 	}
-	#about-our-team h3 {
+	.about-our-team h3 {
 		margin: 20px 0;	
+	}
+	.about-our-team .about-sep {
+		display: none;
+	}
+	.about-our-team .title {
+		display: block;
+		font-size: 0.85em;
 	}
 }
 
