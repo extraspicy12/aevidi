@@ -144,6 +144,8 @@ include_once "includes/header.php"
 <script>
 $(document).ready(function() {
 	parallax(768);
+	
+	$('#menu-home').addClass('active');
 });
 </script>
 

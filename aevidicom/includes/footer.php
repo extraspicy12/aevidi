@@ -178,7 +178,9 @@
 
 		$(".scroll").click(function(event){
 			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			var pos = $(this.hash).offset().top;
+			pos -= $(window).width() < 768 ? 0 : 65;
+			$('html,body').animate({scrollTop:pos}, 500);
 		});
 
 	});

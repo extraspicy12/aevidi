@@ -213,6 +213,8 @@ include_once "includes/header.php"
 <script>
 $(document).ready(function() {
 	parallax(1400);
+	
+	$('#menu-about').addClass('active');
 });
 </script>
 <?php include_once "includes/footer.php" ?>
