@@ -176,10 +176,13 @@
 		  return false;
 		});
 
-		$(".scroll").click(function(event){
+		$("a").click(function(event) {
 			event.preventDefault();
 			var pos = $(this.hash).offset().top;
-			pos -= $(window).width() < 768 ? 0 : 65;
+			
+			if($(this).attr('href') == '#contact-us')
+				pos -= $(window).width() < 768 ? 0 : 65;
+				
 			$('html,body').animate({scrollTop:pos}, 500);
 		});
 
