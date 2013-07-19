@@ -176,7 +176,7 @@
 		  return false;
 		});
 
-		$("a").click(function(event) {
+		$("a.scroll").click(function(event) {
 			event.preventDefault();
 			var pos = $(this.hash).offset().top;
 			
