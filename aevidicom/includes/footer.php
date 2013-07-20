@@ -80,7 +80,6 @@
 	<a class="close-reveal-modal">&#215;</a>
 </div>
 
-<script src="js/vendor/jquery.js" type="text/javascript"></script>
 <script src="js/foundation.min.js" type="text/javascript"></script>
   <script type="text/javascript">
 
@@ -123,66 +122,94 @@
 	  	$("#"+id).css("border", "1px solid green");
   	}
 
-		$(document).foundation();
+	$(document).foundation();
 
-		$(document).ready(function() {
-			$('#contact-modal').on('opened', function () {
-			  $(this).foundation('section', 'reflow');
-			});
-
-			$("#contact-form input, textarea").keyup(function() {
-				var validateMsg = validate(this.id, this.value);
-				if (validateMsg != "good")
-					invalidate(this.id, validateMsg);
-				else
-					makeValid(this.id);
-			});
-
-			$("#contact-form").submit(function() {
-				var valid = true;
-				var returnMsg;
-				$("#contact-form input, textarea").each(function(index){
-					returnMsg = validate(this.id, this.value);
-					if (returnMsg != "good") {
-						invalidate(this.id, returnMsg);
-						valid = false;
-					}
-				});
-				if (valid) {
-				var name = $("#yourName").val();
-				var number = $("#yourNumber").val();
-				var email = $("#yourEmail").val();
-				var message = $("#yourMessage").val();
-		      $('#contact-form').html("Sending...");
-				  $.ajax({
-				      type: "POST",
-				      url: "includes/sendEmail.php",
-				      data: {
-				          confirm: 'sendEmail',
-				          name: name,
-				          number: number,
-				          email: email,
-				          message: message
-				      },
-				      async: true
-				  }).done(function(msg){
-					  if (msg = "sent")
-					      $('#contact-form').html("Your email has been sent! You will hear back from us promptly.");
-					  else
-					      $('#contact-form').html("There was a problem sending your email. Please contact us at <a href=\"mailto:contact@aevidi.com\">contact@aevidi.com</a> instead.");
-				  });
-			  } else {
-
-			  }
-			  return false;
-			});
-
-			$(".scroll").click(function(event){
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-			});
-
+	$(document).ready(function() {
+		$('#contact-modal').on('opened', function () {
+		  $(this).foundation('section', 'reflow');
 		});
+
+		$("#contact-form input, textarea").keyup(function() {
+			var validateMsg = validate(this.id, this.value);
+			if (validateMsg != "good")
+				invalidate(this.id, validateMsg);
+			else
+				makeValid(this.id);
+		});
+
+		$("#contact-form").submit(function() {
+			var valid = true;
+			var returnMsg;
+			$("#contact-form input, textarea").each(function(index){
+				returnMsg = validate(this.id, this.value);
+				if (returnMsg != "good") {
+					invalidate(this.id, returnMsg);
+					valid = false;
+				}
+			});
+			if (valid) {
+			var name = $("#yourName").val();
+			var number = $("#yourNumber").val();
+			var email = $("#yourEmail").val();
+			var message = $("#yourMessage").val();
+		  $('#contact-form').html("Sending...");
+			  $.ajax({
+				  type: "POST",
+				  url: "includes/sendEmail.php",
+				  data: {
+					  confirm: 'sendEmail',
+					  name: name,
+					  number: number,
+					  email: email,
+					  message: message
+				  },
+				  async: true
+			  }).done(function(msg){
+				  if (msg = "sent")
+					  $('#contact-form').html("Your email has been sent! You will hear back from us promptly.");
+				  else
+					  $('#contact-form').html("There was a problem sending your email. Please contact us at <a href=\"mailto:contact@aevidi.com\">contact@aevidi.com</a> instead.");
+			  });
+		  } else {
+
+		  }
+		  return false;
+		});
+
+		$("a.scroll").click(function(event) {
+			event.preventDefault();
+			var pos = $(this.hash).offset().top;
+			
+			if($(this).attr('href') == '#contact-us')
+				pos -= $(window).width() < 768 ? 0 : 65;
+				
+			$('html,body').animate({scrollTop:pos}, 500);
+		});
+
+	});
+	
+	function parallax(toggleWidth) {
+		var width = $(window).width();
+		
+		if(width >= toggleWidth) {
+			$.stellar({
+				horizontalScrolling: false
+			});
+		}
+			
+		$(window).on('resize', function() {
+			width = $(this).width();
+	
+			if(width < toggleWidth) {
+				$.stellar('destroy');
+			}
+			else {
+				$.stellar({
+					horizontalScrolling: false
+				});	
+			}
+		});	
+	}
   </script>
 </body>
 </html>
