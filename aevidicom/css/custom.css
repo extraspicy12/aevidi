@@ -1,8 +1,6 @@
-/*
 @import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
 @import url(http://fonts.googleapis.com/css?family=Sanchez);
-*/
 
 ::selection {
 	background-color: #f6ea81; /* Safari */
@@ -188,7 +186,7 @@ a:hover {
 	font-family: 'Quicksand', sans-serif, helvetica;
 	color: #B6B6B6;
 	font-size: 1.75em;
-	/*text-shadow: 0 0 10px #c9c9c9;*/
+	text-shadow: 0 0 5px rgba(0,0,0,.35);
 }
 
 #about-our-team h3 {
