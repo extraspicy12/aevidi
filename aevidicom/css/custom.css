@@ -1,7 +1,8 @@
+/*
 @import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
 @import url(http://fonts.googleapis.com/css?family=Sanchez);
-@import url(http://fonts.googleapis.com/css?family=Sanchez);
+*/
 
 ::selection {
 	background-color: #f6ea81; /* Safari */
@@ -359,9 +360,6 @@ form > .row.collapse:hover {
 .nav-ul {
 	text-align: right;
 	margin: 0;
-}
-
-.nav-ul > li {
 }
 
 .nav-link {
@@ -746,31 +744,15 @@ footer.footer {
 /** End fix **/
 
 @media (max-width: 768px) {
-/*
-	.reveal-modal.open {
-  position: absolute;
-  left: 50%;
-  z-index: 99;
-  height: auto;
-  margin-left: -40%;
-  width: 80%;
-  top: 100px !important;
-  margin-top: 100px !important;
-	}
-*/
 
-#home-hero {
-	height: 300px;
-	background-image: url(../img/hero-770.png);
-	background-position: 50%;
-}
+	#home-hero {
+		height: 300px;
+		background-image: url(../img/hero-770.png);
+		background-position: 50%;
+	}
 	.centered-box {
 		padding: 5px 15px;
 	}
-	/*.no-pad {
-		padding-left: 15px;
-		padding-right: 15px;
-	}*/
 	.show-for-small-only {
 		display: inherit;
 	}
@@ -798,11 +780,6 @@ footer.footer {
 	}
 	nav.fixed {
 		position: relative;
-	}
-	.mobile-block-grid-2 > li{
-		position: relative;
-		float: right;
-    padding: 0 0.625em 1.25em;
 	}
 	.jumbotron {
 		margin-top: -15px;
@@ -876,7 +853,9 @@ footer.footer {
 }
 
 @media (max-width: 450px) {
-	.navbar {font-size:.75em;}
+	.nav-ul img{
+		width:25px;height:25px;
+	}
 	#home-hero {
 		height: 248px;
 		background-image: url(../img/hero-450.png);
