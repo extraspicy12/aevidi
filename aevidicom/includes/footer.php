@@ -2,26 +2,23 @@
 <footer class="row footer" id="footer">
       <div class="large-12 small-centered columns no-pad">
 		    <div class="container">
-		      <div class="row">
+		      <div class="row collapse">
 		        <div class="large-4 columns">
-		          <!-- WIDGET TITLE -->
 		        </div>
 		        <div class="large-4 columns">
-		          <!-- WIDGET TITLE -->
 		        </div>
 		        <div class="large-4 columns">
-		         <!--  WIDGET TITLE -->
 		        </div>
 		      </div>
-		      <div class="row">
+		      <div class="row collapse">
 			      <div class="small-centered large-9 tagline columns">
 			        <div class="small-4 columns">
 			          <span class="pull-right">Seeing is Believing.</span>
-		        </div>
+			        </div>
 			        <div class="small-4 columns"><img src="img/grey-eye.png"></div>
 			        <div class="small-4 columns">
 			          <span class="pull-left">&copy; aeVidi, LLC</span>
-		        </div>
+			        </div>
 			      </div>
 		      </div>
 		    </div>
