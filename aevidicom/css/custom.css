@@ -326,7 +326,7 @@ form > .row.collapse:hover {
 
 #contact-form input,
 #contact-form textarea {
-	font-family: "Carrois Gothic", helvetica, sans-serif;	
+	font-family: "Carrois Gothic", helvetica, sans-serif;
 }
 
 .block:before {
@@ -681,7 +681,7 @@ footer.footer {
 	float: right
 }
 .error-row * {
-	font-family: "Carrois Gothic", helvetica, sans-serif;	
+	font-family: "Carrois Gothic", helvetica, sans-serif;
 }
 
 .form-element-holder {
@@ -729,7 +729,7 @@ footer.footer {
 
 @media (max-width:1400px) {
 	#about-hero {
-		background-position: 50% !important;	
+		background-position: 50% !important;
 	}
 }
 
@@ -864,7 +864,7 @@ footer.footer {
 		margin: 20px 0;
 	}
 	.about-our-team h3 {
-		margin: 20px 0;	
+		margin: 20px 0;
 	}
 	.about-our-team .about-sep {
 		display: none;
