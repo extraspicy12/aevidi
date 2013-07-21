@@ -186,7 +186,7 @@ a:hover {
 	font-family: 'Quicksand', sans-serif, helvetica;
 	color: #B6B6B6;
 	font-size: 1.75em;
-	text-shadow: 0 0 5px rgba(0,0,0,.35);
+	text-shadow: 0 0 6px rgba(0,0,0,.2);
 }
 
 #about-our-team h3 {
@@ -851,7 +851,7 @@ footer.footer {
 }
 
 @media (max-width: 450px) {
-	.nav-link:nth-child(1), .nav-link:nth-child(2), .nav-link:nth-child(3) {width:100%;}
+/* 	.nav-link:nth-child(1), .nav-link:nth-child(2), .nav-link:nth-child(3) {width:100%;} */
 	#home-hero {
 		height: 248px;
 		background-image: url(../img/hero-450.png);
