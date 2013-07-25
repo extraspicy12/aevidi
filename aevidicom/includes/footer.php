@@ -2,26 +2,23 @@
 <footer class="row footer" id="footer">
       <div class="large-12 small-centered columns no-pad">
 		    <div class="container">
-		      <div class="row">
+		      <div class="row collapse">
 		        <div class="large-4 columns">
-		          <!-- WIDGET TITLE -->
 		        </div>
 		        <div class="large-4 columns">
-		          <!-- WIDGET TITLE -->
 		        </div>
 		        <div class="large-4 columns">
-		         <!--  WIDGET TITLE -->
 		        </div>
 		      </div>
-		      <div class="row">
+		      <div class="row collapse">
 			      <div class="small-centered large-9 tagline columns">
 			        <div class="small-4 columns">
 			          <span class="pull-right">Seeing is Believing.</span>
-		        </div>
+			        </div>
 			        <div class="small-4 columns"><img src="img/grey-eye.png"></div>
 			        <div class="small-4 columns">
 			          <span class="pull-left">&copy; aeVidi, LLC</span>
-		        </div>
+			        </div>
 			      </div>
 		      </div>
 		    </div>
@@ -122,6 +119,18 @@
 	  	$("#"+id).css("border", "1px solid green");
   	}
 
+  	function throttle(f, delay){
+    var timer = null;
+    return function(){
+        var context = this, args = arguments;
+        clearTimeout(timer);
+        timer = window.setTimeout(function(){
+            f.apply(context, args);
+        },
+        delay || 500);
+    };
+}
+
 	$(document).foundation();
 
 	$(document).ready(function() {
@@ -129,13 +138,13 @@
 		  $(this).foundation('section', 'reflow');
 		});
 
-		$("#contact-form input, textarea").keyup(function() {
+		$("#contact-form input, textarea").keyup(throttle(function(){
 			var validateMsg = validate(this.id, this.value);
 			if (validateMsg != "good")
 				invalidate(this.id, validateMsg);
 			else
 				makeValid(this.id);
-		});
+		}));
 
 		$("#contact-form").submit(function() {
 			var valid = true;
@@ -179,36 +188,36 @@
 		$("a.scroll").click(function(event) {
 			event.preventDefault();
 			var pos = $(this.hash).offset().top;
-			
+
 			if($(this).attr('href') == '#contact-us')
 				pos -= $(window).width() < 768 ? 0 : 65;
-				
+
 			$('html,body').animate({scrollTop:pos}, 500);
 		});
 
 	});
-	
+
 	function parallax(toggleWidth) {
 		var width = $(window).width();
-		
+
 		if(width >= toggleWidth) {
 			$.stellar({
 				horizontalScrolling: false
 			});
 		}
-			
+
 		$(window).on('resize', function() {
 			width = $(this).width();
-	
+
 			if(width < toggleWidth) {
 				$.stellar('destroy');
 			}
 			else {
 				$.stellar({
 					horizontalScrolling: false
-				});	
+				});
 			}
-		});	
+		});
 	}
   </script>
 </body>

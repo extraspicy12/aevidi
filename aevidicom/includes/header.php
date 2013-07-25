@@ -4,6 +4,14 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width" name="viewport">
+<meta name="msvalidate.01" content="937C402DA814C2890CD562DEA18772B9" />
+<!-- SEO -->
+<meta name="description" content="Start-up Web Design Company. Flawless, responsive layouts. Robust, intuitive content management systems. Search engine optimized. Seeing is believing." />
+<meta name="author" content="aeVidi" />
+<meta name ="keywords" content=" aeVidi, web design company, website services, website design, search engine optimization, content management system, Wordpress developer,web development company, start-up, web content developer, CMS development, layout design, responsive layouts" />
+<link rel="canonical" href="http://www.aevidi.com/" />
+<! -- /SEO -- >
+
 <title><?php echo $title; ?> | aeVidi | Seeing is Believing</title>
 <link href="css/normalize.css" rel="stylesheet" type="text/css">
 <link href="css/foundation.css" rel="stylesheet" type="text/css">
@@ -32,8 +40,13 @@
 						<li class="nav-link" id="menu-home"><a href="/">HOME</a></li>
 						<li class="nav-link" id="menu-about"><a href="about.php">ABOUT</a></li>
 						<li class="nav-link"><a class="scroll" href="#contact-us">CONTACT</a></li>
-						<li class="nav-link"><a class="social-icons" target="_blank" href="https://www.facebook.com/aevidi"><img src="img/fb-round.png" alt="fb-icon" width="32" height="32"></a></li>
-						<li class="nav-link"><a class="social-icons" target="_blank" href="https://twitter.com/aevidiweb"><img src="img/twitter-round.png" alt="tw-icon" width="32" height="32"></a></li>
+					</ul>
+					<ul class="nav-ul">
+						<li class="nav-icons nav-link">
+							<li class="nav-link"><a class="social-icons" target="_blank" href="https://www.facebook.com/aevidi"><img src="img/fb-round.png" alt="fb-icon"></a></li>
+							<li class="nav-link"><a class="social-icons" target="_blank" href="https://twitter.com/aevidiweb"><img src="img/twitter-round.png" alt="tw-icon"></a></li>
+							<li class="nav-link"><a class="social-icons" target="_blank" href="https://www.linkedin.com/company/aevidi"><img src="img/linkedin-round.png" alt="li-icon"></a></li>
+						</li>
 					</ul>
 				</div>
 			</div>
