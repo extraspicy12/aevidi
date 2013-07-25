@@ -21,6 +21,7 @@
 <script src="js/vendor/custom.modernizr.js" type="text/javascript"></script>
 <script src="js/vendor/jquery.js" type="text/javascript"></script>
 <script src="js/jquery.stellar.min.js" type="text/javascript"></script>
+<script src="js/analytics.js" type="text/javascript"></script>
 
 </head>
 
