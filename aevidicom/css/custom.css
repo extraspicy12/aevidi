@@ -359,8 +359,11 @@ form > .row.collapse:hover {
 .nav-ul {
 	text-align: right;
 	margin: 0;
+<<<<<<< HEAD
 	display: inline-block;
 	white-space: nowrap;
+=======
+>>>>>>> cde7edbcc243c6e766b5f5b6f4e359a1dca9daf2
 }
 
 .nav-link {

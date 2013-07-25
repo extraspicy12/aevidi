@@ -40,8 +40,11 @@
 						<li class="nav-link" id="menu-home"><a href="/">HOME</a></li>
 						<li class="nav-link" id="menu-about"><a href="about.php">ABOUT</a></li>
 						<li class="nav-link"><a class="scroll" href="#contact-us">CONTACT</a></li>
+<<<<<<< HEAD
 					</ul>
 					<ul class="nav-ul">
+=======
+>>>>>>> cde7edbcc243c6e766b5f5b6f4e359a1dca9daf2
 						<li class="nav-icons nav-link">
 							<li class="nav-link"><a class="social-icons" target="_blank" href="https://www.facebook.com/aevidi"><img src="img/fb-round.png" alt="fb-icon"></a></li>
 							<li class="nav-link"><a class="social-icons" target="_blank" href="https://twitter.com/aevidiweb"><img src="img/twitter-round.png" alt="tw-icon"></a></li>
