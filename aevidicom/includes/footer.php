@@ -1,5 +1,5 @@
 
-<footer class="row footer" id="footer">
+<footer class="row footer " id="footer">
       <div class="large-12 small-centered columns no-pad">
 		    <div class="container">
 		      <div class="row collapse">
