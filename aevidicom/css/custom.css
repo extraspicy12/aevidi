@@ -138,6 +138,7 @@ a:hover {
 }
 
 .nav-container {
+	text-align: right;
 	padding-top: 4px;
 }
 	.nav-container .nav-link.active a {
@@ -356,13 +357,19 @@ form > .row.collapse:hover {
 }
 
 .nav-ul {
-	text-align: right;
-	margin: 0;
+    display: inline-block;
+    margin: 0;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.nav-ul:nth-child(2) {
+	padding-left: 5px;
 }
 
 .nav-link {
 	font-size: 1.5em;
-	padding: 0 1% !important;
+	padding: 0 5px !important;
 	font-family: 'Carrois Gothic', sans-serif, helvetica;
 	list-style: none;
 	display: inline-block;
@@ -379,19 +386,10 @@ form > .row.collapse:hover {
 
 footer.footer {
 	background: url(../img/black_denim.png) center top repeat;
-	border-top: 4px solid #75B64B;
 }
 
 #footer span {
 	font-family: "Carrois Gothic", helvetica, sans-serif;
-}
-
-#footer > .large-12 {
-		background: url(../img/footer-center.png) top center no-repeat;
-}
-
-.band.process-band > .large-12, .band.about-our-team > .large-12 {
-		background: url(../img/footer-center.png) top center no-repeat;
 }
 
 .footer .container {
@@ -414,27 +412,28 @@ footer.footer {
 .band {
 	padding-bottom: 60px;
 	margin-top:0px;
-	/*box-shadow: 0 7px 4px -4px rgba(0,0,0,0.10) inset*/
 }
 
 .contact-band {
-		border-top: 4px solid #75B64B;
-		background: url(../img/footer-center.png) top center no-repeat #caecb4;
-		padding-top: 40px;
-}
-
-.about-our-team {
-		border-top: 4px solid #75B64B;
-		background: url(../img/footer-center.png) top center no-repeat #caecb4;
+	background-color: #caecb4;
 }
 
 .band.process-band {
 	background: url(../img/escheresque_ste.png) center top repeat;
-	border-top: 4px solid #75B64B;
 	color: white;
 }
 
-.process-band .large-12 > .container, .about-our-team .large-12 > .container {
+.band.green {
+		box-shadow: 0 12px 8px -8px rgba(0,0,0,0.50) inset;
+	/** Mess with shadow here **/
+}
+
+.band.green > .large-12, .footer > .large-12{
+	background: url(../img/footer-center.png) top center no-repeat;
+	border-top: 4px solid #75B64B;
+}
+
+.band.green .large-12 > .container {
 	padding-top:30px;
 }
 
@@ -453,16 +452,6 @@ footer.footer {
 }
 .about-our-team .title {
 	font-family: "Carrois Gothic", helvetica, sans-serif;
-}
-
-.process-band .arrow {
-		background: url(../img/footer-center.png) top center no-repeat;		padding-top: 30px;
-}
-
-.band.process.green {
-		border-top: 4px solid #75B64B;
-		background: #caecb4;
-		padding-top: 30px;
 }
 
 .white-box ul {
@@ -494,15 +483,14 @@ footer.footer {
 }
 */
 
-.band.process.green.arrow {
-		background: url(../img/footer-center.png) top center no-repeat #caecb4;
-}
 
+/*
 .band.process.bg {
-		border-top: 4px solid #75B64B;
-		background: url(../img/grid_noise.png) center top repeat;
-		padding-top: 30px;
+	border-top: 4px solid #75B64B;
+	background: url(../img/grid_noise.png) center top repeat;
+	padding-top: 30px;
 }
+*/
 
 .band.bg-band {
 	background: url(../img/grid_noise.png) center top repeat;
@@ -851,7 +839,6 @@ footer.footer {
 }
 
 @media (max-width: 450px) {
-/* 	.nav-link:nth-child(1), .nav-link:nth-child(2), .nav-link:nth-child(3) {width:100%;} */
 	#home-hero {
 		height: 248px;
 		background-image: url(../img/hero-450.png);

@@ -39,7 +39,7 @@ include_once "includes/header.php"
 		</div>
 	</div>
 	<div class="hidden" id="process"></div>
-	<div class="row band process-band">
+	<div class="row band process-band green">
 		<div class="large-12 small-centered columns no-pad">
 			<div class="container">
 				<div class="large-12 columns small-centered">
@@ -97,7 +97,7 @@ include_once "includes/header.php"
 			</div>
 		</div>
 	</div>
-	<div class="row band bg-band about-our-team" id="about-our-team">
+	<div class="row band green bg-band about-our-team" id="about-our-team">
 		<div class="large-12 small-centered columns no-pad">
 			<div class="container">
 				<div class="large-12 columns small-centered">
@@ -130,90 +130,92 @@ include_once "includes/header.php"
 			</div>
 		</div>
 	</div>
-	<div class="row band contact-band" id="contact-us">
-	<div class="container">
-		<div class="large-12 columns">
-			<div class="row">
-				<div class="large-6 columns small-centered large-uncentered">
-					<h3 class="fancy-header">Let's Get In Touch</h3>
-					<p> Now that you've had a chance to take a look at our services, go ahead and examine our <a class="scroll" href="#process">process</a> so that you can get a feel for our personalization for each individual client. You can start this process off by filling out this
-						contact form and describing your needs and vision for your individualized website. We hope to hear from you soon! </p>
-				</div>
-				<div class="large-6 columns">
-					<div class="content panel rounded" data-slug="contact-form" id="contact-form-div">
-						<form id="contact-form" class="no-margin" method="" target="" id="contact-form">
-							<div class="row collapse">
-								<div class="row form-element-holder">
-									<div class="large-2 columns">
-										<label class="inline" for="yourName">Name</label>
+	<div class="row band green contact-band" id="contact-us">
+		<div class="large-12 small-centered columns no-pad">
+			<div class="container">
+				<div class="large-12 columns">
+					<div class="row">
+						<div class="large-6 columns small-centered large-uncentered">
+							<h3 class="fancy-header">Let's Get In Touch</h3>
+							<p> Now that you've had a chance to take a look at our services, go ahead and examine our <a class="scroll" href="#process">process</a> so that you can get a feel for our personalization for each individual client. You can start this process off by filling out this
+								contact form and describing your needs and vision for your individualized website. We hope to hear from you soon! </p>
+						</div>
+						<div class="large-6 columns">
+							<div class="content panel rounded" data-slug="contact-form" id="contact-form-div">
+								<form id="contact-form" class="no-margin" method="" target="" id="contact-form">
+									<div class="row collapse">
+										<div class="row form-element-holder">
+											<div class="large-2 columns">
+												<label class="inline" for="yourName">Name</label>
+											</div>
+											<div class="large-10 columns">
+												<input type="text" id="yourName" placeholder="Your Name">
+											</div>
+										</div>
+										<div class="row collapse error-row" id="yourName-error-row">
+											<div class="large-offset-2 large-10 columns" id="yourName-error">
+											</div>
+										</div>
 									</div>
-									<div class="large-10 columns">
-										<input type="text" id="yourName" placeholder="Your Name">
+									<div class="row collapse">
+										<div class="row form-element-holder">
+											<div class="large-2 columns">
+												<label class="inline" for="yourNumber">Phone Number (opt.)</label>
+											</div>
+											<div class="large-10 columns">
+												<input type="text" id="yourNumber" placeholder="(000) 000-0000">
+											</div>
+										</div>
+										<div class="row collapse error-row" id="yourNumber-error-row">
+											<div class="large-offset-2 large-10 columns" id="yourNumber-error">
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="row collapse error-row" id="yourName-error-row">
-									<div class="large-offset-2 large-10 columns" id="yourName-error">
+									<div class="row collapse">
+										<div class="row form-element-holder">
+											<div class="large-2 columns">
+												<label class="inline" for="yourEmail">Email</label>
+											</div>
+											<div class="large-10 columns">
+												<input type="text" id="yourEmail" placeholder="your@email.com">
+											</div>
+										</div>
+										<div class="row collapse error-row" id="yourEmail-error-row">
+											<div class="large-offset-2 large-10 columns" id="yourEmail-error">
+											</div>
+										</div>
 									</div>
-								</div>
+									<div class="row collapse">
+										<div class="row form-element-holder">
+											<div class="large-2 columns">
+												<label class="inline" for="yourMessage">Message</label>
+											</div>
+											<div class="large-10 columns">
+												<textarea id="yourMessage" rows="6"></textarea>
+											</div>
+										</div>
+										<div class="row collapse error-row" id="yourMessage-error-row">
+											<div class="large-offset-2 large-10 columns" id="yourMessage-error">
+											</div>
+										</div>
+									</div>
+									<div class="text-center">
+										<button type="submit" class="button fancy top-margin">Submit</button>
+									</div>
+								</form>
 							</div>
-							<div class="row collapse">
-								<div class="row form-element-holder">
-									<div class="large-2 columns">
-										<label class="inline" for="yourNumber">Phone Number (opt.)</label>
-									</div>
-									<div class="large-10 columns">
-										<input type="text" id="yourNumber" placeholder="(000) 000-0000">
-									</div>
-								</div>
-								<div class="row collapse error-row" id="yourNumber-error-row">
-									<div class="large-offset-2 large-10 columns" id="yourNumber-error">
-									</div>
-								</div>
-							</div>
-							<div class="row collapse">
-								<div class="row form-element-holder">
-									<div class="large-2 columns">
-										<label class="inline" for="yourEmail">Email</label>
-									</div>
-									<div class="large-10 columns">
-										<input type="text" id="yourEmail" placeholder="your@email.com">
-									</div>
-								</div>
-								<div class="row collapse error-row" id="yourEmail-error-row">
-									<div class="large-offset-2 large-10 columns" id="yourEmail-error">
-									</div>
-								</div>
-							</div>
-							<div class="row collapse">
-								<div class="row form-element-holder">
-									<div class="large-2 columns">
-										<label class="inline" for="yourMessage">Message</label>
-									</div>
-									<div class="large-10 columns">
-										<textarea id="yourMessage" rows="6"></textarea>
-									</div>
-								</div>
-								<div class="row collapse error-row" id="yourMessage-error-row">
-									<div class="large-offset-2 large-10 columns" id="yourMessage-error">
-									</div>
-								</div>
-							</div>
-							<div class="text-center">
-								<button type="submit" class="button fancy top-margin">Submit</button>
-							</div>
-						</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 </div>
 </div>
 
 <script>
 $(document).ready(function() {
 	parallax(1400);
-	
+
 	$('#menu-about').addClass('active');
 });
 </script>

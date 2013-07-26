@@ -27,11 +27,13 @@
 						<img src="img/logo.png">
 					</div>
 				</a>
-				<div class="nav-container large-8 columns">
+				<div class="nav-container large-8 columns small-centered large-uncentered">
 					<ul class="nav-ul">
 						<li class="nav-link" id="menu-home"><a href="/">HOME</a></li>
 						<li class="nav-link" id="menu-about"><a href="about.php">ABOUT</a></li>
 						<li class="nav-link"><a class="scroll" href="#contact-us">CONTACT</a></li>
+					</ul>
+					<ul class="nav-ul"
 						<li class="nav-icons nav-link">
 							<li class="nav-link"><a class="social-icons" target="_blank" href="https://www.facebook.com/aevidi"><img src="img/fb-round.png" alt="fb-icon"></a></li>
 							<li class="nav-link"><a class="social-icons" target="_blank" href="https://twitter.com/aevidiweb"><img src="img/twitter-round.png" alt="tw-icon"></a></li>
