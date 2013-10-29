@@ -55,7 +55,66 @@
         <div class="search"><a href="#"></a></div>
       </nav>
 
-      <div class="sidebar large-3 large-offset-1 push-8 columns">
+      <div class="body large-8 columns">
+        <div class="row slider">
+          <ul data-orbit>
+            <li>
+              <img src="stylesheets/slide.png">
+              <div class="orbit-caption">...</div>
+            </li>
+            <li>
+              <img src="stylesheets/slide.png">
+              <div class="orbit-caption">...</div>
+            </li>
+            <li>
+              <img src="stylesheets/slide.png">
+              <div class="orbit-caption">...</div>
+            </li>
+          </ul>
+        </div>
+        <div class="row post">
+          <h2>TODO</h2>
+          <h5>October 29st, 2013</h5>
+          <p>
+            <ul>
+              <li>Make the navbar RESPONSIVE</li>
+              <li>OPTIMIZE the footer</li>
+              <li>FINISH form</li>
+            </ul>
+          </p>
+          <div class="divider"></div>
+          <h5>Tag1, Tag2, Tag3, Tag4</h5>
+        </div>
+<div class="row post">
+          <h2>This is a title.</h2>
+          <h5>January 1st, 2009</h5>
+          <p>Bacon ipsum dolor sit amet shank pastrami venison ball tip sausage. Ribeye doner pancetta pork loin short ribs tri-tip fatback. Rump pancetta pork chop sausage sirloin beef turkey tenderloin ball tip doner flank. Spare ribs tail pork chop turducken, tongue bresaola chuck strip steak meatball kielbasa pancetta short ribs. Andouille short ribs t-bone meatloaf, tongue cow short loin ribeye shankle kielbasa ground round. Ribeye hamburger fatback, chicken kielbasa corned beef tail leberkas bresaola flank t-bone prosciutto.<br><br>
+
+Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs filet mignon. Ham ribeye swine rump. Sirloin shoulder short ribs, pig filet mignon ham meatball. Pork loin jerky boudin bresaola beef, tenderloin prosciutto ground round pork pig fatback turkey andouille meatloaf drumstick. Salami frankfurter kielbasa pork tenderloin. Doner kielbasa tenderloin brisket rump, ribeye jerky tail. Tenderloin jerky capicola sirloin sausage, chicken corned beef shankle spare ribs frankfurter kevin bacon turkey ham hock brisket.</p>
+          <div class="divider"></div>
+          <h5>Tag1, Tag2, Tag3, Tag4</h5>
+        </div>
+<div class="row post">
+          <h2>This is a title.</h2>
+          <h5>January 1st, 2009</h5>
+          <p>Bacon ipsum dolor sit amet shank pastrami venison ball tip sausage. Ribeye doner pancetta pork loin short ribs tri-tip fatback. Rump pancetta pork chop sausage sirloin beef turkey tenderloin ball tip doner flank. Spare ribs tail pork chop turducken, tongue bresaola chuck strip steak meatball kielbasa pancetta short ribs. Andouille short ribs t-bone meatloaf, tongue cow short loin ribeye shankle kielbasa ground round. Ribeye hamburger fatback, chicken kielbasa corned beef tail leberkas bresaola flank t-bone prosciutto.<br><br>
+
+Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs filet mignon. Ham ribeye swine rump. Sirloin shoulder short ribs, pig filet mignon ham meatball. Pork loin jerky boudin bresaola beef, tenderloin prosciutto ground round pork pig fatback turkey andouille meatloaf drumstick. Salami frankfurter kielbasa pork tenderloin. Doner kielbasa tenderloin brisket rump, ribeye jerky tail. Tenderloin jerky capicola sirloin sausage, chicken corned beef shankle spare ribs frankfurter kevin bacon turkey ham hock brisket.</p>
+          <div class="divider"></div>
+          <h5>Tag1, Tag2, Tag3, Tag4</h5>
+        </div>
+<div class="row post">
+          <h2>This is a title.</h2>
+          <h5>January 1st, 2009</h5>
+          <p>Bacon ipsum dolor sit amet shank pastrami venison ball tip sausage. Ribeye doner pancetta pork loin short ribs tri-tip fatback. Rump pancetta pork chop sausage sirloin beef turkey tenderloin ball tip doner flank. Spare ribs tail pork chop turducken, tongue bresaola chuck strip steak meatball kielbasa pancetta short ribs. Andouille short ribs t-bone meatloaf, tongue cow short loin ribeye shankle kielbasa ground round. Ribeye hamburger fatback, chicken kielbasa corned beef tail leberkas bresaola flank t-bone prosciutto.<br><br>
+
+Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs filet mignon. Ham ribeye swine rump. Sirloin shoulder short ribs, pig filet mignon ham meatball. Pork loin jerky boudin bresaola beef, tenderloin prosciutto ground round pork pig fatback turkey andouille meatloaf drumstick. Salami frankfurter kielbasa pork tenderloin. Doner kielbasa tenderloin brisket rump, ribeye jerky tail. Tenderloin jerky capicola sirloin sausage, chicken corned beef shankle spare ribs frankfurter kevin bacon turkey ham hock brisket.</p>
+          <div class="divider"></div>
+          <h5>Tag1, Tag2, Tag3, Tag4</h5>
+        </div>
+      </div>
+
+<div class="sidebar large-3 large-offset-1 columns">
         <div class="row search-toggle" style="display:none;">
           <div class="row collapse">
             <div class="small-9 columns">
@@ -131,65 +190,6 @@
               </div>
             </section>
           </div>
-        </div>
-      </div>
-
-      <div class="body large-8 pull-4 columns">
-        <div class="row slider">
-          <ul data-orbit>
-            <li>
-              <img src="stylesheets/slide.png">
-              <div class="orbit-caption">...</div>
-            </li>
-            <li>
-              <img src="stylesheets/slide.png">
-              <div class="orbit-caption">...</div>
-            </li>
-            <li>
-              <img src="stylesheets/slide.png">
-              <div class="orbit-caption">...</div>
-            </li>
-          </ul>
-        </div>
-        <div class="row post">
-          <h2>TODO</h2>
-          <h5>October 29st, 2013</h5>
-          <p>
-            <ul>
-              <li>Make the navbar RESPONSIVE</li>
-              <li>OPTIMIZE the footer</li>
-              <li>FINISH form</li>
-            </ul>
-          </p>
-          <div class="divider"></div>
-          <h5>Tag1, Tag2, Tag3, Tag4</h5>
-        </div>
-<div class="row post">
-          <h2>This is a title.</h2>
-          <h5>January 1st, 2009</h5>
-          <p>Bacon ipsum dolor sit amet shank pastrami venison ball tip sausage. Ribeye doner pancetta pork loin short ribs tri-tip fatback. Rump pancetta pork chop sausage sirloin beef turkey tenderloin ball tip doner flank. Spare ribs tail pork chop turducken, tongue bresaola chuck strip steak meatball kielbasa pancetta short ribs. Andouille short ribs t-bone meatloaf, tongue cow short loin ribeye shankle kielbasa ground round. Ribeye hamburger fatback, chicken kielbasa corned beef tail leberkas bresaola flank t-bone prosciutto.<br><br>
-
-Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs filet mignon. Ham ribeye swine rump. Sirloin shoulder short ribs, pig filet mignon ham meatball. Pork loin jerky boudin bresaola beef, tenderloin prosciutto ground round pork pig fatback turkey andouille meatloaf drumstick. Salami frankfurter kielbasa pork tenderloin. Doner kielbasa tenderloin brisket rump, ribeye jerky tail. Tenderloin jerky capicola sirloin sausage, chicken corned beef shankle spare ribs frankfurter kevin bacon turkey ham hock brisket.</p>
-          <div class="divider"></div>
-          <h5>Tag1, Tag2, Tag3, Tag4</h5>
-        </div>
-<div class="row post">
-          <h2>This is a title.</h2>
-          <h5>January 1st, 2009</h5>
-          <p>Bacon ipsum dolor sit amet shank pastrami venison ball tip sausage. Ribeye doner pancetta pork loin short ribs tri-tip fatback. Rump pancetta pork chop sausage sirloin beef turkey tenderloin ball tip doner flank. Spare ribs tail pork chop turducken, tongue bresaola chuck strip steak meatball kielbasa pancetta short ribs. Andouille short ribs t-bone meatloaf, tongue cow short loin ribeye shankle kielbasa ground round. Ribeye hamburger fatback, chicken kielbasa corned beef tail leberkas bresaola flank t-bone prosciutto.<br><br>
-
-Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs filet mignon. Ham ribeye swine rump. Sirloin shoulder short ribs, pig filet mignon ham meatball. Pork loin jerky boudin bresaola beef, tenderloin prosciutto ground round pork pig fatback turkey andouille meatloaf drumstick. Salami frankfurter kielbasa pork tenderloin. Doner kielbasa tenderloin brisket rump, ribeye jerky tail. Tenderloin jerky capicola sirloin sausage, chicken corned beef shankle spare ribs frankfurter kevin bacon turkey ham hock brisket.</p>
-          <div class="divider"></div>
-          <h5>Tag1, Tag2, Tag3, Tag4</h5>
-        </div>
-<div class="row post">
-          <h2>This is a title.</h2>
-          <h5>January 1st, 2009</h5>
-          <p>Bacon ipsum dolor sit amet shank pastrami venison ball tip sausage. Ribeye doner pancetta pork loin short ribs tri-tip fatback. Rump pancetta pork chop sausage sirloin beef turkey tenderloin ball tip doner flank. Spare ribs tail pork chop turducken, tongue bresaola chuck strip steak meatball kielbasa pancetta short ribs. Andouille short ribs t-bone meatloaf, tongue cow short loin ribeye shankle kielbasa ground round. Ribeye hamburger fatback, chicken kielbasa corned beef tail leberkas bresaola flank t-bone prosciutto.<br><br>
-
-Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs filet mignon. Ham ribeye swine rump. Sirloin shoulder short ribs, pig filet mignon ham meatball. Pork loin jerky boudin bresaola beef, tenderloin prosciutto ground round pork pig fatback turkey andouille meatloaf drumstick. Salami frankfurter kielbasa pork tenderloin. Doner kielbasa tenderloin brisket rump, ribeye jerky tail. Tenderloin jerky capicola sirloin sausage, chicken corned beef shankle spare ribs frankfurter kevin bacon turkey ham hock brisket.</p>
-          <div class="divider"></div>
-          <h5>Tag1, Tag2, Tag3, Tag4</h5>
         </div>
       </div>
 
