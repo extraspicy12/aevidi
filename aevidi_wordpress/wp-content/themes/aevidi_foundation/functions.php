@@ -83,7 +83,13 @@ add_action( 'widgets_init', 'aevidi_foundation_widgets_init' );
  * Enqueue scripts and styles
  */
 function aevidi_foundation_scripts() {
-	wp_enqueue_style( 'aevidi_foundation-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'aevidi_foundation-foundation', get_template_directory_uri() . '/css/foundation.css', array(), '20130802', 'all' );
+
+	wp_enqueue_style( 'aevidi_foundation-custom-style', get_template_directory_uri() . '/css/custom.css', array(), '20130802', 'all' );
+
+	wp_enqueue_style( 'aevidi_foundation-normalize', get_template_directory_uri() . '/css/normalize.css', array(), '20130802', 'all' );
+
+  wp_enqueue_script( 'aevidi_foundation-custom-script', get_template_directory_uri() . '/js/custom-script.js', array( 'jquery' ), '20130802', true );
 
 	wp_enqueue_script( 'aevidi_foundation-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

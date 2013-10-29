@@ -1,0 +1,239 @@
+$header: #2e8445;
+$sidecontainer: #92b999;
+$accent: #47a761;
+$offwhite: #DAFFE9;
+
+
+.container {
+  background-color: $offwhite;
+}
+
+header {
+  h1 {
+    font-weight: 400;
+  }
+  background-color: $header;
+  .row {
+    padding: 0 15px;
+  }
+  .logo {
+    padding: 10px 0;
+  }
+  .top-nav {
+    position: relative;
+    float: right;
+    ul {
+      position: relative;
+      float: right;
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        font-size: .85em;
+        margin: 0;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        position: relative;
+        float: left;
+        a {
+          color: white;
+          display: block;
+          background-color: $accent;
+          transition: all .2s ease-in-out;
+          padding: 7.5px;
+        }
+        a:hover {
+          transition: all .2s ease-in-out;
+          color: $offwhite;
+          background-color: $sidecontainer;
+        }
+      }
+    }
+  }
+  .bottom {
+    background-color: $accent;
+    height: 10px;
+  }
+}
+
+.page-container {
+  padding: 0 30px 15px 30px;
+  background-color: white;
+  nav {
+    height: 40px;
+    ul {
+      background-color: $header;
+      margin: 0;
+      padding: 0;
+      width: 95%;
+      text-align: center;
+      position: relative;
+      float: left;
+      text-align: center;
+      li {
+        list-style: none;
+        position: relative;
+        float: left;
+        color: white;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+        line-height: 40px;
+        height: 40px;
+        padding: 0 2%;
+        width: 16.25%;
+        a {
+          height: 40px;
+          color: white;
+          display: block;
+          background-color: $header;
+          transition: all .2s ease-in-out;
+        }
+        a:hover {
+          transition: all .2s ease-in-out;
+          background-color: $accent;
+          overflow: visible;
+          height: 80px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        li {
+          width: 100%;
+          a {
+            height: auto;
+            transition: none;
+          }
+          a:hover {
+            height: auto;
+            transition: none;
+          }
+        }
+      }
+      li:nth-child(5) a:hover, li:nth-child(6) a:hover {
+        height: 40px;
+      }
+    }
+    .search {
+      position: relative;
+      float: left;
+      width: 5%;
+      padding: 5px;
+      height: 40px;
+      line-height: 40px;
+      background: $accent url(../stylesheets/search.png) no-repeat center center;
+    }
+  }
+  .body {
+    margin-top: 40px;
+    .post {
+      margin-bottom: 30px;
+      h2 {
+        margin-bottom: 0;
+        font-weight: 400;
+      }
+      h5 {
+        margin-top: 0;
+        color: #AEAEAE;
+        font-size: .9em;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      p {}
+      .divider {
+        background-color: $accent;
+        margin-bottom: 10px;
+        height: 3px;
+        width: 100%;
+      }
+    }
+  }
+  .sidebar {
+    .collapse {
+       padding: 5px 15px 0 15px;
+    }
+    .social-media {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .user-area-logged-out {
+      .section-container {
+        border: none;
+        section {
+          border: none;
+          p {
+            border-top: 10px solid $header;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            background-color: $accent;
+            a {
+              color: $offwhite;
+              font-weight: 350;
+              font-size: 1.25em;
+              padding: 7.5px 20px;
+            }
+          }
+          div.content {
+            padding: 7.5px 20px;
+            background-color: $accent;
+            border: none;
+            input {
+              margin-top: 10px;
+              margin-bottom: 3px;
+              background-color: $offwhite;
+            }
+            label {
+              color: $offwhite;
+              font-weight: 200;
+            }
+            .button {
+              margin: 10px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $accent;
+  border-top: 10px solid $header;
+  #footer {
+    padding: 20px 15px 30px 15px;
+  }
+  .copyright {
+    background-color: $header;
+    padding: 10px 0px;
+    .row {
+      padding: 0 30px;
+    }
+  }
+}
+
+/* Centering Classes */
+
+/* This parent can be any width and height */
+.block {
+  text-align: center;
+}
+
+/* The ghost, nudged to maintain perfect centering */
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can
+   also be of any width and height */
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+}
+
