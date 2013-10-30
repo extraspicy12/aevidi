@@ -52,8 +52,6 @@
           </div>
         </div>
       </div>
-      <div class="divider"></div>
-      <a class="toggleMenu" href="#">Menu</a>
       <nav class="row no-pad">
         <ul class="nav">
           <li><a href="#">Find Restaurants</a>
@@ -75,6 +73,7 @@
           <li class="search"><a href="#"></a></li>
         </ul>
       </nav>
+      <a class="toggleMenu" href="#">Menu</a>
 
     </header>
 
