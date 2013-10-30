@@ -7224,21 +7224,21 @@ a.th {
 }
 
 /* line 10, ../sass/custom.scss */
-.divider {
+header .divider {
   display: none;
 }
 
-@media screen and (max-width: 758px) {
-  /* line 14, ../sass/custom.scss */
-  .divider {
-    display: block;
-    padding: 5px 0;
-    background-color: #2e8445;
-  }
+/* line 13, ../sass/custom.scss */
+.divider.white {
+  background-color: white;
+}
 
-  /* line 19, ../sass/custom.scss */
-  .divider.white {
-    background-color: white;
+@media screen and (max-width: 758px) {
+  /* line 17, ../sass/custom.scss */
+  header .divider {
+    display: block;
+    padding: 5px;
+    background-color: #2e8445;
   }
 }
 /* line 24, ../sass/custom.scss */
