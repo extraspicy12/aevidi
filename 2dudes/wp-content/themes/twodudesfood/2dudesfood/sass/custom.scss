@@ -1,0 +1,389 @@
+$header: #2e8445;
+$sidecontainer: #92b999;
+$accent: #47a761;
+$offwhite: #DAFFE9;
+
+header .divider {
+  display: none;
+}
+.divider.white {
+  background-color: white;
+  display: block;
+  padding: 5px;
+}
+@media screen and (max-width: 758px) {
+  header .divider {
+    display: block;
+    padding: 5px;
+    background-color: $header;
+  }
+}
+
+.container {
+  background-color: $offwhite;
+  > header {
+    background-color: white;
+    h1 {
+      font-weight: 400;
+    }
+    background-color: $header;
+    .row {
+      padding: 0 15px;
+    }
+    .logo {
+      padding: 10px 0;
+    }
+    .top-nav {
+      position: relative;
+      float: right;
+      ul {
+        position: relative;
+        float: right;
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          font-size: .85em;
+          margin: 0;
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 500;
+          letter-spacing: 1.5px;
+          position: relative;
+          float: left;
+          a {
+            color: white;
+            display: block;
+            background-color: $accent;
+            transition: all .2s ease-in-out;
+            padding: 7.5px;
+          }
+          a:hover {
+            transition: all .2s ease-in-out;
+            color: $offwhite;
+            background-color: $sidecontainer;
+          }
+        }
+      }
+    }
+    .bottom {
+      background-color: $accent;
+      padding: 10px 0 0 0;
+      .search-toggle {
+        display:none;
+        padding: 0 10px;
+        form {
+          margin-bottom: 0 !important;
+        }
+        .search-bar {
+          padding: 0 0 10px 0;
+          input, a {
+            margin: 0;
+          }
+        }
+      }
+    }
+    @media screen and (max-width:758px) {
+    .bottom {
+      background-color: $header;
+      border-bottom: 5px solid $accent;
+        .search-toggle {
+          display: block;
+        }
+      }
+    }
+    .toggleMenu {
+      display: none;
+      background: $sidecontainer;
+      padding: 15px 15px;
+      color: white;
+      width: 100%;
+      position: relative;
+    }
+    .toggleMenu:after {
+      content:"";
+      background: url('../stylesheets/nav-icon.png') no-repeat;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      position: absolute;
+      right: 15px;
+      top: 13px;
+    }
+    @media screen and (max-width:758px) {
+      .toggleMenu {
+        display: block;
+      }
+    }
+    nav {
+      .menu > ul:first-of-type {
+        list-style: none;
+        *zoom: 1;
+        background: $header;
+        position: relative;
+        float: left;
+        width: 90%;
+        margin-bottom: 0;
+        display: block;
+        ul {
+          list-style: none;
+          width: 9em;
+          margin: 0;
+          padding: 0;
+        }
+        a {
+          padding: 10px 15px;
+          color: white;
+          *zoom: 1;
+          display: block;
+        }
+        > li {
+          float: left;
+          z-index: 200;
+          display: block;
+        }
+        > li.hover > ul {
+          left: 0;
+        }
+        li {
+          position: relative;
+          li.hover ul {
+            left: 100%;
+            top: 0;
+          }
+          a {
+            background-color: $header;
+          }
+          a:hover {
+            background-color: $accent;
+          }
+          ul {
+            position: absolute;
+            left: -9999px;
+            z-index: 100;
+            width: 100%;
+            li {
+              a {
+                border-top: 1px solid black;
+                background-color: $header;
+                position: relative;
+                z-index: 100;
+              }
+              li {
+                a {
+                  border-top: 1px solid black;
+                  background-color: $sidecontainer;
+                  z-index: 200;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width:758px) {
+        .menu > ul:first-of-type {
+          width: 100%;
+          display: none;
+        }
+        .menu > ul:first-of-type > li {
+          float: none;
+          width: 100%;
+        }
+        .menu > ul:first-of-type ul {
+          display: block;
+          width: 100%;
+        }
+        .menu > ul:first-of-type > li.hover > ul, .menu > ul:first-of-type li li.hover ul {
+          position: static;
+        }
+      }
+      .menu > ul:first-of-type:before, .menu > ul:first-of-type:after {
+        content: " ";
+        display: table;
+      }
+      .menu > ul:first-of-type:after {
+        clear: both;
+      }
+    }
+    .search-ul {
+      list-style: none;
+      position: relative;
+      float: left;
+      width: 10%;
+      height: 46px;
+      margin: 0;
+      padding: 0;
+      overflow: none;
+      display: block;
+      .search-toggle-button {
+        position: relative;
+        float: right;
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        background: $accent url(../stylesheets/search.png) no-repeat center center;
+      }
+    }
+    @media screen and (max-width:758px) {
+      .search-ul {
+        display: none;
+      }
+    }
+  }
+
+  .page-container {
+    padding: 0 15px 15px 15px;
+    background-color: white;
+    .body {
+      .slider {
+        ul {
+          li {
+            img {
+              min-width: 100%;
+              height: auto;
+            }
+          }
+        }
+        .orbit-caption {
+          h3 {
+            color: white;
+            margin-bottom: 0;
+            font-weight: 400;
+          }
+          h5 {
+            margin-top: 0;
+            color: #AEAEAE;
+            font-size: .75em;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+        }
+      }
+      article {
+        margin-bottom: 30px;
+        h2 {
+          margin-bottom: 0;
+          font-weight: 400;
+        }
+        h5 {
+          margin-top: 0;
+          color: #AEAEAE;
+          font-size: .9em;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+        p {}
+        .divider {
+          background-color: $accent;
+          margin-bottom: 10px;
+          height: 3px;
+          width: 100%;
+        }
+      }
+    }
+    .sidebar {
+      .collapse {
+         padding: 5px 15px 0 15px;
+      }
+      .social-media {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        a {
+          transition: all .2s ease-in-out;
+        }
+        a:hover {
+          transition: all .2s ease-in-out;
+        	opacity: .7;
+        	filter:alpha(opacity=70);
+        }
+      }
+      .user-area-logged-out {
+        .section-container {
+          border: none;
+          section {
+            border: none;
+            p {
+              border-top: 10px solid $header;
+              border-left: none;
+              border-right: none;
+              border-bottom: none;
+              background-color: $accent;
+              a {
+                color: $offwhite;
+                font-weight: 350;
+                font-size: 1.25em;
+                padding: 7.5px 20px;
+              }
+            }
+            div.content {
+              padding: 7.5px 20px;
+              background-color: $accent;
+              border: none;
+              input {
+                margin-top: 10px;
+                margin-bottom: 3px;
+                background-color: $offwhite;
+              }
+              label {
+                color: $offwhite;
+                font-weight: 200;
+              }
+              .button {
+                margin: 10px 0 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  > footer {
+    background-color: $accent;
+    border-top: 10px solid $header;
+    #footer {
+      padding: 20px 15px 30px 15px;
+    }
+    .copyright {
+      background-color: $header;
+      padding: 10px 0px;
+      a {
+        color: $sidecontainer;
+      }
+      a:hover {
+        color: $offwhite;
+      }
+      .row {
+        padding: 0 30px;
+      }
+    }
+  }
+}
+
+/* Centering Classes */
+
+/* This parent can be any width and height */
+.block {
+  text-align: center;
+}
+
+/* The ghost, nudged to maintain perfect centering */
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can
+   also be of any width and height */
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+}
+.no-pad {
+  padding: 0 !important;
+}

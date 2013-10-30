@@ -1,7 +1,8 @@
 <!--
-* Medium or Small responsiveness?
+* Small responsiveness?
 ** Make everything use small responsiveness (2 breakponts or sync at all 3)
-* add bars/arrow to menu navbar
+* USE HTML5 TAGS
+
 -->
 
 <!DOCTYPE html>
@@ -52,6 +53,8 @@
           </div>
         </div>
       </div>
+      <div class="divider"></div>
+      <a class="toggleMenu" href="#">Menu</a>
       <nav class="row no-pad">
         <ul class="nav">
           <li><a href="#">Find Restaurants</a>
@@ -73,7 +76,6 @@
           <li class="search"><a href="#"></a></li>
         </ul>
       </nav>
-      <a class="toggleMenu" href="#">Menu</a>
 
     </header>
 
