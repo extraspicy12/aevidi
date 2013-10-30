@@ -11,46 +11,48 @@ header .divider {
 /* line 13, ../sass/custom.scss */
 .divider.white {
   background-color: white;
+  display: block;
+  padding: 5px;
 }
 
 @media screen and (max-width: 758px) {
-  /* line 17, ../sass/custom.scss */
+  /* line 19, ../sass/custom.scss */
   header .divider {
     display: block;
     padding: 5px;
     background-color: #2e8445;
   }
 }
-/* line 24, ../sass/custom.scss */
+/* line 26, ../sass/custom.scss */
 header {
   background-color: white;
   background-color: #2e8445;
 }
-/* line 26, ../sass/custom.scss */
+/* line 28, ../sass/custom.scss */
 header h1 {
   font-weight: 400;
 }
-/* line 30, ../sass/custom.scss */
+/* line 32, ../sass/custom.scss */
 header .row {
   padding: 0 15px;
 }
-/* line 33, ../sass/custom.scss */
+/* line 35, ../sass/custom.scss */
 header .logo {
   padding: 10px 0;
 }
-/* line 36, ../sass/custom.scss */
+/* line 38, ../sass/custom.scss */
 header .top-nav {
   position: relative;
   float: right;
 }
-/* line 39, ../sass/custom.scss */
+/* line 41, ../sass/custom.scss */
 header .top-nav ul {
   position: relative;
   float: right;
   margin: 0;
   padding: 0;
 }
-/* line 44, ../sass/custom.scss */
+/* line 46, ../sass/custom.scss */
 header .top-nav ul li {
   list-style: none;
   font-size: .85em;
@@ -63,7 +65,7 @@ header .top-nav ul li {
   position: relative;
   float: left;
 }
-/* line 55, ../sass/custom.scss */
+/* line 57, ../sass/custom.scss */
 header .top-nav ul li a {
   color: white;
   display: block;
@@ -71,32 +73,32 @@ header .top-nav ul li a {
   transition: all .2s ease-in-out;
   padding: 7.5px;
 }
-/* line 62, ../sass/custom.scss */
+/* line 64, ../sass/custom.scss */
 header .top-nav ul li a:hover {
   transition: all .2s ease-in-out;
   color: #daffe9;
   background-color: #92b999;
 }
-/* line 70, ../sass/custom.scss */
+/* line 72, ../sass/custom.scss */
 header .bottom {
   background-color: #47a761;
   padding: 10px 0 0 0;
 }
-/* line 73, ../sass/custom.scss */
+/* line 75, ../sass/custom.scss */
 header .bottom .search-toggle {
   display: none;
   padding: 0 10px;
 }
-/* line 76, ../sass/custom.scss */
+/* line 78, ../sass/custom.scss */
 header .bottom .search-toggle .search-bar {
   margin-right: 20px;
   padding: 0 0 10px 0;
 }
-/* line 79, ../sass/custom.scss */
+/* line 81, ../sass/custom.scss */
 header .bottom .search-toggle .search-bar input, header .bottom .search-toggle .search-bar a {
   margin: 0;
 }
-/* line 85, ../sass/custom.scss */
+/* line 87, ../sass/custom.scss */
 header .toggleMenu {
   display: none;
   background: #92b999;
@@ -104,7 +106,7 @@ header .toggleMenu {
   color: white;
   width: 100%;
 }
-/* line 92, ../sass/custom.scss */
+/* line 94, ../sass/custom.scss */
 header .nav {
   list-style: none;
   *zoom: 1;
@@ -114,96 +116,96 @@ header .nav {
   width: 90%;
   margin-bottom: 0;
 }
-/* line 100, ../sass/custom.scss */
+/* line 102, ../sass/custom.scss */
 header .nav ul {
   list-style: none;
   width: 9em;
   margin: 0;
   padding: 0;
 }
-/* line 106, ../sass/custom.scss */
+/* line 108, ../sass/custom.scss */
 header .nav a {
   padding: 10px 15px;
   color: white;
   *zoom: 1;
   display: block;
 }
-/* line 112, ../sass/custom.scss */
+/* line 114, ../sass/custom.scss */
 header .nav > li {
   float: left;
   z-index: 200;
 }
-/* line 116, ../sass/custom.scss */
+/* line 118, ../sass/custom.scss */
 header .nav > li.hover > ul {
   left: 0;
 }
-/* line 119, ../sass/custom.scss */
+/* line 121, ../sass/custom.scss */
 header .nav li {
   position: relative;
 }
-/* line 121, ../sass/custom.scss */
+/* line 123, ../sass/custom.scss */
 header .nav li li.hover ul {
   left: 100%;
   top: 0;
 }
-/* line 125, ../sass/custom.scss */
+/* line 127, ../sass/custom.scss */
 header .nav li a {
   background-color: #2e8445;
 }
-/* line 128, ../sass/custom.scss */
+/* line 130, ../sass/custom.scss */
 header .nav li a:hover {
   background-color: #47a761;
 }
-/* line 131, ../sass/custom.scss */
+/* line 133, ../sass/custom.scss */
 header .nav li ul {
   position: absolute;
   left: -9999px;
   z-index: 100;
   width: 100%;
 }
-/* line 137, ../sass/custom.scss */
+/* line 139, ../sass/custom.scss */
 header .nav li ul li a {
   border-top: 1px solid black;
   background-color: #2e8445;
   position: relative;
   z-index: 100;
 }
-/* line 144, ../sass/custom.scss */
+/* line 146, ../sass/custom.scss */
 header .nav li ul li li a {
   border-top: 1px solid black;
   background-color: #92b999;
   z-index: 200;
 }
 @media screen and (max-width: 758px) {
-  /* line 155, ../sass/custom.scss */
+  /* line 157, ../sass/custom.scss */
   header .nav {
     width: 100%;
     display: block;
   }
-  /* line 159, ../sass/custom.scss */
+  /* line 161, ../sass/custom.scss */
   header .nav > li {
     float: none;
   }
-  /* line 162, ../sass/custom.scss */
+  /* line 164, ../sass/custom.scss */
   header .nav ul {
     display: block;
     width: 100%;
   }
-  /* line 166, ../sass/custom.scss */
+  /* line 168, ../sass/custom.scss */
   header .nav > li.hover > ul, header .nav li li.hover ul {
     position: static;
   }
 }
-/* line 170, ../sass/custom.scss */
+/* line 172, ../sass/custom.scss */
 header .nav:before, header .nav:after {
   content: " ";
   display: table;
 }
-/* line 174, ../sass/custom.scss */
+/* line 176, ../sass/custom.scss */
 header .nav:after {
   clear: both;
 }
-/* line 177, ../sass/custom.scss */
+/* line 179, ../sass/custom.scss */
 header .search-ul {
   list-style: none;
   position: relative;
@@ -214,7 +216,7 @@ header .search-ul {
   padding: 0;
   overflow: none;
 }
-/* line 186, ../sass/custom.scss */
+/* line 188, ../sass/custom.scss */
 header .search-ul .search {
   position: relative;
   float: right;
@@ -225,23 +227,23 @@ header .search-ul .search {
   background: #47a761 url(../stylesheets/search.png) no-repeat center center;
 }
 
-/* line 198, ../sass/custom.scss */
+/* line 200, ../sass/custom.scss */
 .page-container {
   padding: 0 15px 15px 15px;
   background-color: white;
 }
-/* line 205, ../sass/custom.scss */
+/* line 207, ../sass/custom.scss */
 .page-container .body .slider ul li img {
   min-width: 100%;
   height: auto;
 }
-/* line 212, ../sass/custom.scss */
+/* line 214, ../sass/custom.scss */
 .page-container .body .slider .orbit-caption h3 {
   color: white;
   margin-bottom: 0;
   font-weight: 400;
 }
-/* line 217, ../sass/custom.scss */
+/* line 219, ../sass/custom.scss */
 .page-container .body .slider .orbit-caption h5 {
   margin-top: 0;
   color: #AEAEAE;
@@ -249,16 +251,16 @@ header .search-ul .search {
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 226, ../sass/custom.scss */
+/* line 228, ../sass/custom.scss */
 .page-container .body .post {
   margin-bottom: 30px;
 }
-/* line 228, ../sass/custom.scss */
+/* line 230, ../sass/custom.scss */
 .page-container .body .post h2 {
   margin-bottom: 0;
   font-weight: 400;
 }
-/* line 232, ../sass/custom.scss */
+/* line 234, ../sass/custom.scss */
 .page-container .body .post h5 {
   margin-top: 0;
   color: #AEAEAE;
@@ -266,41 +268,41 @@ header .search-ul .search {
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 240, ../sass/custom.scss */
+/* line 242, ../sass/custom.scss */
 .page-container .body .post .divider {
   background-color: #47a761;
   margin-bottom: 10px;
   height: 3px;
   width: 100%;
 }
-/* line 249, ../sass/custom.scss */
+/* line 251, ../sass/custom.scss */
 .page-container .sidebar .collapse {
   padding: 5px 15px 0 15px;
 }
-/* line 252, ../sass/custom.scss */
+/* line 254, ../sass/custom.scss */
 .page-container .sidebar .social-media {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 255, ../sass/custom.scss */
+/* line 257, ../sass/custom.scss */
 .page-container .sidebar .social-media a {
   transition: all .2s ease-in-out;
 }
-/* line 258, ../sass/custom.scss */
+/* line 260, ../sass/custom.scss */
 .page-container .sidebar .social-media a:hover {
   transition: all .2s ease-in-out;
   opacity: .7;
   filter: alpha(opacity=70);
 }
-/* line 265, ../sass/custom.scss */
+/* line 267, ../sass/custom.scss */
 .page-container .sidebar .user-area-logged-out .section-container {
   border: none;
 }
-/* line 267, ../sass/custom.scss */
+/* line 269, ../sass/custom.scss */
 .page-container .sidebar .user-area-logged-out .section-container section {
   border: none;
 }
-/* line 269, ../sass/custom.scss */
+/* line 271, ../sass/custom.scss */
 .page-container .sidebar .user-area-logged-out .section-container section p {
   border-top: 10px solid #2e8445;
   border-left: none;
@@ -308,63 +310,63 @@ header .search-ul .search {
   border-bottom: none;
   background-color: #47a761;
 }
-/* line 275, ../sass/custom.scss */
+/* line 277, ../sass/custom.scss */
 .page-container .sidebar .user-area-logged-out .section-container section p a {
   color: #daffe9;
   font-weight: 350;
   font-size: 1.25em;
   padding: 7.5px 20px;
 }
-/* line 282, ../sass/custom.scss */
+/* line 284, ../sass/custom.scss */
 .page-container .sidebar .user-area-logged-out .section-container section div.content {
   padding: 7.5px 20px;
   background-color: #47a761;
   border: none;
 }
-/* line 286, ../sass/custom.scss */
+/* line 288, ../sass/custom.scss */
 .page-container .sidebar .user-area-logged-out .section-container section div.content input {
   margin-top: 10px;
   margin-bottom: 3px;
   background-color: #daffe9;
 }
-/* line 291, ../sass/custom.scss */
+/* line 293, ../sass/custom.scss */
 .page-container .sidebar .user-area-logged-out .section-container section div.content label {
   color: #daffe9;
   font-weight: 200;
 }
-/* line 295, ../sass/custom.scss */
+/* line 297, ../sass/custom.scss */
 .page-container .sidebar .user-area-logged-out .section-container section div.content .button {
   margin: 10px 0 0 0;
 }
 
-/* line 305, ../sass/custom.scss */
+/* line 307, ../sass/custom.scss */
 footer {
   background-color: #47a761;
   border-top: 10px solid #2e8445;
 }
-/* line 308, ../sass/custom.scss */
+/* line 310, ../sass/custom.scss */
 footer #footer {
   padding: 20px 15px 30px 15px;
 }
-/* line 311, ../sass/custom.scss */
+/* line 313, ../sass/custom.scss */
 footer .copyright {
   background-color: #2e8445;
   padding: 10px 0px;
 }
-/* line 314, ../sass/custom.scss */
+/* line 316, ../sass/custom.scss */
 footer .copyright .row {
   padding: 0 30px;
 }
 
 /* Centering Classes */
 /* This parent can be any width and height */
-/* line 323, ../sass/custom.scss */
+/* line 325, ../sass/custom.scss */
 .block {
   text-align: center;
 }
 
 /* The ghost, nudged to maintain perfect centering */
-/* line 328, ../sass/custom.scss */
+/* line 330, ../sass/custom.scss */
 .block:before {
   content: '';
   display: inline-block;
@@ -376,14 +378,14 @@ footer .copyright .row {
 
 /* The element to be centered, can
    also be of any width and height */
-/* line 338, ../sass/custom.scss */
+/* line 340, ../sass/custom.scss */
 .centered {
   display: inline-block;
   vertical-align: middle;
   width: 300px;
 }
 
-/* line 343, ../sass/custom.scss */
+/* line 345, ../sass/custom.scss */
 .no-pad {
   padding: 0 !important;
 }
