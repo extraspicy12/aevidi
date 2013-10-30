@@ -7,8 +7,22 @@ $offwhite: #DAFFE9;
 .container {
   background-color: $offwhite;
 }
+.divider {
+  display: none;
+}
+@media screen and (max-width:758px) {
+  .divider {
+    display: block;
+    padding: 5px 0;
+    background-color: $header;
+  }
+  .divider.white {
+    background-color: white;
+  }
+}
 
 header {
+  background-color: white;
   h1 {
     font-weight: 400;
   }
@@ -55,78 +69,160 @@ header {
   }
   .bottom {
     background-color: $accent;
-    height: 10px;
+    padding: 10px 0 0 0;
+    .search-toggle {
+      display:none;
+      padding: 0 10px;
+      .search-bar {
+        margin-right: 20px;
+        padding: 0 0 10px 0;
+        input, a {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .toggleMenu {
+    display: none;
+    background: $sidecontainer;
+    padding: 15px 15px;
+    color: white;
+    width: 100%;
+  }
+  .nav {
+    list-style: none;
+    *zoom: 1;
+    background: $header;
+    position: relative;
+    float: left;
+    width: 90%;
+    margin-bottom: 0;
+    ul {
+      list-style: none;
+      width: 9em;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      padding: 10px 15px;
+      color: white;
+      *zoom: 1;
+      display: block;
+    }
+    > li {
+      float: left;
+      z-index: 200;
+    }
+    > li.hover > ul {
+      left: 0;
+    }
+    li {
+      position: relative;
+      li.hover ul {
+        left: 100%;
+        top: 0;
+      }
+      a {
+        background-color: $header;
+      }
+      a:hover {
+        background-color: $accent;
+      }
+      ul {
+        position: absolute;
+        left: -9999px;
+        z-index: 100;
+        width: 100%;
+        li {
+          a {
+            border-top: 1px solid black;
+            background-color: $header;
+            position: relative;
+            z-index: 100;
+          }
+          li {
+            a {
+              border-top: 1px solid black;
+              background-color: $sidecontainer;
+              z-index: 200;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width:758px) {
+    .nav {
+      width: 100%;
+      display: block;
+    }
+    .nav > li {
+      float: none;
+    }
+    .nav ul {
+      display: block;
+      width: 100%;
+    }
+    .nav > li.hover > ul, .nav li li.hover ul {
+      position: static;
+    }
+  }
+  .nav:before, .nav:after {
+    content: " ";
+    display: table;
+  }
+  .nav:after {
+    clear: both;
+  }
+  .search-ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    width: 10%;
+    height: 46px;
+    margin: 0;
+    padding: 0;
+    overflow: none;
+    .search {
+      position: relative;
+      float: right;
+      display: block;
+      height: 100%;
+      width: 100%;
+      padding: 5px;
+      background: $accent url(../stylesheets/search.png) no-repeat center center;
+    }
   }
 }
 
 .page-container {
-  padding: 0 30px 15px 30px;
+  padding: 0 15px 15px 15px;
   background-color: white;
-  nav {
-    height: 40px;
-    ul {
-      background-color: $header;
-      margin: 0;
-      padding: 0;
-      width: 95%;
-      text-align: center;
-      position: relative;
-      float: left;
-      text-align: center;
-      li {
-        list-style: none;
-        position: relative;
-        float: left;
-        color: white;
-        font-weight: 300;
-        letter-spacing: 1.5px;
-        line-height: 40px;
-        height: 40px;
-        padding: 0 2%;
-        width: 16.25%;
-        a {
-          height: 40px;
-          color: white;
-          display: block;
-          background-color: $header;
-          transition: all .2s ease-in-out;
-        }
-        a:hover {
-          transition: all .2s ease-in-out;
-          background-color: $accent;
-          overflow: visible;
-          height: 80px;
-        }
-      }
-      @media only screen and (max-width: 768px) {
-        li {
-          width: 100%;
-          a {
-            height: auto;
-            transition: none;
-          }
-          a:hover {
-            height: auto;
-            transition: none;
-          }
-        }
-      }
-      li:nth-child(5) a:hover, li:nth-child(6) a:hover {
-        height: 40px;
-      }
-    }
-    .search {
-      position: relative;
-      float: left;
-      width: 5%;
-      padding: 5px;
-      height: 40px;
-      line-height: 40px;
-      background: $accent url(../stylesheets/search.png) no-repeat center center;
-    }
-  }
   .body {
-    margin-top: 40px;
+    .slider {
+      ul {
+        li {
+          img {
+            min-width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .orbit-caption {
+        h3 {
+          color: white;
+          margin-bottom: 0;
+          font-weight: 400;
+        }
+        h5 {
+          margin-top: 0;
+          color: #AEAEAE;
+          font-size: .75em;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+      }
+    }
     .post {
       margin-bottom: 30px;
       h2 {
@@ -156,6 +252,14 @@ header {
     .social-media {
       padding-top: 20px;
       padding-bottom: 20px;
+      a {
+        transition: all .2s ease-in-out;
+      }
+      a:hover {
+        transition: all .2s ease-in-out;
+      	opacity: .7;
+      	filter:alpha(opacity=70);
+      }
     }
     .user-area-logged-out {
       .section-container {
@@ -236,4 +340,6 @@ footer {
   vertical-align: middle;
   width: 300px;
 }
-
+.no-pad {
+  padding: 0 !important;
+}

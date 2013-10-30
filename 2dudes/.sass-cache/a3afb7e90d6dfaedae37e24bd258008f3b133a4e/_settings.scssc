@@ -1,7 +1,7 @@
 3.2.10 (Media Mark)
-93c631ffe11dbaabfe0bafe2f34aaae156931509
+ace1a77d71cae410cebdce990ca3aa5331092e8d
 o:Sass::Tree::RootNode
-:@template"÷Š//
+:@template"óŠ//
 // Foundation Variables
 //
 
@@ -70,8 +70,8 @@ $default-float: left;
 
 // Colors
 
-// $primary-color: #2ba6cb;
-// $secondary-color: #e9e9e9;
+ $primary-color: #2e8445;
+ $secondary-color: #47a761;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
 
@@ -1302,7 +1302,7 @@ $default-float: left;
 // Sticky Class
 
 // $topbar-sticky-class: ".sticky";
-:@has_childrenT:@options{ :@children[xo:Sass::Tree::CommentNode
+:@has_childrenT:@options{ :@children[zo:Sass::Tree::CommentNode
 :
 @type:silent:@value["%/*
  * Foundation Variables
@@ -1396,12 +1396,12 @@ space;[ ;@;i-;@;	[ ;i-o;
 
 ;;;[" /* $text-direction: ltr; */;@;	[ ;iGo;
 
-;;;["/* Colors */;@;	[ ;iIo;
+;;;["/* Colors */;@;	[ ;iIo;;0;"primary-color;o:Sass::Script::Color	:@attrs{	:	blueiJ:redi3:
+alphai:
+greeni„;0;@;iK;@;	[ ;iKo;;0;"secondary-color;o;1	;2{	;3if;4iL;5i;6i§;0;@;iL;@;	[ ;iLo;
 
-;;;["w/* $primary-color: #2ba6cb;
- * $secondary-color: #e9e9e9;
- * $alert-color: #c60f13;
- * $success-color: #5da423; */;@;	[ ;iKo;
+;;;["=/* $alert-color: #c60f13;
+ * $success-color: #5da423; */;@;	[ ;iMo;
 
 ;;;["G/* Make sure border radius matches unless we want it different. */;@;	[ ;iPo;
 
