@@ -12,8 +12,10 @@ header .divider {
 }
 .divider.white {
   background-color: white;
+  display: block;
+  padding: 5px;
 }
-@media screen and (max-width:758px) {
+@media screen and (max-width: 758px) {
   header .divider {
     display: block;
     padding: 5px;
