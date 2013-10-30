@@ -1,8 +1,7 @@
 <!--
-* Make navbar responsive (maybe remove coloranimation?)
-* Add color band to navbar on slideDown?
-* Remove rounding?
-* add searchbar to navbar
+* Medium or Small responsiveness?
+** Make everything use small responsiveness (2 breakponts or sync at all 3)
+* add bars/arrow to menu navbar
 -->
 
 <!DOCTYPE html>
@@ -14,7 +13,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>2 Dudes Who Love Food</title>
   <link rel="stylesheet" href="stylesheets/app.css" type="text/css">
@@ -26,12 +25,12 @@
 <body>
   <div class="container">
     <header>
-      <div class="row block" id="header">
-        <div class="large-4 columns centered logo">
+      <div class="row no-pad block" id="header">
+        <div class="medium-4 columns centered logo">
           <h1>LOGO</h1>
         </div>
 
-        <div class="large-6 large-offset-2 columns hide-for-small">
+        <div class="medium-6 medium-offset-2 columns hide-for-small no-pad">
           <div class="top-nav">
             <ul>
               <li><a href="#">HOME</a></li><li><a href="#">ABOUT</a></li><li><a href="#">CONTACT</a></li>
@@ -39,28 +38,57 @@
           </div>
         </div>
       </div>
-      <div class="bottom"></div>
-    </header>
-
-    <div class="page-container row">
-      <nav>
-        <ul>
-          <li><a href="#">Find Restaurants</a></li>
+      <div class="bottom">
+        <div class="row search-toggle">
+          <div class="medium-6 medium-offset-6 columns">
+            <div class="row collapse search-bar">
+              <div class="small-9 columns">
+                <input type="text" placeholder="Search Query">
+              </div>
+              <div class="small-3 columns">
+                <a href="#" class="button prefix">Search</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <a class="toggleMenu" href="#">Menu</a>
+      <nav class="row no-pad">
+        <ul class="nav">
+          <li><a href="#">Find Restaurants</a>
+            <ul>
+              <li><a>Italiano!</a></li>
+              <li><a>Americano!</a><ul>
+              <li><a>Italiano!</a></li>
+              <li><a>Americano!</a></li>
+            </ul></li>
+            </ul>
+          </li>
           <li><a href="#">Write Reviews</a></li>
           <li><a href="#">Learn Recipes</a></li>
           <li><a href="#">Watch Videos</a></li>
           <li><a href="#">Kindness</a></li>
           <li><a href="#">Swag</a></li>
         </ul>
-        <div class="search"><a href="#"></a></div>
+        <ul class="search-ul">
+          <li class="search"><a href="#"></a></li>
+        </ul>
       </nav>
 
-      <div class="body large-8 columns">
+    </header>
+
+    <div class="page-container row">
+
+      <div class="divider white"></div>
+
+      <div class="body large-9 columns">
         <div class="row slider">
+        <div class="large-12 columns">
           <ul data-orbit>
             <li>
               <img src="stylesheets/slide.png">
-              <div class="orbit-caption">...</div>
+              <div class="orbit-caption"><h3 style="color:white;">TODO</h3><h5>OCTOBER 29ST, 2013</h5><p>&bull; Make the navbar RESPONSIVE...</p></div>
             </li>
             <li>
               <img src="stylesheets/slide.png">
@@ -72,20 +100,24 @@
             </li>
           </ul>
         </div>
+        </div>
         <div class="row post">
+        <div class="large-12 columns">
           <h2>TODO</h2>
           <h5>October 29st, 2013</h5>
           <p>
             <ul>
-              <li>Make the navbar RESPONSIVE</li>
-              <li>OPTIMIZE the footer</li>
+              <li>Make searchbar look purty</li>
+              <li>Add arrows to navbar and fix colors</li>
               <li>FINISH form</li>
             </ul>
           </p>
           <div class="divider"></div>
           <h5>Tag1, Tag2, Tag3, Tag4</h5>
         </div>
+        </div>
 <div class="row post">
+<div class="large-12 columns">
           <h2>This is a title.</h2>
           <h5>January 1st, 2009</h5>
           <p>Bacon ipsum dolor sit amet shank pastrami venison ball tip sausage. Ribeye doner pancetta pork loin short ribs tri-tip fatback. Rump pancetta pork chop sausage sirloin beef turkey tenderloin ball tip doner flank. Spare ribs tail pork chop turducken, tongue bresaola chuck strip steak meatball kielbasa pancetta short ribs. Andouille short ribs t-bone meatloaf, tongue cow short loin ribeye shankle kielbasa ground round. Ribeye hamburger fatback, chicken kielbasa corned beef tail leberkas bresaola flank t-bone prosciutto.<br><br>
@@ -94,7 +126,9 @@ Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs fi
           <div class="divider"></div>
           <h5>Tag1, Tag2, Tag3, Tag4</h5>
         </div>
+</div>
 <div class="row post">
+<div class="large-12 columns">
           <h2>This is a title.</h2>
           <h5>January 1st, 2009</h5>
           <p>Bacon ipsum dolor sit amet shank pastrami venison ball tip sausage. Ribeye doner pancetta pork loin short ribs tri-tip fatback. Rump pancetta pork chop sausage sirloin beef turkey tenderloin ball tip doner flank. Spare ribs tail pork chop turducken, tongue bresaola chuck strip steak meatball kielbasa pancetta short ribs. Andouille short ribs t-bone meatloaf, tongue cow short loin ribeye shankle kielbasa ground round. Ribeye hamburger fatback, chicken kielbasa corned beef tail leberkas bresaola flank t-bone prosciutto.<br><br>
@@ -103,7 +137,9 @@ Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs fi
           <div class="divider"></div>
           <h5>Tag1, Tag2, Tag3, Tag4</h5>
         </div>
+</div>
 <div class="row post">
+<div class="large-12 columns">
           <h2>This is a title.</h2>
           <h5>January 1st, 2009</h5>
           <p>Bacon ipsum dolor sit amet shank pastrami venison ball tip sausage. Ribeye doner pancetta pork loin short ribs tri-tip fatback. Rump pancetta pork chop sausage sirloin beef turkey tenderloin ball tip doner flank. Spare ribs tail pork chop turducken, tongue bresaola chuck strip steak meatball kielbasa pancetta short ribs. Andouille short ribs t-bone meatloaf, tongue cow short loin ribeye shankle kielbasa ground round. Ribeye hamburger fatback, chicken kielbasa corned beef tail leberkas bresaola flank t-bone prosciutto.<br><br>
@@ -113,19 +149,10 @@ Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs fi
           <h5>Tag1, Tag2, Tag3, Tag4</h5>
         </div>
       </div>
+      </div>
 
-<div class="sidebar large-3 large-offset-1 columns">
-        <div class="row search-toggle" style="display:none;">
-          <div class="row collapse">
-            <div class="small-9 columns">
-              <input type="text" placeholder="Search Query">
-            </div>
-            <div class="small-3 columns">
-              <a href="#" class="button prefix">Search</a>
-            </div>
-          </div>
-        </div>
-        <div class="row collapse social-media">
+      <div class="sidebar large-3 columns">
+        <div class="row social-media collapse">
           <div class="small-3 columns"><a href="#"><img src="stylesheets/facebook.png" alt="facebook" ></a>
           </div>
           <div class="small-3 columns"><a href="#"><img src="stylesheets/twitter.png" alt="twitter" ></a>
@@ -136,10 +163,11 @@ Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs fi
           </div>
         </div>
         <div class="row user-area-logged-out">
-          <div class="section-container accordion" data-section="accordion">
+        <div class="large-12 columns">
+          <div class="section-container accordion">
           <section class="active">
-              <p class="title" data-section-title><a href="#">Login</a></p>
-              <div class="content" data-section-content>
+              <p class="title"><a href="#" id="login">Login</a></p>
+              <div class="content">
                 <div class="login">
                   <form>
                     <div class="row">
@@ -164,8 +192,8 @@ Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs fi
               </div>
             </section>
             <section>
-              <p class="title" data-section-title><a href="#">Register</a></p>
-              <div class="content" data-section-content>
+              <p class="title"><a href="#" id="register">Register</a></p>
+              <div class="content">
                 <div class="register">
                   <form>
                     <div class="row">
@@ -192,6 +220,7 @@ Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs fi
           </div>
         </div>
       </div>
+    </div>
 
     </div>
     <footer>
@@ -256,27 +285,6 @@ Tenderloin bacon venison, pork fatback tongue swine ham hock doner spare ribs fi
 </script><script src="javascripts/foundation/foundation.tooltips.js" type="text/javascript">
 </script><script src="javascripts/foundation/foundation.topbar.js" type="text/javascript">
 </script><script src="javascripts/foundation/foundation.interchange.js" type="text/javascript">
-</script><script type="text/javascript">
-$(document).ready(function() {
-  $(document).foundation();
-  $(".search").mouseover(function(){
-    if ($(".search-toggle").stop().css("display") == "none")
-      $(".search, .bottom").stop().animate({backgroundColor: '#92b999'}, 250)
-  });
-  $(".search").mouseout(function(){
-    if ($(".search-toggle").stop().css("display") == "none")
-      $(".search, .bottom").stop().animate({backgroundColor: '#47a761'}, 250)
-  });
-  $(".search").click(function(){
-    if ($(".search-toggle").css("display") == "none") {
-      $(".search-toggle").slideToggle(250);
-      $(".search, .bottom").animate({backgroundColor: '#92b999'}, 250);
-    } else {
-      $(".search-toggle").slideToggle(250);
-      $(".search, .bottom").animate({backgroundColor: '#47a761'}, 250);
-    }
-  });
-});
-  </script>
+</script><script src="javascripts/vendor/custom.js" type="text/javascript"></script>
 </body>
 </html>
