@@ -300,11 +300,12 @@ header .divider {
         }
       }
       .user-area-logged-out {
+        .button-primary { @include button;}
         .section-container {
           border: none;
           section {
             border: none;
-            p {
+            p.title {
               border-top: 10px solid $header;
               border-left: none;
               border-right: none;
