@@ -9,13 +9,13 @@
 
 <div id="secondary" class="sidebar large-3 columns" role="complementary">
         <div class="row social-media collapse">
-          <div class="small-3 columns"><a href="#"><img src="stylesheets/facebook.png" alt="facebook" ></a>
+          <div class="small-3 columns"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/2dudesfood/stylesheets/facebook.png" alt="facebook" ></a>
           </div>
-          <div class="small-3 columns"><a href="#"><img src="stylesheets/twitter.png" alt="twitter" ></a>
+          <div class="small-3 columns"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/2dudesfood/stylesheets/twitter.png" alt="twitter" ></a>
           </div>
-          <div class="small-3 columns"><a href="#"><img src="stylesheets/instagram.png" alt="instagram" ></a>
+          <div class="small-3 columns"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/2dudesfood/stylesheets/instagram.png" alt="instagram" ></a>
           </div>
-          <div class="small-3 columns"><a href="#"><img src="stylesheets/youtube.png" alt="youtube" ></a>
+          <div class="small-3 columns"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/2dudesfood/stylesheets/youtube.png" alt="youtube" ></a>
           </div>
         </div>
         <div class="row user-area-logged-out">

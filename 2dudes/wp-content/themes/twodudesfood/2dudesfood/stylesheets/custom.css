@@ -343,7 +343,7 @@ header .divider {
   border: none;
 }
 /* line 307, ../sass/custom.scss */
-.container .page-container .sidebar .user-area-logged-out .section-container section p {
+.container .page-container .sidebar .user-area-logged-out .section-container section p.title {
   border-top: 10px solid #2e8445;
   border-left: none;
   border-right: none;
@@ -351,7 +351,7 @@ header .divider {
   background-color: #47a761;
 }
 /* line 313, ../sass/custom.scss */
-.container .page-container .sidebar .user-area-logged-out .section-container section p a {
+.container .page-container .sidebar .user-area-logged-out .section-container section p.title a {
   color: #daffe9;
   font-weight: 350;
   font-size: 1.25em;
