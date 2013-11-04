@@ -13,36 +13,24 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="row" id="footer">
     <div class="large-3 columns">
-      MOST POPULAR<BR>
-      <BR>
-      COLUMN<br>
-      COLUMN<br>
-      COLUMN<br>
-      COLUMN<br>
+      <?php if (!dynamic_sidebar('footer-far-left'))  ?>
+      NULL
+      <?php endif; ?>
     </div>
     <div class="large-3 columns">
-      MOST POPULAR<BR>
-      <BR>
-      COLUMN<br>
-      COLUMN<br>
-      COLUMN<br>
-      COLUMN<br>
+      <?php if (!dynamic_sidebar('footer-slight-left')):  ?>
+      NULL
+      <?php endif; ?>
     </div>
     <div class="large-3 columns">
-      MOST POPULAR<BR>
-      <BR>
-      COLUMN<br>
-      COLUMN<br>
-      COLUMN<br>
-      COLUMN<br>
+      <?php if (!dynamic_sidebar('footer-slight-right')):  ?>
+      NULL
+      <?php endif; ?>
     </div>
     <div class="large-3 columns">
-      MOST POPULAR<BR>
-      <BR>
-      COLUMN<br>
-      COLUMN<br>
-      COLUMN<br>
-      COLUMN<br>
+      <?php if (!dynamic_sidebar('footer-far-right'))  ?>
+      NULL
+      <?php endif; ?>
     </div>
   </div>
   <div class="copyright">
