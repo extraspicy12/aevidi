@@ -5082,6 +5082,42 @@ header .divider {
     background-color: #2e8445; } }
 .container {
   background-color: #daffe9; }
+  .container a {
+    transition: all .125s ease-in-out; }
+  .container a:hover {
+    transition: all .125s ease-in-out; }
+  .container .button-primary {
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 0 1.25em;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding-top: 0.75em;
+    padding-right: 1.5em;
+    padding-bottom: 0.8125em;
+    padding-left: 1.5em;
+    font-size: 1em;
+    background-color: #2e8445;
+    border-color: #215e31;
+    color: white;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; }
+    .container .button-primary:hover, .container .button-primary:focus {
+      background-color: #215e31; }
+    .container .button-primary:hover, .container .button-primary:focus {
+      color: white; }
+    .container .button-primary:active {
+      -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; }
   .container > header {
     background-color: white;
     background-color: #2e8445; }
@@ -5286,6 +5322,27 @@ header .divider {
         transition: all .2s ease-in-out;
         opacity: .7;
         filter: alpha(opacity=70); }
+    .container .page-container .sidebar .widget_wp_sidebarlogin {
+      background-color: #47a761;
+      border-top: 10px solid #2e8445;
+      padding: 10px; }
+      .container .page-container .sidebar .widget_wp_sidebarlogin .button-primary {
+        margin-bottom: 0;
+        display: block;
+        width: 100%; }
+      .container .page-container .sidebar .widget_wp_sidebarlogin h1 {
+        color: #daffe9;
+        font-size: 1.75em;
+        text-align: center; }
+      .container .page-container .sidebar .widget_wp_sidebarlogin p label {
+        color: #daffe9;
+        font-weight: 200;
+        font-size: .875em;
+        text-transform: uppercase; }
+      .container .page-container .sidebar .widget_wp_sidebarlogin a {
+        color: #daffe9; }
+      .container .page-container .sidebar .widget_wp_sidebarlogin a:hover {
+        color: #b0d8c0; }
     .container .page-container .sidebar .user-area-logged-out .button-primary {
       border-style: solid;
       border-width: 1px;
