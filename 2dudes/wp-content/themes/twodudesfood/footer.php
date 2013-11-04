@@ -13,7 +13,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="row" id="footer">
     <div class="large-3 columns">
-      <?php if (!dynamic_sidebar('footer-far-left'))  ?>
+      <?php if (!dynamic_sidebar('footer-far-left')):  ?>
       NULL
       <?php endif; ?>
     </div>
@@ -28,7 +28,7 @@
       <?php endif; ?>
     </div>
     <div class="large-3 columns">
-      <?php if (!dynamic_sidebar('footer-far-right'))  ?>
+      <?php if (!dynamic_sidebar('footer-far-right')):  ?>
       NULL
       <?php endif; ?>
     </div>
