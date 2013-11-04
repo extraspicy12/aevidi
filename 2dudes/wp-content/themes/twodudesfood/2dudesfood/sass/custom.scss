@@ -20,12 +20,12 @@ header .divider {
 }
 
 .container {
-        a {
-          transition: all .125s ease-in-out;
-        }
-        a:hover {
-          transition: all .125s ease-in-out;
-        }
+  a {
+    transition: all .125s ease-in-out;
+  }
+  a:hover {
+    transition: all .125s ease-in-out;
+  }
   .button-primary {
     @include button-base;
     @include button-size;
@@ -312,10 +312,35 @@ header .divider {
         	filter:alpha(opacity=70);
         }
       }
+      aside {
+        ul {
+          padding-left: 15px;
+        }
+        margin: 0 0 15px 0;
+        background-color: $accent;
+        border-top: 10px solid $header;
+        padding: 10px;
+        a {
+          color: $offwhite;
+        }
+        a:hover{
+          color: $header;
+        }
+        h1 {
+          color: $offwhite;
+          font-size: 1.75em;
+          text-align: center;
+        }
+      }
       .widget_wp_sidebarlogin {
         background-color: $accent;
         border-top: 10px solid $header;
         padding: 10px;
+        ul {
+          padding-left: 0;
+          text-align: center;
+          font-weight: 500;
+        }
         .button-primary {
           margin-bottom: 0;
           display: block;
@@ -338,7 +363,7 @@ header .divider {
           color: $offwhite;
         }
         a:hover {
-          color: #b0d8c0;
+          color: /* #b0d8c0 */ $header;
         }
       }
       .user-area-logged-out {

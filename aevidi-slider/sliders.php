@@ -62,3 +62,64 @@ alt="<?php the_title(); ?>"
 endif;
 wp_reset_postdata();
 ?>
+
+
+<!-- Fancy sidebar accordion -->
+<div class="row user-area-logged-out">
+        <div class="large-12 columns">
+          <div class="section-container accordion">
+          <section class="active">
+              <p class="title"><a href="#" id="login">Login</a></p>
+              <div class="content">
+                <div class="login">
+                  <form>
+                    <div class="row">
+                      <div class="large-12 columns">
+                        <input type="text">
+                        <label>USERNAME</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="large-12 columns">
+                        <input type="password">
+                        <label>PASSWORD</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="large-12 columns" style="text-align:center;">
+                        <a href="#" class="button">asdasd</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <section>
+              <p class="title"><a href="#" id="register">Register</a></p>
+              <div class="content">
+                <div class="register">
+                  <form>
+                    <div class="row">
+                      <div class="large-12 columns">
+                        <input type="text">
+                        <label>USERNAME</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="large-12 columns">
+                        <input type="password">
+                        <label>PASSWORD</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="large-12 columns" style="text-align:center;">
+                        <a href="#" class="button">asdasd</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
