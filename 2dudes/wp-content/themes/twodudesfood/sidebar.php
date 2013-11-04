@@ -7,7 +7,7 @@
 ?>
   </main>
 
-<div id="secondary" class="sidebar large-3 columns" role="complementary">
+  <div id="secondary" class="sidebar large-3 columns widget-area" role="complementary">
         <div class="row social-media collapse">
           <div class="small-3 columns"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/2dudesfood/stylesheets/facebook.png" alt="facebook" ></a>
           </div>
@@ -18,7 +18,9 @@
           <div class="small-3 columns"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/2dudesfood/stylesheets/youtube.png" alt="youtube" ></a>
           </div>
         </div>
-        <div class="row user-area-logged-out">
+
+        <!--
+<div class="row user-area-logged-out">
         <div class="large-12 columns">
           <div class="section-container accordion">
           <section class="active">
@@ -76,9 +78,8 @@
           </div>
         </div>
       </div>
-    </div>
+-->
 
-	<div id="secondary" class="sidebar large-3 columns widget-area" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
 
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>

@@ -20,6 +20,19 @@ header .divider {
 }
 
 .container {
+        a {
+          transition: all .125s ease-in-out;
+        }
+        a:hover {
+          transition: all .125s ease-in-out;
+        }
+  .button-primary {
+    @include button-base;
+    @include button-size;
+    @include button-style;
+    @include single-transition;
+    @include inset-shadow(true);
+  }
   background-color: $offwhite;
   > header {
     background-color: white;
@@ -297,6 +310,35 @@ header .divider {
           transition: all .2s ease-in-out;
         	opacity: .7;
         	filter:alpha(opacity=70);
+        }
+      }
+      .widget_wp_sidebarlogin {
+        background-color: $accent;
+        border-top: 10px solid $header;
+        padding: 10px;
+        .button-primary {
+          margin-bottom: 0;
+          display: block;
+          width: 100%;
+        }
+        h1 {
+          color: $offwhite;
+          font-size: 1.75em;
+          text-align: center;
+        }
+        p {
+          label {
+            color: $offwhite;
+            font-weight: 200;
+            font-size: .875em;
+            text-transform: uppercase;
+          }
+        }
+        a {
+          color: $offwhite;
+        }
+        a:hover {
+          color: #b0d8c0;
         }
       }
       .user-area-logged-out {
