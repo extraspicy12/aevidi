@@ -299,13 +299,13 @@ header .divider {
         	filter:alpha(opacity=70);
         }
       }
-      .user-area-logged-out {
+      .user-area-logged-out, .widget_wp_sidebarlogin {
         .button-primary { @include button;}
         .section-container {
           border: none;
           section {
             border: none;
-            p.title {
+            p.title, p.login-password, p.login-username, p.login-remember, p.login-submit {
               border-top: 10px solid $header;
               border-left: none;
               border-right: none;

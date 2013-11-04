@@ -19,9 +19,9 @@
           </div>
         </div>
         <div class="row user-area-logged-out">
-        <div class="large-12 columns">
-          <div class="section-container accordion">
-          <section class="active">
+          <div class="large-12 columns">
+            <div class="section-container accordion">
+              <section class="active">
               <p class="title"><a href="#" id="login">Login</a></p>
               <div class="content">
                 <div class="login">
