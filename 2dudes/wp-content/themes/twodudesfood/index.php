@@ -19,8 +19,10 @@ get_header(); ?>
   <div class="large-12 columns">
     <ul data-orbit>
 
-    <?php while ( have_posts() ) : the_post(); ?>
-      <?php if (has_post_thumbnail()): ?>
+  <?php query_posts('showposts=5');
+  if ( have_posts() ) :
+    while ( have_posts() ) : the_post();
+      if (has_post_thumbnail()): ?>
       <li <?php post_class(); ?> id="post-<?php the_ID(); ?>">
             <a href="<?php the_permalink(); ?>" rel="bookmark" >
             	<img src="<?php bloginfo('stylesheet_directory'); ?>/timthumb.php?src=<?php
@@ -37,6 +39,11 @@ get_header(); ?>
       </li>
       <?php endif; ?>
     <?php endwhile; ?>
+  <?php
+  else :
+  endif;
+  wp_reset_postdata();
+  ?>
     </ul>
   </div>
   </div>
