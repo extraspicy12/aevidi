@@ -26,7 +26,7 @@ header .divider {
   a:hover {
     transition: all .125s ease-in-out;
   }
-  .button-primary {
+  .button-primary, #submit {
     @include button-base;
     @include button-size;
     @include button-style;
@@ -313,6 +313,10 @@ header .divider {
         }
       }
       aside {
+      .avatar {
+        height: 60px;
+        width: 60px;
+      }
         ul {
           padding-left: 15px;
         }
@@ -338,7 +342,7 @@ header .divider {
         padding: 10px;
         ul {
           padding-left: 0;
-          text-align: center;
+          text-align: left;
           font-weight: 500;
         }
         .button-primary {
