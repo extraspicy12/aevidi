@@ -39,7 +39,11 @@ function twodudesfood_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+
+if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails' );
+        set_post_thumbnail_size( 150, 150 ); // default Post Thumbnail dimensions
+}
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.

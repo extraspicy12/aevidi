@@ -18,18 +18,25 @@ get_header(); ?>
   <div class="row slider">
   <div class="large-12 columns">
     <ul data-orbit>
-      <li>
-        <img src="stylesheets/slide.png">
-        <div class="orbit-caption"><h3 style="color:white;">TODO</h3><h5>OCTOBER 29ST, 2013</h5><p>&bull; Make the navbar RESPONSIVE...</p></div>
+
+    <?php while ( have_posts() ) : the_post(); ?>
+      <?php if (has_post_thumbnail()): ?>
+      <li <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+            <a href="<?php the_permalink(); ?>" rel="bookmark" >
+            	<img src="<?php bloginfo('stylesheet_directory'); ?>/timthumb.php?src=<?php
+                $image_id = get_post_thumbnail_id();
+                $image_url = wp_get_attachment_image_src($image_id,'full');
+                echo $image_url[0];
+                ?>&h=500&w=698&zc=1&q=100&c=1&a=t"
+                alt="<?php the_title(); ?>"
+              />
+            </a>
+        <div class="orbit-caption">
+        <?php the_excerpt(); ?><a href='<?php the_permalink(); ?>' rel="bookmark" >Read More >> </a>
+        </div> <!-- END Blog Summary -->
       </li>
-      <li>
-        <img src="stylesheets/slide.png">
-        <div class="orbit-caption">...</div>
-      </li>
-      <li>
-        <img src="stylesheets/slide.png">
-        <div class="orbit-caption">...</div>
-      </li>
+      <?php endif; ?>
+    <?php endwhile; ?>
     </ul>
   </div>
   </div>
