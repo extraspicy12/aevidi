@@ -1,3 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+
+
+h1,h2,h3,h4,h5, ul li a, input, textarea, a.button {
+  font-family: "Sanchez";
+  weight: 400;
+}
+body,a,li,ul,p {
+  font-family: "Open Sans";
+}
+
 $header: #2e8445;
 $sidecontainer: #92b999;
 $accent: #47a761;
@@ -11,7 +24,7 @@ header .divider {
   display: block;
   padding: 5px;
 }
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 757px) {
   header .divider {
     display: block;
     padding: 5px;
@@ -25,6 +38,7 @@ header .divider {
   }
   a:hover {
     transition: all .125s ease-in-out;
+    color: #CCCCCC;
   }
   .button-primary, #submit {
     @include button-base;
@@ -32,6 +46,11 @@ header .divider {
     @include button-style;
     @include single-transition;
     @include inset-shadow(true);
+  }
+  footer.entry-meta {
+    > span {
+      margin-right: 10px;
+    }
   }
   background-color: $offwhite;
   > header {
@@ -74,8 +93,18 @@ header .divider {
           }
           a:hover {
             transition: all .2s ease-in-out;
-            color: $offwhite;
+            color: $accent;
             background-color: $sidecontainer;
+          }
+        }
+        li:nth-child(1) {
+          a {
+            border-bottom-left-radius: 5px;
+          }
+        }
+        li:nth-child(3) {
+          a {
+            border-bottom-right-radius: 5px;
           }
         }
       }
@@ -97,7 +126,7 @@ header .divider {
         }
       }
     }
-    @media screen and (max-width:758px) {
+    @media screen and (max-width:757px) {
     .bottom {
       background-color: $header;
       border-bottom: 5px solid $accent;
@@ -124,7 +153,7 @@ header .divider {
       right: 15px;
       top: 13px;
     }
-    @media screen and (max-width:758px) {
+    @media screen and (max-width:757px) {
       .toggleMenu {
         display: block;
       }
@@ -178,14 +207,12 @@ header .divider {
             width: 100%;
             li {
               a {
-                border-top: 1px solid black;
                 background-color: $header;
                 position: relative;
                 z-index: 100;
               }
               li {
                 a {
-                  border-top: 1px solid black;
                   background-color: $sidecontainer;
                   z-index: 200;
                 }
@@ -194,7 +221,7 @@ header .divider {
           }
         }
       }
-      @media screen and (max-width:758px) {
+      @media screen and (max-width:757px) {
         .menu > ul:first-of-type {
           width: 100%;
           display: none;
@@ -209,6 +236,15 @@ header .divider {
         }
         .menu > ul:first-of-type > li.hover > ul, .menu > ul:first-of-type li li.hover ul {
           position: static;
+        }
+        .menu > ul:first-of-type li a:hover {
+          background-color: $accent !important;
+        }
+        .menu > ul:first-of-type > li > ul > li a {
+          background-color: $accent;
+        }
+        .menu > ul:first-of-type > li > ul > li > ul > li a {
+          background-color: $sidecontainer !important;
         }
       }
       .menu > ul:first-of-type:before, .menu > ul:first-of-type:after {
@@ -239,7 +275,7 @@ header .divider {
         background: $accent url(../stylesheets/search.png) no-repeat center center;
       }
     }
-    @media screen and (max-width:758px) {
+    @media screen and (max-width:757px) {
       .search-ul {
         display: none;
       }
@@ -324,11 +360,12 @@ header .divider {
         background-color: $accent;
         border-top: 10px solid $header;
         padding: 10px;
+        border-radius: 5px;
         a {
           color: $offwhite;
         }
         a:hover{
-          color: $header;
+          color: #CCCCCC;
         }
         h1 {
           color: $offwhite;
@@ -362,12 +399,6 @@ header .divider {
             font-size: .875em;
             text-transform: uppercase;
           }
-        }
-        a {
-          color: $offwhite;
-        }
-        a:hover {
-          color: /* #b0d8c0 */ $header;
         }
       }
       .user-area-logged-out {
@@ -421,10 +452,10 @@ header .divider {
       background-color: $header;
       padding: 10px 0px;
       a {
-        color: $sidecontainer;
+        color: $offwhite;
       }
       a:hover {
-        color: $offwhite;
+        color: #CCCCCC;
       }
       .row {
         padding: 0 30px;

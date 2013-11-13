@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   function adjustMenu() {
       var w = $(window).width();
-      if(w < 768) {
+      if(w < 757) {
           if (!$(".toggleMenu").hasClass("active")) {
               $(menu).hide();
           } else {

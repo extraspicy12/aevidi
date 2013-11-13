@@ -58,6 +58,6 @@
 
       <div class="divider white"></div>
 
-      <main class="body large-9 columns" role="main">
+      <main class="body medium-9 columns" role="main">
 
 

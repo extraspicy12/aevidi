@@ -7,7 +7,7 @@
 ?>
   </main>
 
-  <div id="secondary" class="sidebar large-3 columns widget-area" role="complementary">
+  <div id="secondary" class="sidebar medium-3 columns widget-area" role="complementary">
         <div class="row social-media collapse">
           <div class="small-3 columns"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/2dudesfood/stylesheets/facebook.png" alt="facebook" ></a>
           </div>
