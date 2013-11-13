@@ -5242,8 +5242,9 @@ header .divider {
           top: 0; }
         .container > header nav .menu > ul:first-of-type li a {
           background-color: #2e8445; }
-        .container > header nav .menu > ul:first-of-type li a:hover {
-          background-color: #47a761; }
+        @media screen and (min-width: 758px) {
+          .container > header nav .menu > ul:first-of-type li a:hover {
+            background-color: #47a761; } }
         .container > header nav .menu > ul:first-of-type li ul {
           position: absolute;
           left: -9999px;
@@ -5268,8 +5269,6 @@ header .divider {
         width: 100%; }
       .container > header nav .menu > ul:first-of-type > li.hover > ul, .container > header nav .menu > ul:first-of-type li li.hover ul {
         position: static; }
-      .container > header nav .menu > ul:first-of-type li a:hover {
-        background-color: #47a761 !important; }
       .container > header nav .menu > ul:first-of-type > li > ul > li a {
         background-color: #47a761; }
       .container > header nav .menu > ul:first-of-type > li > ul > li > ul > li a {

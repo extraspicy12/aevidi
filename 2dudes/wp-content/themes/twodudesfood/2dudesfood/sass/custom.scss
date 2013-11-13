@@ -197,8 +197,10 @@ header .divider {
           a {
             background-color: $header;
           }
-          a:hover {
-            background-color: $accent;
+          @media screen and (min-width: 758px) {
+            a:hover {
+              background-color: $accent;
+            }
           }
           ul {
             position: absolute;
@@ -236,9 +238,6 @@ header .divider {
         }
         .menu > ul:first-of-type > li.hover > ul, .menu > ul:first-of-type li li.hover ul {
           position: static;
-        }
-        .menu > ul:first-of-type li a:hover {
-          background-color: $accent !important;
         }
         .menu > ul:first-of-type > li > ul > li a {
           background-color: $accent;
