@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 /*! normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -5067,6 +5070,13 @@ a.th {
   .f-dropdown.large {
     max-width: 800px; }
 
+h1, h2, h3, h4, h5, ul li a, input, textarea, a.button {
+  font-family: "Sanchez";
+  weight: 400; }
+
+body, a, li, ul, p {
+  font-family: "Open Sans"; }
+
 header .divider {
   display: none; }
 
@@ -5075,7 +5085,7 @@ header .divider {
   display: block;
   padding: 5px; }
 
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 757px) {
   header .divider {
     display: block;
     padding: 5px;
@@ -5085,7 +5095,8 @@ header .divider {
   .container a {
     transition: all .125s ease-in-out; }
   .container a:hover {
-    transition: all .125s ease-in-out; }
+    transition: all .125s ease-in-out;
+    color: #CCCCCC; }
   .container .button-primary, .container #submit {
     border-style: solid;
     border-width: 1px;
@@ -5118,6 +5129,8 @@ header .divider {
     .container .button-primary:active, .container #submit:active {
       -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; }
+  .container footer.entry-meta > span {
+    margin-right: 10px; }
   .container > header {
     background-color: white;
     background-color: #2e8445; }
@@ -5154,8 +5167,12 @@ header .divider {
             padding: 7.5px; }
           .container > header .top-nav ul li a:hover {
             transition: all .2s ease-in-out;
-            color: #daffe9;
+            color: #47a761;
             background-color: #92b999; }
+        .container > header .top-nav ul li:nth-child(1) a {
+          border-bottom-left-radius: 5px; }
+        .container > header .top-nav ul li:nth-child(3) a {
+          border-bottom-right-radius: 5px; }
     .container > header .bottom {
       background-color: #47a761;
       padding: 10px 0 0 0; }
@@ -5168,7 +5185,7 @@ header .divider {
           padding: 0 0 10px 0; }
           .container > header .bottom .search-toggle .search-bar input, .container > header .bottom .search-toggle .search-bar a {
             margin: 0; }
-    @media screen and (max-width: 758px) {
+    @media screen and (max-width: 757px) {
       .container > header .bottom {
         background-color: #2e8445;
         border-bottom: 5px solid #47a761; }
@@ -5190,7 +5207,7 @@ header .divider {
       position: absolute;
       right: 15px;
       top: 13px; }
-    @media screen and (max-width: 758px) {
+    @media screen and (max-width: 757px) {
       .container > header .toggleMenu {
         display: block; } }
     .container > header nav .menu > ul:first-of-type {
@@ -5233,15 +5250,13 @@ header .divider {
           z-index: 100;
           width: 100%; }
           .container > header nav .menu > ul:first-of-type li ul li a {
-            border-top: 1px solid black;
             background-color: #2e8445;
             position: relative;
             z-index: 100; }
           .container > header nav .menu > ul:first-of-type li ul li li a {
-            border-top: 1px solid black;
             background-color: #92b999;
             z-index: 200; }
-    @media screen and (max-width: 758px) {
+    @media screen and (max-width: 757px) {
       .container > header nav .menu > ul:first-of-type {
         width: 100%;
         display: none; }
@@ -5252,7 +5267,13 @@ header .divider {
         display: block;
         width: 100%; }
       .container > header nav .menu > ul:first-of-type > li.hover > ul, .container > header nav .menu > ul:first-of-type li li.hover ul {
-        position: static; } }
+        position: static; }
+      .container > header nav .menu > ul:first-of-type li a:hover {
+        background-color: #47a761 !important; }
+      .container > header nav .menu > ul:first-of-type > li > ul > li a {
+        background-color: #47a761; }
+      .container > header nav .menu > ul:first-of-type > li > ul > li > ul > li a {
+        background-color: #92b999 !important; } }
     .container > header nav .menu > ul:first-of-type:before, .container > header nav .menu > ul:first-of-type:after {
       content: " ";
       display: table; }
@@ -5276,7 +5297,7 @@ header .divider {
         width: 100%;
         padding: 5px;
         background: #47a761 url(../stylesheets/search.png) no-repeat center center; }
-    @media screen and (max-width: 758px) {
+    @media screen and (max-width: 757px) {
       .container > header .search-ul {
         display: none; } }
   .container .page-container {
@@ -5326,7 +5347,8 @@ header .divider {
       margin: 0 0 15px 0;
       background-color: #47a761;
       border-top: 10px solid #2e8445;
-      padding: 10px; }
+      padding: 10px;
+      border-radius: 5px; }
       .container .page-container .sidebar aside .avatar {
         height: 60px;
         width: 60px; }
@@ -5335,7 +5357,7 @@ header .divider {
       .container .page-container .sidebar aside a {
         color: #daffe9; }
       .container .page-container .sidebar aside a:hover {
-        color: #2e8445; }
+        color: #CCCCCC; }
       .container .page-container .sidebar aside h1 {
         color: #daffe9;
         font-size: 1.75em;
@@ -5361,10 +5383,6 @@ header .divider {
         font-weight: 200;
         font-size: .875em;
         text-transform: uppercase; }
-      .container .page-container .sidebar .widget_wp_sidebarlogin a {
-        color: #daffe9; }
-      .container .page-container .sidebar .widget_wp_sidebarlogin a:hover {
-        color: #2e8445; }
     .container .page-container .sidebar .user-area-logged-out .button-primary {
       border-style: solid;
       border-width: 1px;
@@ -5426,9 +5444,9 @@ header .divider {
       background-color: #2e8445;
       padding: 10px 0px; }
       .container > footer .copyright a {
-        color: #92b999; }
-      .container > footer .copyright a:hover {
         color: #daffe9; }
+      .container > footer .copyright a:hover {
+        color: #CCCCCC; }
       .container > footer .copyright .row {
         padding: 0 30px; }
 
