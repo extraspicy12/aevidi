@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5, ul li a, input, textarea, a.button {
   font-family: "Sanchez";
   weight: 400;
 }
-body,a,li,ul,p {
+body,li,ul,p {
   font-family: "Open Sans";
 }
 
@@ -338,6 +338,7 @@ header .divider {
       .social-media {
         padding-top: 20px;
         padding-bottom: 20px;
+        text-align: center;
         a {
           transition: all .2s ease-in-out;
         }
@@ -348,18 +349,22 @@ header .divider {
         }
       }
       aside {
-      .avatar {
-        height: 60px;
-        width: 60px;
-      }
-        ul {
-          padding-left: 15px;
-        }
         margin: 0 0 15px 0;
         background-color: $accent;
         border-top: 10px solid $header;
         padding: 10px;
         border-radius: 5px;
+        .avatar {
+          height: 60px;
+          width: 60px;
+        }
+        ul {
+          padding-left: 15px;
+          li {
+          color: $offwhite;
+          list-style: circle;
+          }
+        }
         a {
           color: $offwhite;
         }
@@ -380,6 +385,9 @@ header .divider {
           padding-left: 0;
           text-align: left;
           font-weight: 500;
+          li {
+            list-style: none;
+          }
         }
         .button-primary {
           margin-bottom: 0;
@@ -398,6 +406,24 @@ header .divider {
             font-size: .875em;
             text-transform: uppercase;
           }
+        }
+      }
+      @media screen and (max-width: 850px) {
+        .widget.widget_wp_sidebarlogin {
+          display: block;
+          text-align: center;
+        }
+        .avatar_container {
+          width: 100%;
+          text-align: center;
+        }
+        ul {
+          text-align: center !important;
+        }
+      }
+      @media screen and (max-width: 757px) {
+        > aside {
+           display: none;
         }
       }
       .user-area-logged-out {
@@ -450,6 +476,7 @@ header .divider {
     .copyright {
       background-color: $header;
       padding: 10px 0px;
+      text-align: right;
       a {
         color: $offwhite;
       }

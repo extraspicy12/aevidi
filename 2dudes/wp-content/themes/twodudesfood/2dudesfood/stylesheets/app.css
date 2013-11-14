@@ -5074,7 +5074,7 @@ h1, h2, h3, h4, h5, ul li a, input, textarea, a.button {
   font-family: "Sanchez";
   weight: 400; }
 
-body, a, li, ul, p {
+body, li, ul, p {
   font-family: "Open Sans"; }
 
 header .divider {
@@ -5335,7 +5335,8 @@ header .divider {
       padding: 5px 15px 0 15px; }
     .container .page-container .sidebar .social-media {
       padding-top: 20px;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      text-align: center; }
       .container .page-container .sidebar .social-media a {
         transition: all .2s ease-in-out; }
       .container .page-container .sidebar .social-media a:hover {
@@ -5353,6 +5354,9 @@ header .divider {
         width: 60px; }
       .container .page-container .sidebar aside ul {
         padding-left: 15px; }
+        .container .page-container .sidebar aside ul li {
+          color: #daffe9;
+          list-style: circle; }
       .container .page-container .sidebar aside a {
         color: #daffe9; }
       .container .page-container .sidebar aside a:hover {
@@ -5369,6 +5373,8 @@ header .divider {
         padding-left: 0;
         text-align: left;
         font-weight: 500; }
+        .container .page-container .sidebar .widget_wp_sidebarlogin ul li {
+          list-style: none; }
       .container .page-container .sidebar .widget_wp_sidebarlogin .button-primary {
         margin-bottom: 0;
         display: block;
@@ -5382,6 +5388,18 @@ header .divider {
         font-weight: 200;
         font-size: .875em;
         text-transform: uppercase; }
+    @media screen and (max-width: 850px) {
+      .container .page-container .sidebar .widget.widget_wp_sidebarlogin {
+        display: block;
+        text-align: center; }
+      .container .page-container .sidebar .avatar_container {
+        width: 100%;
+        text-align: center; }
+      .container .page-container .sidebar ul {
+        text-align: center !important; } }
+    @media screen and (max-width: 757px) {
+      .container .page-container .sidebar > aside {
+        display: none; } }
     .container .page-container .sidebar .user-area-logged-out .button-primary {
       border-style: solid;
       border-width: 1px;
@@ -5441,7 +5459,8 @@ header .divider {
       padding: 20px 15px 30px 15px; }
     .container > footer .copyright {
       background-color: #2e8445;
-      padding: 10px 0px; }
+      padding: 10px 0px;
+      text-align: right; }
       .container > footer .copyright a {
         color: #daffe9; }
       .container > footer .copyright a:hover {
