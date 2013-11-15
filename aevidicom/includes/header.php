@@ -43,7 +43,7 @@ ga('create', 'UA-42718613-1', 'aevidi.com'); ga('send', 'pageview');
 				<div class="nav-container large-8 columns small-centered large-uncentered">
 					<ul class="nav-ul">
 						<li class="nav-link" id="menu-home"><a href="/">HOME</a></li>
-						<li class="nav-link" id="menu-about"><a href="about.php">ABOUT</a></li>
+						<li class="nav-link" id="menu-about"><a href="about">ABOUT</a></li>
 						<li class="nav-link"><a class="scroll" href="#contact-us">CONTACT</a></li>
 					</ul>
 					<ul class="nav-ul"
