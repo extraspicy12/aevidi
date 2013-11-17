@@ -473,6 +473,13 @@ header .divider {
     #footer {
       padding: 20px 15px 30px 15px;
     }
+    ul {
+      li {
+        a {
+          color: $sidecontainer;
+        }
+      }
+    }
     .copyright {
       background-color: $header;
       padding: 10px 0px;

@@ -5457,6 +5457,8 @@ header .divider {
     border-top: 10px solid #2e8445; }
     .container > footer #footer {
       padding: 20px 15px 30px 15px; }
+    .container > footer ul li a {
+      color: #92b999; }
     .container > footer .copyright {
       background-color: #2e8445;
       padding: 10px 0px;
