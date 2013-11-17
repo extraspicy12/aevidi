@@ -68,7 +68,7 @@ include_once "includes/header.php"
 					<div class="row">
 						<div class="large-6 columns small-centered large-uncentered">
 							<h3 class="fancy-header">Let's Get In Touch</h3>
-							<p> Now that you've had a chance to take a look at our services, go ahead and examine our <a class="scroll" href="#process">process</a> so that you can get a feel for our personalization for each individual client. You can start this process off by filling out this
+							<p> Now that you've had a chance to take a look at our services, go ahead and examine our <a href="about#process">process</a> so that you can get a feel for our personalization for each individual client. You can start this process off by filling out this
 								contact form and describing your needs and vision for your individualized website. We hope to hear from you soon! </p>
 						</div>
 						<div class="large-6 columns">
