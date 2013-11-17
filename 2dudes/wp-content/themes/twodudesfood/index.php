@@ -34,7 +34,7 @@ get_header(); ?>
               />
             </a>
         <div class="orbit-caption">
-        <?php the_excerpt(); ?><a href='<?php the_permalink(); ?>' rel="bookmark" >Read More >> </a>
+        <h3><?php the_title();?></h3><span><?php the_excerpt(); ?></span><a href='<?php the_permalink(); ?>' rel="bookmark" >Read More >> </a>
         </div> <!-- END Blog Summary -->
       </li>
       <?php endif; ?>
