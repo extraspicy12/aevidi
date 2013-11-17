@@ -25,6 +25,7 @@
     <div class="large-3 medium-6 columns">
       <?php if (!dynamic_sidebar('footer-slight-right')):  ?>
       NULL
+      <ul><li><a>asdasd</a>asd</li></ul>
       <?php endif; ?>
     </div>
     <div class="large-3 medium-6 columns">

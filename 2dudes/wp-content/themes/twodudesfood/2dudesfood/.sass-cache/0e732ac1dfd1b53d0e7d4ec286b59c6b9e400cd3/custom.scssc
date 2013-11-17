@@ -1,7 +1,7 @@
 3.2.10 (Media Mark)
-9111412cea7331113b1285cf4829fbbd08fa4390
+5a25c1c43aea6a484f63dc2ea04655dfaa1ca4f4
 o:Sass::Tree::RootNode
-:@template"ñ,@import url(http://fonts.googleapis.com/css?family=Sanchez);
+:@template"ì,@import url(http://fonts.googleapis.com/css?family=Sanchez);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 
@@ -479,7 +479,7 @@ header .divider {
     ul {
       li {
         a {
-          color: $sidecontainer;
+          color: $offwhite;
         }
       }
     }
@@ -872,7 +872,7 @@ label;@;iÉ;#0;%To;;i ;[o;;i ;["margin;[ ;	o;;;;	"10px 0 
 o;;i ;["background-color;[ ;	o;0	;1"accent;"accent;@;i×;@;i×;;o;;i ;["border-top;[ ;	o;?	;	[o;2;3["px;	i;@;4"	10px;iØ;5[ o;	;;;	"
 solid;@;iØo;0	;1"header;"header;@;iØ;@;iØ;@;A;@;iØ;;o;;i ;[o;;i ;["padding;[ ;	o;;;;	"20px 15px 30px 15px;@;@;iÚ;;;@;["#footer;iÙ;o;;" ;iÙ;[o;;[o;
 ;0;@,;o; ;!{ ;iÙ;[o;>;["footer;@,;iÙ;%To;;i ;[o;;i ;[o;;i ;[o;;i ;["
-color;[ ;	o;0	;1"sidecontainer;"sidecontainer;@;iß;@;iß;;;@;["a;iÞ;o;;" ;iÞ;[o;;[o;
+color;[ ;	o;0	;1"offwhite;"offwhite;@;iß;@;iß;;;@;["a;iÞ;o;;" ;iÞ;[o;;[o;
 ;0;@G;o; ;!{ ;iÞ;[o;"	;["a;@G;iÞ;#0;%T;@;["li;iÝ;o;;" ;iÝ;[o;;[o;
 ;0;@U;o; ;!{ ;iÝ;[o;"	;["li;@U;iÝ;#0;%T;@;["ul;iÜ;o;;" ;iÜ;[o;;[o;
 ;0;@c;o; ;!{ ;iÜ;[o;"	;["ul;@c;iÜ;#0;%To;;i ;[o;;i ;["background-color;[ ;	o;0	;1"header;"header;@;iä;@;iä;;o;;i ;["padding;[ ;	o;;;;	"10px 0px;@;@;iå;;o;;i ;["text-align;[ ;	o;;;;	"
