@@ -23,13 +23,13 @@
     <?php do_action( 'before' ); ?>
     <header role="banner">
       <div class="row no-pad block" id="header">
-        <div class="medium-4 columns centered logo">
+        <div class="medium-8 columns centered logo">
           <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" style="color: #222222;"><?php bloginfo( 'name' ); ?></a>
           <?php /**<main class="body large-9 columns" role="main">**/ ?>
           </h1>
         </div>
 
-        <div class="medium-6 medium-offset-2 columns hide-for-small no-pad">
+        <div class="medium-4 columns hide-for-small no-pad">
           <div class="top-nav">
             <ul>
               <li><a href="#">HOME</a></li><li><a href="#">ABOUT</a></li><li><a href="#">CONTACT</a></li>
