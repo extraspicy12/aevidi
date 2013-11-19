@@ -81,32 +81,24 @@ function twodudesfood_widgets_init() {
 		'after_title'   => '</h1>',
 	));
 	register_sidebar(array(
-		'name'          => __( 'Footer Far Left', 'twodudesfood' ),
-		'id'            => 'footer-far-left',
+		'name'          => __( 'Footer Left', 'twodudesfood' ),
+		'id'            => 'footer-left',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	));
 	register_sidebar(array(
-		'name'          => __( 'Footer Slight Left', 'twodudesfood' ),
-		'id'            => 'footer-slight-left',
+		'name'          => __( 'Footer Center', 'twodudesfood' ),
+		'id'            => 'footer-center',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	));
 	register_sidebar(array(
-		'name'          => __( 'Footer Slight Right', 'twodudesfood' ),
-		'id'            => 'footer-slight-right',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	));
-	register_sidebar(array(
-		'name'          => __( 'Footer Far Right', 'twodudesfood' ),
-		'id'            => 'footer-far-right',
+		'name'          => __( 'Footer Right', 'twodudesfood' ),
+		'id'            => 'footer-right',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
