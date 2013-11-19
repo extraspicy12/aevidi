@@ -5229,6 +5229,8 @@ header .divider {
         color: white;
         *zoom: 1;
         display: block; }
+      .container > header nav .menu > ul:first-of-type > li.current_page_item a {
+        background-color: #47a761; }
       .container > header nav .menu > ul:first-of-type > li {
         float: left;
         z-index: 200;
@@ -5457,6 +5459,9 @@ header .divider {
     border-top: 10px solid #2e8445; }
     .container > footer #footer {
       padding: 20px 15px 30px 15px; }
+    .container > footer h1 {
+      text-align: center;
+      font-size: 1.5em; }
     .container > footer ul li a {
       color: #daffe9; }
     .container > footer .copyright {

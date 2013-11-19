@@ -180,6 +180,11 @@ header .divider {
           *zoom: 1;
           display: block;
         }
+        > li.current_page_item {
+          a {
+            background-color: $accent;
+          }
+        }
         > li {
           float: left;
           z-index: 200;
@@ -472,6 +477,10 @@ header .divider {
     border-top: 10px solid $header;
     #footer {
       padding: 20px 15px 30px 15px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.5em;
     }
     ul {
       li {
