@@ -12,33 +12,29 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="row" id="footer">
-    <div class="large-3 medium-6 columns">
-      <?php if (!dynamic_sidebar('footer-far-left')):  ?>
+    <div class="medium-4 columns">
+      <?php if (!dynamic_sidebar('footer-left')):  ?>
       NULL
       <?php endif; ?>
     </div>
-    <div class="large-3 medium-6 columns">
-      <?php if (!dynamic_sidebar('footer-slight-left')):  ?>
+    <div class="medium-4 columns">
+      <?php if (!dynamic_sidebar('footer-center')):  ?>
       NULL
       <?php endif; ?>
     </div>
-    <div class="large-3 medium-6 columns">
-      <?php if (!dynamic_sidebar('footer-slight-right')):  ?>
-      NULL
-      <ul><li><a>asdasd</a>asd</li></ul>
-      <?php endif; ?>
-    </div>
-    <div class="large-3 medium-6 columns">
-      <?php if (!dynamic_sidebar('footer-far-right')):  ?>
+    <div class="medium-4 columns">
+      <?php if (!dynamic_sidebar('footer-right')):  ?>
       NULL
       <?php endif; ?>
     </div>
   </div>
   <div class="copyright">
     <div class="row">
+      <div class="large-12 columns">
 			<?php do_action( 'twodudesfood_credits' ); ?>
-			<?php printf( __( 'Theme for %1$s created by %2$s.', 'twodudesfood' ), '<i>Two Dudes Who Love Food</i>', '<a href="http://aeVidi.com/" rel="designer">aeVidi</a>' ); ?>
+      &copy; Two Dudes Who Love Food 2013. Theme designed by <a href="http://aevidi.com" target="_blank">aeVidi</a>
   		</div>
+    </div>
     </div>
   </footer><!-- #colophon -->
 </div><!-- #page -->

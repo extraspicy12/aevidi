@@ -491,16 +491,15 @@ header .divider {
     }
     .copyright {
       background-color: $header;
-      padding: 10px 0px;
-      text-align: right;
+      padding: 15px 0px;
+      text-align: center;
+      font-size: .9em;
+      font-family: 'Sanchez';
       a {
         color: $offwhite;
       }
       a:hover {
         color: #CCCCCC;
-      }
-      .row {
-        padding: 0 30px;
       }
     }
   }

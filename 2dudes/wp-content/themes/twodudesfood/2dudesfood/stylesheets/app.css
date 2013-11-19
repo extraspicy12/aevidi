@@ -5466,14 +5466,14 @@ header .divider {
       color: #daffe9; }
     .container > footer .copyright {
       background-color: #2e8445;
-      padding: 10px 0px;
-      text-align: right; }
+      padding: 15px 0px;
+      text-align: center;
+      font-size: .9em;
+      font-family: 'Sanchez'; }
       .container > footer .copyright a {
         color: #daffe9; }
       .container > footer .copyright a:hover {
         color: #CCCCCC; }
-      .container > footer .copyright .row {
-        padding: 0 30px; }
 
 /* Centering Classes */
 /* This parent can be any width and height */
