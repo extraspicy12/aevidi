@@ -109,9 +109,11 @@ function twodudesfood_comment( $comment, $args, $depth ) {
 				) ) );
 			?>
 		</article><!-- .comment-body -->
-
 	<?php
 	endif;
+	?>
+	</li>
+	<?php
 }
 endif; // ends check for twodudesfood_comment()
 

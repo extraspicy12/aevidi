@@ -5458,7 +5458,23 @@ header .divider {
     background-color: #47a761;
     border-top: 10px solid #2e8445; }
     .container > footer #footer {
-      padding: 20px 15px 30px 15px; }
+      padding: 15px; }
+      .container > footer #footer .aevidi_widget_recent_comments > ul#recentcomments > li.recentcomments {
+        list-style: none;
+        padding: 10px;
+        background-color: #2e8445;
+        margin: 10px 0;
+        border-radius: 5px;
+        width: 100%; }
+        .container > footer #footer .aevidi_widget_recent_comments > ul#recentcomments > li.recentcomments div.user-box {
+          position: relative;
+          padding: 0 7.5px 7.5px 0;
+          text-align: center;
+          border-radius: 5px; }
+          .container > footer #footer .aevidi_widget_recent_comments > ul#recentcomments > li.recentcomments div.user-box h5 {
+            color: #daffe9;
+            font-weight: 600;
+            font-size: 1em; }
     .container > footer h1 {
       text-align: center;
       font-size: 1.5em; }
@@ -5493,8 +5509,7 @@ header .divider {
    also be of any width and height */
 .centered {
   display: inline-block;
-  vertical-align: middle;
-  width: 300px; }
+  vertical-align: middle; }
 
 .no-pad {
   padding: 0 !important; }
