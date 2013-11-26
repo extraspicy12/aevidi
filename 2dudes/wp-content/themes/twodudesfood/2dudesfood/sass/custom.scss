@@ -476,7 +476,30 @@ header .divider {
     background-color: $accent;
     border-top: 10px solid $header;
     #footer {
-      padding: 20px 15px 30px 15px;
+      padding: 15px;
+      .aevidi_widget_recent_comments {
+        > ul#recentcomments {
+          > li.recentcomments {
+            list-style: none;
+            padding: 10px;
+            background-color: $header;
+            margin: 10px 0;
+            border-radius: 5px;
+            width: 100%;
+            div.user-box {
+              position: relative;
+              padding: 0 7.5px 7.5px 0;
+              text-align: center;
+              border-radius: 5px;
+              h5 {
+                color: $offwhite;
+                font-weight: 600;
+                font-size: 1em;
+              }
+            }
+          }
+        }
+      }
     }
     h1 {
       text-align: center;
@@ -526,7 +549,6 @@ header .divider {
 .centered {
   display: inline-block;
   vertical-align: middle;
-  width: 300px;
 }
 .no-pad {
   padding: 0 !important;

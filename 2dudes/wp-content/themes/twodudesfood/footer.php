@@ -12,17 +12,17 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="row" id="footer">
-    <div class="medium-4 columns">
+    <div class="medium-3 columns">
       <?php if (!dynamic_sidebar('footer-left')):  ?>
       NULL
       <?php endif; ?>
     </div>
-    <div class="medium-4 columns">
+    <div class="medium-6 columns">
       <?php if (!dynamic_sidebar('footer-center')):  ?>
       NULL
       <?php endif; ?>
     </div>
-    <div class="medium-4 columns">
+    <div class="medium-3 columns">
       <?php if (!dynamic_sidebar('footer-right')):  ?>
       NULL
       <?php endif; ?>
