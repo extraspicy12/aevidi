@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Widget Plugin
-Plugin URI: http://www.wpexplorer.com/
-Description: A simple plugin that adds a simple widget
+Plugin Name: aeVidi Recent Footer Comments
+Plugin URI: http://www.aevidi.com/
+Description: A plugin that displays recent comments in the footer
 Version: 1.0
-Author: WPExplorer
-Author URI: http://www.wpexplorer.com/
+Author: aeVidi
+Author URI: http://www.aevidi.com/
 License: GPL2
 */
 
