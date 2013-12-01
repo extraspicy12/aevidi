@@ -63,7 +63,7 @@ class aeVidi_Recent_Comments extends WP_Widget {
 			_prime_post_caches( $post_ids, strpos( get_option( 'permalink_structure' ), '%category%' ), false );
 
 			foreach ( (array) $comments as $comment) {
-			  $output .= '<li class="row recentcomments"><div class="small-4 medium-3 columns user-box"><h5>'.get_comment_author_link().'</h5>'.get_avatar($comment, '50').'</div><div class="small-8 medium-9 columns">'.get_comment_excerpt().'</div></li>';
+			  $output .= '<li class="row recentcomments"><div class="small-4 medium-3 columns user-box"><h5>'.get_comment_author_link().'</h5>'.get_avatar($comment, '50').'</div><div class="small-8 medium-9 columns"><h5><a href="' . esc_url( get_comment_link($comment->comment_ID) ) . '">' . get_the_title($comment->comment_post_ID) . '</a></h5>'.get_comment_excerpt().'</div></li>';
 /*
 
 				$output .=  '<li class="recentcomments"><div class="floater">'.get_avatar($comment, '32').'</div><span class="title"><span class="user-box">' . get_avatar($comment, '32') . ' ' . sprintf(_x('%1$s on %2$s', 'widgets'),  get_comment_author_link().'</span>', '<a href="' . esc_url( get_comment_link($comment->comment_ID) ) . '">' . get_the_title($comment->comment_post_ID) . '</a>').'</span><span class="comment-content">asd asdasdasdadasdas d<br>asdasd asdasd adasd<br>,asdasdasdas dasdasdasdasd</span></li>';
