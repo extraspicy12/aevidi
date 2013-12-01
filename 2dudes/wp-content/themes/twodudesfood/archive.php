@@ -27,7 +27,7 @@ get_header(); ?>
 							/* Queue the first post, that way we know
 							 * what author we're dealing with (if that is the case).
 							*/
-							the_post();
+							the_excerpt();
 							printf( __( 'Author: %s', 'twodudesfood' ), '<span class="vcard">' . get_the_author() . '</span>' );
 							/* Since we called the_post() above, we need to
 							 * rewind the loop back to the beginning that way
