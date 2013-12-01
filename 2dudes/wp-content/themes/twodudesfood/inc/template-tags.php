@@ -30,22 +30,21 @@ function twodudesfood_content_nav( $nav_id ) {
 	$nav_class = ( is_single() ) ? 'post-navigation' : 'paging-navigation';
 
 	?>
-	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'twodudesfood' ); ?></h1>
+	<nav role="row navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twodudesfood' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twodudesfood' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="medium-4 columns nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twodudesfood' ) . '</span> %title' ); ?>
+		<?php next_post_link( '<div class="medium-4 columns medium-offset-4 nav-next" style="text-align:right;">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twodudesfood' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twodudesfood' ) ); ?></div>
+		<div class="medium-4 columns nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twodudesfood' ) ); ?></div>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twodudesfood' ) ); ?></div>
+		<div class="medium-4 columns medium-offset-4 nav-next" style="text-align:right;"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twodudesfood' ) ); ?></div>
 		<?php endif; ?>
 
 	<?php endif; ?>
@@ -74,19 +73,28 @@ function twodudesfood_comment( $comment, $args, $depth ) {
 	<?php else : ?>
 
 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
-		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
-			<footer class="comment-meta">
-				<div class="comment-author vcard">
-					<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-					<?php printf( __( '%s <span class="says">says:</span>', 'twodudesfood' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body row collapse">
+			<div class="comment-avatar small-2 columns">
+				<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, '72' ); ?>
+			</div>
+			<footer class="comment-meta small-10 columns">
+				<div class="comment-author">
+					<?php printf( __( '%s', 'twodudesfood' ), sprintf( '<span class="author-name">%s</span>', get_comment_author_link() ) ); ?>
 				</div><!-- .comment-author -->
 
 				<div class="comment-metadata">
-					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
-						<time datetime="<?php comment_time( 'c' ); ?>">
-							<?php printf( _x( '%1$s at %2$s', '1: date, 2: time', 'twodudesfood' ), get_comment_date(), get_comment_time() ); ?>
-						</time>
-					</a>
+					<time datetime="<?php comment_time( 'c' ); ?>">
+						<?php printf( _x( '%1$s at %2$s', '1: date, 2: time', 'twodudesfood' ), get_comment_date(), get_comment_time() ); ?>
+					</time>
+					<?php
+          	comment_reply_link( array_merge( $args, array(
+          		'add_below' => 'div-comment',
+          		'depth'     => $depth,
+          		'max_depth' => $args['max_depth'],
+          		'before'    => '<span class="">',
+          		'after'     => '</span>',
+          	) ) );
+          ?>
 					<?php edit_comment_link( __( 'Edit', 'twodudesfood' ), '<span class="edit-link">', '</span>' ); ?>
 				</div><!-- .comment-metadata -->
 
@@ -95,19 +103,10 @@ function twodudesfood_comment( $comment, $args, $depth ) {
 				<?php endif; ?>
 			</footer><!-- .comment-meta -->
 
-			<div class="comment-content">
+			<div class="comment-content small-10 columns">
 				<?php comment_text(); ?>
 			</div><!-- .comment-content -->
 
-			<?php
-				comment_reply_link( array_merge( $args, array(
-					'add_below' => 'div-comment',
-					'depth'     => $depth,
-					'max_depth' => $args['max_depth'],
-					'before'    => '<div class="reply">',
-					'after'     => '</div>',
-				) ) );
-			?>
 		</article><!-- .comment-body -->
 	<?php
 	endif;

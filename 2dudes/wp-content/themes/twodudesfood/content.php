@@ -23,7 +23,7 @@
   	</div><!-- .entry-summary -->
   	<?php else : ?>
   	<div class="entry-content">
-  		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twodudesfood' ) ); ?>
+  		<?php the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twodudesfood' ) ); ?>
   		<?php
   			wp_link_pages( array(
   				'before' => '<div class="page-links">' . __( 'Pages:', 'twodudesfood' ),

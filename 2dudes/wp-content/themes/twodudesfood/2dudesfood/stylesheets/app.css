@@ -5304,6 +5304,10 @@ header .divider {
   .container .page-container {
     padding: 0 15px 15px 15px;
     background-color: white; }
+    .container .page-container .body #nav-below div .nav-previous {
+      text-align: left; }
+    .container .page-container .body #nav-below div .nav-next {
+      text-align: right; }
     .container .page-container .body .slider ul li img {
       min-width: 100%;
       height: auto; }
@@ -5319,9 +5323,18 @@ header .divider {
       text-transform: uppercase; }
     .container .page-container .body article {
       margin-bottom: 30px; }
+      .container .page-container .body article header h1 {
+        font-weight: 500;
+        font-size: 3em;
+        margin-bottom: 12px; }
+      .container .page-container .body article header time.updated:before {
+        content: " (Updated on "; }
+      .container .page-container .body article header time.updated:after {
+        content: ")"; }
       .container .page-container .body article h2 {
         margin-bottom: 0;
-        font-weight: 400; }
+        font-weight: 400;
+        font-size: 2.25em; }
       .container .page-container .body article h5 {
         margin-top: 0;
         color: #AEAEAE;
@@ -5333,6 +5346,47 @@ header .divider {
         margin-bottom: 10px;
         height: 3px;
         width: 100%; }
+    .container .page-container .body #comments h2 {
+      font-size: 2.25em;
+      font-weight: 400; }
+    .container .page-container .body #comments #reply-title {
+      display: none; }
+    .container .page-container .body #comments #respond #commentform .logged-in-as {
+      display: none; }
+    .container .page-container .body #comments #respond #commentform .comment-form-comment label {
+      display: none; }
+    .container .page-container .body #comments #respond #commentform .comment-form-comment textarea#comment {
+      background-color: #EEEEEE;
+      resize: none;
+      height: 150px; }
+    .container .page-container .body #comments #respond #commentform .form-allowed-tags {
+      display: none; }
+    .container .page-container .body #comments #respond #commentform .form-submit {
+      text-align: right; }
+    .container .page-container .body #comments ol.comment-list li.comment, .container .page-container .body #comments ol.comment-list ul.children {
+      list-style: none; }
+    .container .page-container .body #comments ol.comment-list ul.children {
+      margin-left: 5%; }
+    .container .page-container .body #comments ol.comment-list li.comment div.comment-avatar {
+      padding-right: 10px; }
+      .container .page-container .body #comments ol.comment-list li.comment div.comment-avatar img {
+        max-width: 72px;
+        width: 100%;
+        height: auto; }
+    .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta {
+      background-color: #EEEEEE;
+      padding: 5px; }
+      .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-author {
+        color: #2e8445;
+        position: relative;
+        float: left;
+        font-size: 1em; }
+      .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-metadata {
+        position: relative;
+        float: right;
+        text-align: right; }
+        .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-metadata time {
+          color: #888888; }
     .container .page-container .sidebar .collapse {
       padding: 5px 15px 0 15px; }
     .container .page-container .sidebar .social-media {
@@ -5366,6 +5420,7 @@ header .divider {
       .container .page-container .sidebar aside h1 {
         color: #daffe9;
         font-size: 1.75em;
+        font-weight: 500;
         text-align: center; }
     .container .page-container .sidebar .widget_wp_sidebarlogin {
       background-color: #47a761;
@@ -5477,7 +5532,8 @@ header .divider {
             font-size: 1em; }
     .container > footer h1 {
       text-align: center;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      font-weight: 500; }
     .container > footer ul li a {
       color: #daffe9; }
     .container > footer .copyright {
