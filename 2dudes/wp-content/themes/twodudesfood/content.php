@@ -10,7 +10,7 @@
   <div class="large-12 columns">
   	<header class="entry-header">
   		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-  		<?php if ( 'post' == get_post_type() ) : ?>
+  		<?php if ( 'post' == get_post_type() || 'review' == get_post_type() ) : ?>
   		<h5>
   			<?php twodudesfood_posted_on(); ?>
   		</h5><!-- .entry-meta -->

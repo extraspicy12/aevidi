@@ -288,9 +288,13 @@ header .divider {
 
   .page-container {
     padding: 0 15px 15px 15px;
+    @media screen and (max-width:757px) {
+      padding: 0;
+    }
     background-color: white;
     .body {
       #nav-below {
+      margin-top: 50px;
         div {
           .nav-previous {
             text-align: left;
@@ -325,7 +329,6 @@ header .divider {
         }
       }
       article {
-        margin-bottom: 30px;
         header {
           h1 {
             font-weight: 500;
@@ -348,6 +351,7 @@ header .divider {
           margin-top: 0;
           color: #AEAEAE;
           font-size: .9em;
+          line-height: 1em;
           font-weight: 400;
           text-transform: uppercase;
         }
@@ -358,6 +362,9 @@ header .divider {
           height: 3px;
           width: 100%;
         }
+      }
+      article.status-publish {
+        margin-bottom: 30px;
       }
       #comments {
         h2 {
@@ -379,37 +386,80 @@ header .divider {
             .form-allowed-tags { display: none; }
             .form-submit {
               text-align: right;
+              @media screen and (max-width:757px) {
+                text-align: center;
+              }
             }
           }
         }
         ol.comment-list {
+          li article {
+            padding-bottom: 20px;
+            .comment-content p {
+              padding-bottom: 0;
+            }
+          }
           li.comment, ul.children {
             list-style: none;
           }
           ul.children {
-            margin-left: 5%;
+            padding-left: 5%;
+            @media screen and (max-width:757px) {
+              padding-left: 0;
+            }
+          }
+          > li.comment:nth-of-type(odd) {
+            background-color: $offwhite; /* #e3e3e3 */
+/*
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+*/
           }
           li.comment {
             div.comment-avatar {
               img {
-                max-width: 72px;
+                min-width: 50px;
                 width: 100%;
                 height: auto;
               }
               padding-right: 10px;
             }
             footer.comment-meta {
+              span, time {
+                display: inline-block;
+                height: 100%;
+              }
               background-color: #EEEEEE;
               padding: 5px;
+/*               border-radius: 5px; */
+              line-height: 36px;
               div.comment-author {
-                color: $header;
+                  position: relative;
+                  float: left;
+                  font-size: 24px;
+                  span.author-name {
+                    color: $header;
+                  }
+              }
+              div.comment-reply {
                 position: relative;
                 float: left;
-                font-size: 1em;
+                font-size: 16px;
+                color: #888888;
+                padding-left: 20px;
+                .arrow-right {
+                  	width: 0;
+                  	height: 0;
+                  	border-top: 5px solid transparent;
+                  	border-bottom: 5px solid transparent;
+                  	border-left: 5px solid #888888;
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;  /* added */
+                    margin-top: -5px;
+                 }
               }
               div.comment-metadata {
-                position: relative;
-                float: right;
                 text-align: right;
                 time {
                   color: #888888;

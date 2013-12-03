@@ -19,9 +19,10 @@ get_header(); ?>
   <div class="large-12 columns">
     <ul data-orbit>
 
-  <?php query_posts('showposts=5');
-  if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
+  <?php
+  $query = new WP_Query( 'offset=1' );
+  if ( $query->have_posts() ) :
+    while ( $query->have_posts() ) : $query->the_post();
       if (has_post_thumbnail()): ?>
       <li <?php post_class(); ?> id="post-<?php the_ID(); ?>">
             <a href="<?php the_permalink(); ?>" rel="bookmark" >
@@ -42,17 +43,15 @@ get_header(); ?>
   <?php
   else :
   endif;
-  wp_reset_postdata();
+  rewind_posts();
   ?>
     </ul>
   </div>
   </div>
 
-		<?php $posts = query_posts($query_string);
-		if ( have_posts() ) : ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php
+		if ( have_posts() ) :
+			while ( have_posts() ) : the_post(); ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
@@ -70,7 +69,8 @@ get_header(); ?>
 
 			<?php get_template_part( 'no-results', 'index' ); ?>
 
-		<?php endif; ?>
+		<?php endif;   wp_reset_postdata(); wp_reset_query();
+  rewind_posts();?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

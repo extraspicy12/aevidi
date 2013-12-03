@@ -86,4 +86,16 @@ $(document).ready(function() {
         $(".search-toggle-button, .bottom").animate({backgroundColor: '#47a761'}, 200);
     }
   });
+
+  $("#comments ol.comment-list").find("ul.children").each(function() {
+    var parentUser = $(this).prev().find("> article > footer.comment-meta div.comment-author span.author-name").html();
+    $(this).css('background-color', $(this).prev().css('background-color'));
+/*
+    $(this).css('border-bottom-left-radius', '5px');
+    $(this).css('border-bottom-right-radius', '5px');
+*/
+    var child = $(this).find("> li.comment > article > footer.comment-meta div.comment-author span.author-name");
+    child.parent().after("<div class=\"comment-reply\"><div class=\"arrow-right\"></div> "+parentUser+"</div>");
+  });
+  //for each children? do we want asasd > asdasd > asdasd ?
 });
