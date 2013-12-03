@@ -5304,10 +5304,15 @@ header .divider {
   .container .page-container {
     padding: 0 15px 15px 15px;
     background-color: white; }
-    .container .page-container .body #nav-below div .nav-previous {
-      text-align: left; }
-    .container .page-container .body #nav-below div .nav-next {
-      text-align: right; }
+    @media screen and (max-width: 757px) {
+      .container .page-container {
+        padding: 0; } }
+    .container .page-container .body #nav-below {
+      margin-top: 50px; }
+      .container .page-container .body #nav-below div .nav-previous {
+        text-align: left; }
+      .container .page-container .body #nav-below div .nav-next {
+        text-align: right; }
     .container .page-container .body .slider ul li img {
       min-width: 100%;
       height: auto; }
@@ -5321,31 +5326,32 @@ header .divider {
       font-size: .75em;
       font-weight: 400;
       text-transform: uppercase; }
-    .container .page-container .body article {
+    .container .page-container .body article header h1 {
+      font-weight: 500;
+      font-size: 3em;
+      margin-bottom: 12px; }
+    .container .page-container .body article header time.updated:before {
+      content: " (Updated on "; }
+    .container .page-container .body article header time.updated:after {
+      content: ")"; }
+    .container .page-container .body article h2 {
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 2.25em; }
+    .container .page-container .body article h5 {
+      margin-top: 0;
+      color: #AEAEAE;
+      font-size: .9em;
+      line-height: 1em;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .container .page-container .body article .divider {
+      background-color: #47a761;
+      margin-bottom: 10px;
+      height: 3px;
+      width: 100%; }
+    .container .page-container .body article.status-publish {
       margin-bottom: 30px; }
-      .container .page-container .body article header h1 {
-        font-weight: 500;
-        font-size: 3em;
-        margin-bottom: 12px; }
-      .container .page-container .body article header time.updated:before {
-        content: " (Updated on "; }
-      .container .page-container .body article header time.updated:after {
-        content: ")"; }
-      .container .page-container .body article h2 {
-        margin-bottom: 0;
-        font-weight: 400;
-        font-size: 2.25em; }
-      .container .page-container .body article h5 {
-        margin-top: 0;
-        color: #AEAEAE;
-        font-size: .9em;
-        font-weight: 400;
-        text-transform: uppercase; }
-      .container .page-container .body article .divider {
-        background-color: #47a761;
-        margin-bottom: 10px;
-        height: 3px;
-        width: 100%; }
     .container .page-container .body #comments h2 {
       font-size: 2.25em;
       font-weight: 400; }
@@ -5363,27 +5369,65 @@ header .divider {
       display: none; }
     .container .page-container .body #comments #respond #commentform .form-submit {
       text-align: right; }
+      @media screen and (max-width: 757px) {
+        .container .page-container .body #comments #respond #commentform .form-submit {
+          text-align: center; } }
+    .container .page-container .body #comments ol.comment-list li article {
+      padding-bottom: 20px; }
+      .container .page-container .body #comments ol.comment-list li article .comment-content p {
+        padding-bottom: 0; }
     .container .page-container .body #comments ol.comment-list li.comment, .container .page-container .body #comments ol.comment-list ul.children {
       list-style: none; }
     .container .page-container .body #comments ol.comment-list ul.children {
-      margin-left: 5%; }
+      padding-left: 5%; }
+      @media screen and (max-width: 757px) {
+        .container .page-container .body #comments ol.comment-list ul.children {
+          padding-left: 0; } }
+    .container .page-container .body #comments ol.comment-list > li.comment:nth-of-type(odd) {
+      background-color: #daffe9;
+      /* #e3e3e3 */
+      /*
+                  border-top-left-radius: 5px;
+                  border-top-right-radius: 5px;
+      */ }
     .container .page-container .body #comments ol.comment-list li.comment div.comment-avatar {
       padding-right: 10px; }
       .container .page-container .body #comments ol.comment-list li.comment div.comment-avatar img {
-        max-width: 72px;
+        min-width: 50px;
         width: 100%;
         height: auto; }
     .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta {
       background-color: #EEEEEE;
-      padding: 5px; }
+      padding: 5px;
+      /*               border-radius: 5px; */
+      line-height: 36px; }
+      .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta span, .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta time {
+        display: inline-block;
+        height: 100%; }
       .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-author {
-        color: #2e8445;
         position: relative;
         float: left;
-        font-size: 1em; }
-      .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-metadata {
+        font-size: 24px; }
+        .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-author span.author-name {
+          color: #2e8445; }
+      .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-reply {
         position: relative;
-        float: right;
+        float: left;
+        font-size: 16px;
+        color: #888888;
+        padding-left: 20px; }
+        .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-reply .arrow-right {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 5px solid #888888;
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          /* added */
+          margin-top: -5px; }
+      .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-metadata {
         text-align: right; }
         .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-metadata time {
           color: #888888; }

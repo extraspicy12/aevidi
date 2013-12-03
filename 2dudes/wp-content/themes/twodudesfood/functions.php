@@ -180,6 +180,134 @@ function twodudesfood_scripts() {
 add_action( 'wp_enqueue_scripts', 'twodudesfood_scripts' );
 
 /**
+ * Add custom post type for reviews
+ */
+function review_register() {
+
+	$labels = array(
+		'name' => _x('Reviews', 'post type general name'),
+		'singular_name' => _x('Review', 'post type singular name'),
+		'add_new' => _x('Add New', 'portfolio item'),
+		'add_new_item' => __('Add New Review'),
+		'edit_item' => __('Edit Review'),
+		'new_item' => __('New Review'),
+		'view_item' => __('View Review'),
+		'search_items' => __('Search Reviews'),
+		'not_found' =>  __('Nothing found'),
+		'not_found_in_trash' => __('Nothing found in Trash'),
+		'parent_item_colon' => ''
+	);
+
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'query_var' => true,
+		'menu_icon' => get_stylesheet_directory_uri() . '/article16.png',
+		'rewrite' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'menu_position' => null,
+		'supports' => array('title','editor','thumbnail','comments','revisions','post-formats')
+	  );
+
+	register_post_type( 'review' , $args );
+
+  register_taxonomy("Cuisines", array("review"), array("hierarchical" => true, "label" => "Types of Cuisine", "singular_label" => "Type of Cuisine", "rewrite" => true));
+}
+add_action('init', 'review_register');
+
+/**
+ * Add reviews to main query
+ */
+function home_filter($query) {
+  if (!is_page() && !is_admin() && $query->is_main_query() )
+      $query->set('post_type', array( 'post', 'review' ) );
+}
+add_action('pre_get_posts','home_filter');
+
+/**
+ * Add meta boxes for reviews
+ */
+function admin_init(){
+  add_meta_box("review_information", "Information about the Restaurant", "review_information", "review", "side", "low");
+  add_meta_box("review_feedback", "Feedback / Your thoughts about the Restaurant", "review_feedback", "review", "normal", "high");
+}
+add_action("admin_init", "admin_init");
+
+function review_information(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $address = $custom["address"][0];
+  $phone = $custom["phone"][0];
+  ?>
+  <p><label>Address:</label><br />
+  <textarea rows="5" style="resize:none;width:100%;" name="address"><?php echo $address; ?></textarea></p>
+  <p><label>Phone Number:</label><br />
+  <textarea rows="1" style="resize:none;width:100%;" name="phone"><?php echo $phone; ?></textarea></p>
+  <?php
+}
+
+function review_feedback(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $rating = $custom["rating"][0];
+  $summary = $custom["summary"][0];
+  ?>
+  <p><label>Rating (F to A+):</label><br />
+  <textarea rows="1" style="resize:none;width:100%;" name="rating"><?php echo $rating; ?></textarea></p>
+  <p><label>Feedback (Summarize your review)</label><br />
+  <textarea rows="5" style="resize:none;width:100%;" name="summary"><?php echo $summary; ?></textarea></p>
+  <?php
+}
+
+function review_save_details(){
+  global $post;
+
+  update_post_meta($post->ID, "address", $_POST["address"]);
+  update_post_meta($post->ID, "phone", $_POST["phone"]);
+  update_post_meta($post->ID, "rating", $_POST["rating"]);
+  update_post_meta($post->ID, "feedback", $_POST["feedback"]);
+}
+add_action('save_post', 'review_save_details');
+
+
+function review_edit_columns($columns){
+  $columns = array(
+    "cb" => "<input type=\"checkbox\" />",
+    "title" => "Review Title",
+    "description" => "Description",
+    "rating" => "Rating",
+    "cuisines" => "Cuisine",
+  );
+
+  return $columns;
+}
+
+function review_custom_columns($column){
+  global $post;
+
+  switch ($column) {
+    case "description":
+      the_excerpt();
+      break;
+    case "rating":
+      $custom = get_post_custom();
+      echo $custom["rating"][0];
+      break;
+    case "cuisines":
+      echo get_the_term_list($post->ID, 'Cuisine', '', ', ','');
+      break;
+  }
+}
+
+add_action("manage_posts_custom_column",  "review_custom_columns");
+add_filter("manage_edit-portfolio_columns", "review_edit_columns");
+
+
+
+/**
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';
