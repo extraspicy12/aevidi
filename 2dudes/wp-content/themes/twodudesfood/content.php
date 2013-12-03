@@ -55,8 +55,19 @@
   				<?php printf( __( 'Tagged %1$s', 'twodudesfood' ), $tags_list ); ?>
   			</span>
   			<?php endif; // End if $tags_list ?>
-  		<?php endif; // End if 'post' == get_post_type() ?>
+  		<?php endif; ?>
+  		<?php if ('review' == get_post_type() ) : // End if 'post' == get_post_type() ?>
+  			<?php
+  				/* translators: used between list items, there is a space after the comma */
+  				$categories_list = get_the_term_list( $post->ID, 'reviews', '', ', ', ' ' );
+  				if ( $categories_list ) :
+  			?>
+  			<span class="cat-links">
+  				<?php printf( __( 'Posted in %1$s', 'twodudesfood' ), $categories_list ); ?>
+  			</span>
+  			<?php endif; // End if categories ?>
 
+  		<?php endif; ?>
   		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
   		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twodudesfood' ), __( '1 Comment', 'twodudesfood' ), __( '% Comments', 'twodudesfood' ) ); ?></span>
   		<?php endif; ?>

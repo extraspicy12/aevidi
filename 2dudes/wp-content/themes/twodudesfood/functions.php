@@ -55,7 +55,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 	/**
 	 * Enable support for Post Formats
 	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+/* 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) ); */
 
 	/**
 	 * Setup the WordPress core custom background feature.
@@ -198,6 +198,7 @@ function review_register() {
 		'parent_item_colon' => ''
 	);
 
+/*
 	$args = array(
 		'labels' => $labels,
 		'public' => true,
@@ -205,18 +206,53 @@ function review_register() {
 		'show_ui' => true,
 		'query_var' => true,
 		'menu_icon' => get_stylesheet_directory_uri() . '/article16.png',
-		'rewrite' => true,
+		'rewrite' => false,
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'menu_position' => null,
-		'supports' => array('title','editor','thumbnail','comments','revisions','post-formats')
+		'supports' => array('title','editor','thumbnail','comments','revisions')
 	  );
+*/
 
-	register_post_type( 'review' , $args );
+  $rewrite = array(
+      'slug'                => 'review',
+      'with_front'          => true,
+      'pages'               => true,
+      'feeds'               => true,
+  );
 
-  register_taxonomy("Cuisines", array("review"), array("hierarchical" => true, "label" => "Types of Cuisine", "singular_label" => "Type of Cuisine", "rewrite" => true));
+  $args = array(
+      'label'               => __( 'review'),
+      'description'         => __( 'Reviews' ),
+      'labels'              => $labels,
+      'supports'            => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', ),
+      'taxonomies'          => array( 'reviews' ),
+      'hierarchical'        => false,
+      'public'              => true,
+      'show_ui'             => true,
+      'show_in_menu'        => true,
+      'show_in_nav_menus'   => true,
+      'show_in_admin_bar'   => true,
+      'menu_position'       => null,
+      'menu_icon'           => '',
+      'can_export'          => true,
+      'has_archive'         => true,
+      'exclude_from_search' => false,
+      'publicly_queryable'  => true,
+      'query_var'           => 'review',
+      'rewrite'             => $rewrite,
+      'capability_type'     => 'post',
+  );
+
+  register_post_type( 'review' , $args );
+
 }
 add_action('init', 'review_register');
+
+function aevidi_build_taxonomies() {
+    register_taxonomy( 'reviews', 'reviews', array( 'hierarchical' => true, 'label' => 'Review Categories', "singular_label" => "Review Category", 'query_var' => true, 'rewrite' => true ) );
+}
+add_action( 'init', 'aevidi_build_taxonomies', 0 );
 
 /**
  * Add reviews to main query
@@ -226,6 +262,25 @@ function home_filter($query) {
       $query->set('post_type', array( 'post', 'review' ) );
 }
 add_action('pre_get_posts','home_filter');
+
+
+function ucc_getarchives_where_filter( $where , $r ) {
+ $post_types = "'post' , 'review'";
+  return str_replace( "post_type = 'post'" , "post_type IN ( $post_types )" , $where );
+}
+add_filter( 'getarchives_where' , 'ucc_getarchives_where_filter' , 10 , 2 );
+
+/*
+function namespace_add_custom_types( $query ) {
+  if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'review'
+		));
+	  return $query;
+	}
+}
+add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
+*/
 
 /**
  * Add meta boxes for reviews

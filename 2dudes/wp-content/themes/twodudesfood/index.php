@@ -20,10 +20,11 @@ get_header(); ?>
     <ul data-orbit>
 
   <?php
-  $query = new WP_Query( 'offset=1' );
+  $query = new WP_Query( 'post_type=any&nopaging=true' );
+  $count = 0;
   if ( $query->have_posts() ) :
-    while ( $query->have_posts() ) : $query->the_post();
-      if (has_post_thumbnail()): ?>
+    while ( $query->have_posts() && $count < 5 ) : $query->the_post();
+      if (has_post_thumbnail()): $count++; ?>
       <li <?php post_class(); ?> id="post-<?php the_ID(); ?>">
             <a href="<?php the_permalink(); ?>" rel="bookmark" >
             	<img src="<?php bloginfo('stylesheet_directory'); ?>/timthumb.php?src=<?php
