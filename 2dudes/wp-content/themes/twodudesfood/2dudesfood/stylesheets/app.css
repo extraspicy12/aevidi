@@ -5096,7 +5096,7 @@ header .divider {
     transition: all .125s ease-in-out; }
   .container a:hover {
     transition: all .125s ease-in-out;
-    color: #CCCCCC; }
+    color: #AEAEAE; }
   .container .button-primary, .container #submit {
     border-style: solid;
     border-width: 1px;
@@ -5334,17 +5334,102 @@ header .divider {
       content: " (Updated on "; }
     .container .page-container .body article header time.updated:after {
       content: ")"; }
+    .container .page-container .body article header .great {
+      border-bottom-color: #2e8445;
+      color: #2e8445;
+      background-color: #daffe9; }
+    .container .page-container .body article header .good {
+      border-bottom-color: #85AF4B;
+      color: #85AF4B;
+      background-color: #B4D091; }
+    .container .page-container .body article header .average {
+      border-bottom-color: #B5BA50;
+      color: #B5BA50;
+      background-color: #D3D796; }
+    .container .page-container .body article header .bad {
+      border-bottom-color: #BD9751;
+      color: #BD9751;
+      background-color: #D9C397; }
+    .container .page-container .body article header .poor {
+      border-bottom-color: #BD5B51;
+      color: #BD5B51;
+      background-color: #D9A097; }
+    .container .page-container .body article header .rating h1 {
+      font-size: 5em;
+      line-height: 100px;
+      font-weight: 600;
+      font-family: "Sanchez";
+      padding: 20px 10px;
+      margin: 25px 0 0 0;
+      border-bottom-width: 5px;
+      border-bottom-style: solid;
+      text-align: center; }
+    .container .page-container .body article header blockquote {
+      font-size: 1.5em;
+      font-weight: 500;
+      font-family: "Sanchez";
+      padding: 5px 10px;
+      color: #AEAEAE;
+      quotes: "\201C" "\201D" "\2018" "\2019";
+      text-align: center;
+      border: none; }
+      .container .page-container .body article header blockquote .great {
+        border-bottom-color: none;
+        color: #2e8445;
+        background-color: transparent; }
+      .container .page-container .body article header blockquote .good {
+        border-bottom-color: none;
+        color: #85AF4B;
+        background-color: transparent; }
+      .container .page-container .body article header blockquote .average {
+        border-bottom-color: none;
+        color: #B5BA50;
+        background-color: transparent; }
+      .container .page-container .body article header blockquote .bad {
+        border-bottom-color: none;
+        color: #BD9751;
+        background-color: transparent; }
+      .container .page-container .body article header blockquote .poor {
+        border-bottom-color: none;
+        color: #BD5B51;
+        background-color: transparent; }
+    .container .page-container .body article header blockquote:before {
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.15em;
+      vertical-align: -0.4em; }
+    .container .page-container .body article header blockquote:after {
+      content: close-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-left: 0.15em;
+      vertical-align: -0.6em; }
+    .container .page-container .body article header blockquote p {
+      display: inline;
+      font-size: 1.5em;
+      font-weight: 500;
+      font-family: "Sanchez"; }
     .container .page-container .body article h2 {
       margin-bottom: 0;
       font-weight: 400;
       font-size: 2.25em; }
     .container .page-container .body article h5 {
-      margin-top: 0;
+      margin-bottom: 6px;
       color: #AEAEAE;
       font-size: .9em;
       line-height: 1em;
       font-weight: 400;
       text-transform: uppercase; }
+    .container .page-container .body article ul li {
+      margin-bottom: 12px;
+      font-family: "Sanchez";
+      color: #AEAEAE;
+      font-size: .9em;
+      line-height: 1em;
+      font-weight: 400;
+      text-transform: uppercase;
+      list-style: none; }
     .container .page-container .body article .divider {
       background-color: #47a761;
       margin-bottom: 10px;
@@ -5414,14 +5499,14 @@ header .divider {
         position: relative;
         float: left;
         font-size: 16px;
-        color: #888888;
-        padding-left: 20px; }
+        color: #AEAEAE;
+        padding-left: 27.5px; }
         .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-reply .arrow-right {
           width: 0;
           height: 0;
           border-top: 5px solid transparent;
           border-bottom: 5px solid transparent;
-          border-left: 5px solid #888888;
+          border-left: 10px solid #AEAEAE;
           position: absolute;
           left: 10px;
           top: 50%;
@@ -5430,7 +5515,7 @@ header .divider {
       .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-metadata {
         text-align: right; }
         .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-metadata time {
-          color: #888888; }
+          color: #AEAEAE; }
     .container .page-container .sidebar .collapse {
       padding: 5px 15px 0 15px; }
     .container .page-container .sidebar .social-media {
@@ -5460,7 +5545,7 @@ header .divider {
       .container .page-container .sidebar aside a {
         color: #daffe9; }
       .container .page-container .sidebar aside a:hover {
-        color: #CCCCCC; }
+        color: #AEAEAE; }
       .container .page-container .sidebar aside h1 {
         color: #daffe9;
         font-size: 1.75em;
@@ -5589,7 +5674,7 @@ header .divider {
       .container > footer .copyright a {
         color: #daffe9; }
       .container > footer .copyright a:hover {
-        color: #CCCCCC; }
+        color: #AEAEAE; }
 
 /* Centering Classes */
 /* This parent can be any width and height */

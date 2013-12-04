@@ -97,5 +97,4 @@ $(document).ready(function() {
     var child = $(this).find("> li.comment > article > footer.comment-meta div.comment-author span.author-name");
     child.parent().after("<div class=\"comment-reply\"><div class=\"arrow-right\"></div> "+parentUser+"</div>");
   });
-  //for each children? do we want asasd > asdasd > asdasd ?
 });

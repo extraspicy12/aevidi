@@ -323,7 +323,7 @@ function review_save_details(){
   update_post_meta($post->ID, "address", $_POST["address"]);
   update_post_meta($post->ID, "phone", $_POST["phone"]);
   update_post_meta($post->ID, "rating", $_POST["rating"]);
-  update_post_meta($post->ID, "feedback", $_POST["feedback"]);
+  update_post_meta($post->ID, "summary", $_POST["summary"]);
 }
 add_action('save_post', 'review_save_details');
 
