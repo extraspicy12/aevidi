@@ -38,7 +38,7 @@ header .divider {
   }
   a:hover {
     transition: all .125s ease-in-out;
-    color: #CCCCCC;
+    color: #AEAEAE;
   }
   .button-primary, #submit {
     @include button-base;
@@ -341,6 +341,97 @@ header .divider {
           time.updated:after {
             content: ")";
           }
+          .great {
+            border-bottom-color: $header;
+            color: $header;
+            background-color: $offwhite;
+          }
+          .good {
+            border-bottom-color: #85AF4B;
+            color: #85AF4B;
+            background-color: #B4D091;
+          }
+          .average {
+            border-bottom-color: #B5BA50;
+            color: #B5BA50;
+            background-color: #D3D796;
+          }
+          .bad {
+            border-bottom-color: #BD9751;
+            color: #BD9751;
+            background-color: #D9C397;
+          }
+          .poor {
+            border-bottom-color: #BD5B51;
+            color: #BD5B51;
+            background-color: #D9A097;
+          }
+          .rating h1 {
+            font-size: 5em;
+            line-height: 100px;
+            font-weight: 600;
+            font-family: "Sanchez";
+            padding: 20px 10px;
+            margin: 25px 0 0 0;
+            border-bottom-width: 5px;
+            border-bottom-style: solid;
+            text-align: center;
+          }
+          blockquote {
+            font-size: 1.5em;
+            font-weight: 500;
+            font-family: "Sanchez";
+            padding: 5px 10px;
+            color: #AEAEAE;
+            quotes: "\201C""\201D""\2018""\2019";
+            text-align: center;
+            border: none;
+            .great {
+              border-bottom-color: none;
+              color: $header;
+              background-color: transparent;
+            }
+            .good {
+              border-bottom-color: none;
+              color: #85AF4B;
+              background-color: transparent;
+            }
+            .average {
+              border-bottom-color: none;
+              color: #B5BA50;
+              background-color: transparent;
+            }
+            .bad {
+              border-bottom-color: none;
+              color: #BD9751;
+              background-color: transparent;
+            }
+            .poor {
+              border-bottom-color: none;
+              color: #BD5B51;
+              background-color: transparent;
+            }
+          }
+          blockquote:before {
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.15em;
+            vertical-align: -0.4em;
+          }
+          blockquote:after {
+            content: close-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-left: 0.15em;
+            vertical-align: -0.6em;
+          }
+          blockquote p {
+            display: inline;
+            font-size: 1.5em;
+            font-weight: 500;
+            font-family: "Sanchez";
+          }
         }
         h2 {
           margin-bottom: 0;
@@ -348,12 +439,22 @@ header .divider {
           font-size: 2.25em;
         }
         h5 {
-          margin-top: 0;
+          margin-bottom: 6px;
           color: #AEAEAE;
           font-size: .9em;
           line-height: 1em;
           font-weight: 400;
           text-transform: uppercase;
+        }
+        ul li {
+          margin-bottom: 12px;
+          font-family: "Sanchez";
+          color: #AEAEAE;
+          font-size: .9em;
+          line-height: 1em;
+          font-weight: 400;
+          text-transform: uppercase;
+          list-style: none;
         }
         p {}
         .divider {
@@ -445,14 +546,14 @@ header .divider {
                 position: relative;
                 float: left;
                 font-size: 16px;
-                color: #888888;
-                padding-left: 20px;
+                color: #AEAEAE;
+                padding-left: 27.5px;
                 .arrow-right {
                   	width: 0;
                   	height: 0;
                   	border-top: 5px solid transparent;
                   	border-bottom: 5px solid transparent;
-                  	border-left: 5px solid #888888;
+                  	border-left: 10px solid #AEAEAE;
                     position: absolute;
                     left: 10px;
                     top: 50%;  /* added */
@@ -462,7 +563,7 @@ header .divider {
               div.comment-metadata {
                 text-align: right;
                 time {
-                  color: #888888;
+                  color: #AEAEAE;
                 }
               }
             }
@@ -508,7 +609,7 @@ header .divider {
           color: $offwhite;
         }
         a:hover{
-          color: #CCCCCC;
+          color: #AEAEAE;
         }
         h1 {
           color: $offwhite;
@@ -658,7 +759,7 @@ header .divider {
         color: $offwhite;
       }
       a:hover {
-        color: #CCCCCC;
+        color: #AEAEAE;
       }
     }
   }
