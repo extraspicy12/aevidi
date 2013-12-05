@@ -198,22 +198,6 @@ function review_register() {
 		'parent_item_colon' => ''
 	);
 
-/*
-	$args = array(
-		'labels' => $labels,
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'query_var' => true,
-		'menu_icon' => get_stylesheet_directory_uri() . '/article16.png',
-		'rewrite' => false,
-		'capability_type' => 'post',
-		'hierarchical' => false,
-		'menu_position' => null,
-		'supports' => array('title','editor','thumbnail','comments','revisions')
-	  );
-*/
-
   $rewrite = array(
       'slug'                => 'review',
       'with_front'          => true,
