@@ -5129,8 +5129,9 @@ header .divider {
     .container .button-primary:active, .container #submit:active {
       -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; }
-  .container footer.entry-meta > span {
-    margin-right: 10px; }
+  .container footer.entry-meta {
+    margin-top: 25px;
+    text-align: center; }
   .container > header {
     background-color: white;
     background-color: #2e8445; }
@@ -5326,45 +5327,49 @@ header .divider {
       font-size: .75em;
       font-weight: 400;
       text-transform: uppercase; }
-    .container .page-container .body article header h1 {
+    .container .page-container .body article header.entry-header h1 {
       font-weight: 500;
       font-size: 3em;
       margin-bottom: 12px; }
-    .container .page-container .body article header time.updated:before {
+    .container .page-container .body article header.entry-header time.updated:before {
       content: " (Updated on "; }
-    .container .page-container .body article header time.updated:after {
+    .container .page-container .body article header.entry-header time.updated:after {
       content: ")"; }
-    .container .page-container .body article header .great {
+    .container .page-container .body article header.entry-header .great {
       border-bottom-color: #2e8445;
       color: #2e8445;
       background-color: #daffe9; }
-    .container .page-container .body article header .good {
+    .container .page-container .body article header.entry-header .good {
       border-bottom-color: #85AF4B;
       color: #85AF4B;
       background-color: #B4D091; }
-    .container .page-container .body article header .average {
+    .container .page-container .body article header.entry-header .average {
       border-bottom-color: #B5BA50;
       color: #B5BA50;
       background-color: #D3D796; }
-    .container .page-container .body article header .bad {
+    .container .page-container .body article header.entry-header .bad {
       border-bottom-color: #BD9751;
       color: #BD9751;
       background-color: #D9C397; }
-    .container .page-container .body article header .poor {
+    .container .page-container .body article header.entry-header .poor {
       border-bottom-color: #BD5B51;
       color: #BD5B51;
       background-color: #D9A097; }
-    .container .page-container .body article header .rating h1 {
-      font-size: 5em;
-      line-height: 100px;
-      font-weight: 600;
-      font-family: "Sanchez";
-      padding: 20px 10px;
-      margin: 25px 0 0 0;
-      border-bottom-width: 5px;
-      border-bottom-style: solid;
-      text-align: center; }
-    .container .page-container .body article header blockquote {
+    .container .page-container .body article header.entry-header .rating {
+      margin: 30px 0; }
+      @media screen and (max-width: 757px) {
+        .container .page-container .body article header.entry-header .rating {
+          margin: 15px 0; } }
+      .container .page-container .body article header.entry-header .rating h1 {
+        font-size: 5em;
+        line-height: 100px;
+        font-weight: 600;
+        font-family: "Sanchez";
+        padding: 20px 10px;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        text-align: center; }
+    .container .page-container .body article header.entry-header blockquote {
       font-size: 1.5em;
       font-weight: 500;
       font-family: "Sanchez";
@@ -5373,43 +5378,61 @@ header .divider {
       quotes: "\201C" "\201D" "\2018" "\2019";
       text-align: center;
       border: none; }
-      .container .page-container .body article header blockquote .great {
+      .container .page-container .body article header.entry-header blockquote .great {
         border-bottom-color: none;
         color: #2e8445;
         background-color: transparent; }
-      .container .page-container .body article header blockquote .good {
+      .container .page-container .body article header.entry-header blockquote .good {
         border-bottom-color: none;
         color: #85AF4B;
         background-color: transparent; }
-      .container .page-container .body article header blockquote .average {
+      .container .page-container .body article header.entry-header blockquote .average {
         border-bottom-color: none;
         color: #B5BA50;
         background-color: transparent; }
-      .container .page-container .body article header blockquote .bad {
+      .container .page-container .body article header.entry-header blockquote .bad {
         border-bottom-color: none;
         color: #BD9751;
         background-color: transparent; }
-      .container .page-container .body article header blockquote .poor {
+      .container .page-container .body article header.entry-header blockquote .poor {
         border-bottom-color: none;
         color: #BD5B51;
         background-color: transparent; }
-    .container .page-container .body article header blockquote:before {
+    .container .page-container .body article header.entry-header blockquote:before {
       content: open-quote;
       font-size: 4em;
       line-height: 0.1em;
       margin-right: 0.15em;
       vertical-align: -0.4em; }
-    .container .page-container .body article header blockquote:after {
+    .container .page-container .body article header.entry-header blockquote:after {
       content: close-quote;
       font-size: 4em;
       line-height: 0.1em;
       margin-left: 0.15em;
       vertical-align: -0.6em; }
-    .container .page-container .body article header blockquote p {
+    .container .page-container .body article header.entry-header blockquote p {
       display: inline;
       font-size: 1.5em;
       font-weight: 500;
       font-family: "Sanchez"; }
+    .container .page-container .body article div.entry-content p {
+      position: relative;
+      float: none;
+      display: block; }
+    .container .page-container .body article div.entry-content .alignleft {
+      position: relative;
+      float: left;
+      display: block; }
+    .container .page-container .body article div.entry-content .alignright {
+      position: relative;
+      float: right;
+      display: block; }
+    .container .page-container .body article div.entry-content .aligncenter {
+      position: relative;
+      float: none;
+      display: block;
+      width: 100%;
+      margin: 0 auto; }
     .container .page-container .body article h2 {
       margin-bottom: 0;
       font-weight: 400;
@@ -5421,7 +5444,7 @@ header .divider {
       line-height: 1em;
       font-weight: 400;
       text-transform: uppercase; }
-    .container .page-container .body article ul li {
+    .container .page-container .body article .entry-meta ul li {
       margin-bottom: 12px;
       font-family: "Sanchez";
       color: #AEAEAE;

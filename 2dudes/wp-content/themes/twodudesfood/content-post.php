@@ -6,10 +6,27 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title"><?php the_title().edit_post_link( __( 'Edit', 'twodudesfood' ), ' <small class="edit-link">', '</small>' ); ?>
+    </h1>
 
 		<div class="entry-meta">
-			<?php twodudesfood_posted_on(); ?>
+		  <ul>
+  			<li style="margin-bottom: 0;"><?php twodudesfood_posted_on(); ?></li>
+  		<?php
+
+  			$category_list = get_the_category_list( __( ' | ', 'twodudesfood' ) );
+
+  			if ($category_list != "") : ?>
+  			<li>Categories: <?php echo $category_list; ?></li>
+  			<?php
+        endif;
+
+  			$tag_list = get_the_tag_list( '', __( ' | ', 'twodudesfood' ) );
+
+        if ($tag_list != "") : ?>
+        <li>Tags: <?php echo $tag_list; ?></li>
+        <?php endif; ?>
+		  </ul>
 		</div><!-- .entry-meta -->
 
     <div class="row" style="margin-bottom: 24px;">
@@ -37,39 +54,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
-		<?php
-			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'twodudesfood' ) );
-
-			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_tag_list( '', __( ', ', 'twodudesfood' ) );
-
-			if ( ! twodudesfood_categorized_blog() ) {
-				// This blog only has 1 category so we just need to worry about tags in the meta text
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
-				} else {
-					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
-				}
-
-			} else {
-				// But this blog has loads of categories so we should probably display them here
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
-				} else {
-					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
-				}
-
-			} // end check for categories on this blog
-
-			printf(
-				$meta_text,
-				$category_list,
-				$tag_list,
-				get_permalink()
-			);
-		?>
-
-		<?php edit_post_link( __( 'Edit', 'twodudesfood' ), '<span class="edit-link">', '</span>' ); ?>
+    <?php twodudesfood_posted_on(); ?>
+    <?php edit_post_link( __( 'Edit', 'twodudesfood' ), ' | <span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

@@ -28,14 +28,21 @@
 
 	  <div class="row">
 	    <div class="large-9 columns">
-    		<h1 class="entry-title"><?php the_title(); ?></h1>
-    		<div class="entry-meta">
-    		<ul>
-      		<li>Reviewed on <?php echo the_date(); ?></li>
-      		<li><?php echo $address; ?></li>
-      		<li><?php echo $phone; ?></li>
-      		<li><?php the_terms( $post->ID, 'reviews', '', ' | ', ' ' ); ?></li>
-    		</ul>
+    		<h1 class="entry-title"><?php the_title().edit_post_link( __( 'Edit', 'twodudesfood' ), ' <small class="edit-link">', '</small>' ); ?>
+        </h1>
+        <div class="entry-meta">
+      		<ul>
+        		<li>Reviewed on <?php echo the_date(); ?></li>
+        		<?php if ($address != "") : ?>
+        		<li><?php echo $address; ?></li>
+        		<?php endif; if ($phone != "") : ?>
+        		<li><?php echo $phone; ?></li>
+        		<?php endif; if ( ($categories = get_the_term_list( $post->ID, 'reviews', '', ' | ', ' ' )) != "" ) : ?>
+        		<li>Categories: <?php echo $categories; ?></li>
+        		<?php endif; if (($tags = get_the_tag_list( '', __( ' | ', 'twodudesfood' ) )) != "" ) : ?>
+        		<li>Tags: <?php echo $tags; ?></li>
+            <?php endif; ?>
+      		</ul>
     		</div><!-- .entry-meta -->
   	  </div>
 	    <div class="large-3 columns rating">
@@ -76,17 +83,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
-		<?php
-/*
-  		$meta_text = __( 'This entry was posted on %1$s. Bookmark the <a href="%2$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
-  		printf(
-				$meta_text,
-				get_the_date(),
-				get_permalink()
-			);
-*/
-		?>
-
-		<?php edit_post_link( __( 'Edit', 'twodudesfood' ), '<span class="edit-link">', '</span>' ); ?>
+    <?php twodudesfood_posted_on(); ?>
+    <?php edit_post_link( __( 'Edit', 'twodudesfood' ), ' | <span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

@@ -38,29 +38,26 @@
 
 	<footer class="entry-meta">
 		<?php
-			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'twodudesfood' ) );
+      $category_list = get_the_category_list()( $post->ID, 'reviews', '', ' | ', ' ' );
 
-			/* translators: used between list items, there is a space after the comma */
 			$tag_list = get_the_tag_list( '', __( ', ', 'twodudesfood' ) );
 
-			if ( ! twodudesfood_categorized_blog() ) {
-				// This blog only has 1 category so we just need to worry about tags in the meta text
+			if ($category_list != "") {
+  				// If this post has a 1+ categories
 				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
+					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s.<br> Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
 				} else {
-					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
+					$meta_text = __( 'This entry was posted in %1$s.<br> Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
 				}
 
 			} else {
-				// But this blog has loads of categories so we should probably display them here
+  			// Else post was not placed in any category even though categories exist
 				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
+					$meta_text = __( 'This entry was tagged %2$s.<br> Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
 				} else {
-					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
+					$meta_text = __( '<br>Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
 				}
-
-			} // end check for categories on this blog
+			}
 
 			printf(
 				$meta_text,
@@ -70,6 +67,16 @@
 			);
 		?>
 
-		<?php edit_post_link( __( 'Edit', 'twodudesfood' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php
+/*
+  		$meta_text = __( 'This entry was posted on %1$s. Bookmark the <a href="%2$s" rel="bookmark">permalink</a>.', 'twodudesfood' );
+  		printf(
+				$meta_text,
+				get_the_date(),
+				get_permalink()
+			);
+			edit_post_link( __( 'Edit', 'twodudesfood' ), '<br><br><span class="edit-link">', '</span>' );
+*/
+		?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->
