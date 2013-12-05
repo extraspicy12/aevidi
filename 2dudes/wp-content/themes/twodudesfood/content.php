@@ -33,17 +33,17 @@
   	</div><!-- .entry-content -->
   	<?php endif; ?>
 
-  	<footer class="entry-meta">
+  	<footer>
     	<div class="divider"></div>
-  		<?php if ( 'post' == get_post_type() || get_post() == 'review' ) : // Hide category and tag text for pages on Search ?>
+  		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
   			<?php
   				/* translators: used between list items, there is a space after the comma */
   				$categories_list = get_the_category_list( __( ', ', 'twodudesfood' ) );
-  				if ( $categories_list && twodudesfood_categorized_blog() ) :
+  				if ( $categories_list ) :
   			?>
   			<span class="cat-links">
   				<?php printf( __( 'Posted in %1$s', 'twodudesfood' ), $categories_list ); ?>
-  			</span>
+  			</span> |
   			<?php endif; // End if categories ?>
 
   			<?php
@@ -53,10 +53,10 @@
   			?>
   			<span class="tags-links">
   				<?php printf( __( 'Tagged %1$s', 'twodudesfood' ), $tags_list ); ?>
-  			</span>
+  			</span> |
   			<?php endif; // End if $tags_list ?>
   		<?php endif; ?>
-  		<?php if ('review' == get_post_type() ) : // End if 'post' == get_post_type() ?>
+  		<?php if ( 'review' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
   			<?php
   				/* translators: used between list items, there is a space after the comma */
   				$categories_list = get_the_term_list( $post->ID, 'reviews', '', ', ', ' ' );
@@ -64,15 +64,24 @@
   			?>
   			<span class="cat-links">
   				<?php printf( __( 'Posted in %1$s', 'twodudesfood' ), $categories_list ); ?>
-  			</span>
+  			</span> |
   			<?php endif; // End if categories ?>
 
+  			<?php
+  				/* translators: used between list items, there is a space after the comma */
+  				$tags_list = get_the_tag_list( '', __( ', ', 'twodudesfood' ) );
+  				if ( $tags_list ) :
+  			?>
+  			<span class="tags-links">
+  				<?php printf( __( 'Tagged %1$s', 'twodudesfood' ), $tags_list ); ?>
+  			</span> |
+  			<?php endif; // End if $tags_list ?>
   		<?php endif; ?>
   		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-  		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twodudesfood' ), __( '1 Comment', 'twodudesfood' ), __( '% Comments', 'twodudesfood' ) ); ?></span>
+  		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment ', 'twodudesfood' ), __( '1 Comment', 'twodudesfood' ), __( '% Comments', 'twodudesfood' ) ); ?></span>
   		<?php endif; ?>
 
-  		<?php edit_post_link( __( 'Edit', 'twodudesfood' ), '<span class="edit-link">', '</span>' ); ?>
+  		<?php edit_post_link( __( 'Edit', 'twodudesfood' ), ' | <span class="edit-link">', '</span>' ); ?>
   	</footer><!-- .entry-meta -->
   </div>
 </article><!-- #post-## -->
