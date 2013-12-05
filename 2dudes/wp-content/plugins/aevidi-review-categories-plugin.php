@@ -28,24 +28,25 @@ class aeVidi_widget_categories extends WP_Widget {
 		if ( $title )
 			echo $before_title . $title . $after_title;
 
-		$cat_args = array('orderby' => 'name', 'show_count' => $c, 'hierarchical' => $h);
+		$cat_args = array('orderby' => 'name', 'show_count' => $c, 'hierarchical' => $h, 'taxonomy' => 'reviews', 'name' => 'rcat');
 
-		if ( $d ) {
-			$cat_args['show_option_none'] = __('Select Review Category');
-			wp_dropdown_categories(apply_filters('aeVidi_widget_categories_dropdown_args', $cat_args));
-?>
-
-<script type='text/javascript'>
-/* <![CDATA[ */
-	var dropdown = document.getElementById("cat");
-	function onCatChange() {
-		if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
-			location.href = "<?php echo home_url(); ?>/?cat="+dropdown.options[dropdown.selectedIndex].value;
-		}
-	}
-	dropdown.onchange = onCatChange;
-/* ]]> */
-</script>
+		if ( $d ) { ?>
+    <select class="postform" id="rcat" name="rcat">
+    	<option value="-1">Select Category</option>
+    <?php
+      $categories = get_terms('reviews');
+      foreach ($categories as $term) : ?>
+    	<option value="<?php echo strtolower($term->name); ?>" class="level-0"><?php echo $term->name; ?></option>
+    	<?php endforeach; ?>
+    </select>
+    <script type="text/javascript"><!--
+        var dropdown2 = document.getElementById("rcat");
+        function onCatChange2() {
+      		if ( dropdown2.options[dropdown2.selectedIndex].value != -1 )
+      			location.href = "<?php echo get_option('home'); ?>/?reviews="+dropdown2.options[dropdown2.selectedIndex].value;
+        }
+        dropdown2.onchange = onCatChange2;
+    --></script>
 
 <?php
 		} else {
@@ -53,7 +54,8 @@ class aeVidi_widget_categories extends WP_Widget {
 		<ul>
 <?php
 		$cat_args['title_li'] = '';
-		wp_list_categories(apply_filters('aeVidi_widget_categories_args', $cat_args));
+		$asd = wp_list_categories(apply_filters('aeVidi_widget_categories_args', $cat_args));
+		foreach ($asd as $a) echo '1';
 ?>
 		</ul>
 <?php
