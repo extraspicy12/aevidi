@@ -48,9 +48,8 @@ header .divider {
     @include inset-shadow(true);
   }
   footer.entry-meta {
-    > span {
-      margin-right: 10px;
-    }
+    margin-top: 25px;
+    text-align: center;
   }
   background-color: $offwhite;
   > header {
@@ -329,7 +328,7 @@ header .divider {
         }
       }
       article {
-        header {
+        header.entry-header {
           h1 {
             font-weight: 500;
             font-size: 3em;
@@ -366,16 +365,21 @@ header .divider {
             color: #BD5B51;
             background-color: #D9A097;
           }
-          .rating h1 {
-            font-size: 5em;
-            line-height: 100px;
-            font-weight: 600;
-            font-family: "Sanchez";
-            padding: 20px 10px;
-            margin: 25px 0 0 0;
-            border-bottom-width: 5px;
-            border-bottom-style: solid;
-            text-align: center;
+          .rating {
+            margin: 30px 0;
+            @media screen and (max-width: 757px) {
+              margin: 15px 0;
+            }
+            h1 {
+              font-size: 5em;
+              line-height: 100px;
+              font-weight: 600;
+              font-family: "Sanchez";
+              padding: 20px 10px;
+              border-bottom-width: 5px;
+              border-bottom-style: solid;
+              text-align: center;
+            }
           }
           blockquote {
             font-size: 1.5em;
@@ -433,6 +437,32 @@ header .divider {
             font-family: "Sanchez";
           }
         }
+        div.entry-content {
+          p {
+            position: relative;
+            float: none;
+            display: block;
+          }
+          .alignleft {
+            position: relative;
+            float: left;
+            display: block;
+          }
+          .alignright {
+            position: relative;
+            float: right;
+            display: block;
+          }
+          .aligncenter {
+            position: relative;
+            float: none;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+        footer.entry-meta {
+        }
         h2 {
           margin-bottom: 0;
           font-weight: 400;
@@ -446,7 +476,7 @@ header .divider {
           font-weight: 400;
           text-transform: uppercase;
         }
-        ul li {
+        .entry-meta ul li {
           margin-bottom: 12px;
           font-family: "Sanchez";
           color: #AEAEAE;

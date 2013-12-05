@@ -35,7 +35,7 @@
 
   	<footer class="entry-meta">
     	<div class="divider"></div>
-  		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
+  		<?php if ( 'post' == get_post_type() || get_post() == 'review' ) : // Hide category and tag text for pages on Search ?>
   			<?php
   				/* translators: used between list items, there is a space after the comma */
   				$categories_list = get_the_category_list( __( ', ', 'twodudesfood' ) );

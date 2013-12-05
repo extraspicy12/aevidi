@@ -226,7 +226,7 @@ function review_register() {
       'description'         => __( 'Reviews' ),
       'labels'              => $labels,
       'supports'            => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', ),
-      'taxonomies'          => array( 'reviews' ),
+      'taxonomies'          => array( 'reviews', 'post_tag'),
       'hierarchical'        => false,
       'public'              => true,
       'show_ui'             => true,
