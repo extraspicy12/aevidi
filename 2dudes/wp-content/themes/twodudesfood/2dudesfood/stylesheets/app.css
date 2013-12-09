@@ -5077,26 +5077,25 @@ h1, h2, h3, h4, h5, ul li a, input, textarea, a.button {
 body, li, ul, p {
   font-family: "Open Sans"; }
 
-header .divider {
-  display: none; }
-
 .divider.white {
   background-color: white;
   display: block;
   padding: 5px; }
 
 @media screen and (max-width: 757px) {
-  header .divider {
-    display: block;
-    padding: 5px;
-    background-color: #2e8445; } }
+  .divider.white {
+    display: none; } }
 .container {
   background-color: #daffe9; }
+  .container time.updated:before {
+    content: " (Updated on "; }
+  .container time.updated:after {
+    content: ")"; }
   .container a {
     transition: all .125s ease-in-out; }
   .container a:hover {
     transition: all .125s ease-in-out;
-    color: #AEAEAE; }
+    color: #aeaeae; }
   .container .button-primary, .container #submit {
     border-style: solid;
     border-width: 1px;
@@ -5314,6 +5313,8 @@ header .divider {
         text-align: left; }
       .container .page-container .body #nav-below div .nav-next {
         text-align: right; }
+    .container .page-container .body .slider ol.orbit-bullets {
+      margin-left: 15px; }
     .container .page-container .body .slider ul li img {
       min-width: 100%;
       height: auto; }
@@ -5323,98 +5324,216 @@ header .divider {
       font-weight: 400; }
     .container .page-container .body .slider .orbit-caption h5 {
       margin-top: 0;
-      color: #AEAEAE;
+      color: #aeaeae;
       font-size: .75em;
       font-weight: 400;
       text-transform: uppercase; }
-    .container .page-container .body article header.entry-header h1 {
-      font-weight: 500;
-      font-size: 3em;
-      margin-bottom: 12px; }
-    .container .page-container .body article header.entry-header time.updated:before {
-      content: " (Updated on "; }
-    .container .page-container .body article header.entry-header time.updated:after {
-      content: ")"; }
-    .container .page-container .body article header.entry-header .great {
-      border-bottom-color: #2e8445;
-      color: #2e8445;
-      background-color: #daffe9; }
-    .container .page-container .body article header.entry-header .good {
-      border-bottom-color: #85AF4B;
-      color: #85AF4B;
-      background-color: #B4D091; }
-    .container .page-container .body article header.entry-header .average {
-      border-bottom-color: #B5BA50;
-      color: #B5BA50;
-      background-color: #D3D796; }
-    .container .page-container .body article header.entry-header .bad {
-      border-bottom-color: #BD9751;
-      color: #BD9751;
-      background-color: #D9C397; }
-    .container .page-container .body article header.entry-header .poor {
-      border-bottom-color: #BD5B51;
-      color: #BD5B51;
-      background-color: #D9A097; }
-    .container .page-container .body article header.entry-header .rating {
-      margin: 30px 0; }
-      @media screen and (max-width: 757px) {
-        .container .page-container .body article header.entry-header .rating {
-          margin: 15px 0; } }
-      .container .page-container .body article header.entry-header .rating h1 {
-        font-size: 5em;
-        line-height: 100px;
-        font-weight: 600;
-        font-family: "Sanchez";
-        padding: 20px 10px;
-        border-bottom-width: 5px;
-        border-bottom-style: solid;
-        text-align: center; }
-    .container .page-container .body article header.entry-header blockquote {
-      font-size: 1.5em;
-      font-weight: 500;
-      font-family: "Sanchez";
-      padding: 5px 10px;
-      color: #AEAEAE;
-      quotes: "\201C" "\201D" "\2018" "\2019";
-      text-align: center;
-      border: none; }
-      .container .page-container .body article header.entry-header blockquote .great {
-        border-bottom-color: none;
+    .container .page-container .body article.page header.entry-header {
+      text-align: center; }
+    .container .page-container .body article #restaurant-reviews #sorting-module {
+      margin-bottom: 10px;
+      text-transform: uppercase; }
+      .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values {
+        padding-bottom: 5px; }
+        .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values .sort-by-x {
+          display: none; }
+        .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values > ul {
+          margin-bottom: 0; }
+          @media screen and (max-width: 757px) {
+            .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values > ul {
+              text-align: center; } }
+          .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values > ul li {
+            margin-bottom: 6px;
+            font-family: "Sanchez";
+            color: #aeaeae;
+            font-size: .9em;
+            line-height: 1em;
+            font-weight: 400;
+            text-transform: uppercase;
+            list-style: none;
+            width: 25%;
+            float: left;
+            position: relative; }
+            @media screen and (max-width: 757px) {
+              .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values > ul li {
+                padding: 0 5px;
+                width: 33.33333%; } }
+            .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values > ul li a {
+              color: #aeaeae;
+              font-weight: 400; }
+            .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values > ul li a.active {
+              color: #2e8445;
+              font-weight: 600; }
+            .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values > ul li a:hover {
+              color: #2e8445; }
+      .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories {
+        border-right: 3px solid #2e8445;
+        padding-bottom: 5px; }
+        @media screen and (max-width: 757px) {
+          .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories {
+            border-left: 3px solid #2e8445; } }
+        .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories > h4 {
+          margin-top: 0;
+          line-height: 20px;
+          font-size: 20px; }
+          @media screen and (max-width: 757px) {
+            .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories > h4 {
+              text-align: center;
+              margin-bottom: 20px; } }
+        .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories ul {
+          margin-bottom: 0; }
+          @media screen and (max-width: 757px) {
+            .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories ul {
+              text-align: center; } }
+          .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories ul li {
+            margin-bottom: 12px;
+            font-family: "Sanchez";
+            color: #aeaeae;
+            font-size: .9em;
+            line-height: 1em;
+            font-weight: 400;
+            text-transform: uppercase;
+            list-style: none;
+            width: 100%;
+            float: left;
+            position: relative; }
+            @media screen and (max-width: 757px) {
+              .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories ul li {
+                width: 50%; } }
+            .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories ul li a {
+              color: #aeaeae;
+              font-weight: 400; }
+            .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories ul li a.active {
+              color: #2e8445;
+              font-weight: 600; }
+            .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories ul li a:hover {
+              color: #2e8445; }
+    .container .page-container .body article #restaurant-reviews #sort-button-holder #clear-holder {
+      text-align: right; }
+    .container .page-container .body article #restaurant-reviews #sort-button-holder #sort-holder {
+      text-align: left; }
+    .container .page-container .body article header.entry-header {
+      text-align: left; }
+      .container .page-container .body article header.entry-header .entry-meta ul {
+        margin-bottom: 0; }
+        .container .page-container .body article header.entry-header .entry-meta ul li {
+          margin-bottom: 12px;
+          font-family: "Sanchez";
+          color: #aeaeae;
+          font-size: .9em;
+          line-height: 1em;
+          font-weight: 400;
+          text-transform: uppercase;
+          list-style: none; }
+      .container .page-container .body article header.entry-header h1 {
+        font-weight: 500;
+        font-size: 3em;
+        margin-bottom: 12px; }
+      .container .page-container .body article header.entry-header h1.great {
+        border-bottom-color: #2e8445;
         color: #2e8445;
-        background-color: transparent; }
-      .container .page-container .body article header.entry-header blockquote .good {
-        border-bottom-color: none;
+        background-color: #daffe9; }
+      .container .page-container .body article header.entry-header h1.good {
+        border-bottom-color: #85AF4B;
         color: #85AF4B;
-        background-color: transparent; }
-      .container .page-container .body article header.entry-header blockquote .average {
-        border-bottom-color: none;
+        background-color: #B4D091; }
+      .container .page-container .body article header.entry-header h1.average {
+        border-bottom-color: #B5BA50;
         color: #B5BA50;
-        background-color: transparent; }
-      .container .page-container .body article header.entry-header blockquote .bad {
-        border-bottom-color: none;
+        background-color: #D3D796; }
+      .container .page-container .body article header.entry-header h1.bad {
+        border-bottom-color: #BD9751;
         color: #BD9751;
-        background-color: transparent; }
-      .container .page-container .body article header.entry-header blockquote .poor {
-        border-bottom-color: none;
+        background-color: #D9C397; }
+      .container .page-container .body article header.entry-header h1.poor {
+        border-bottom-color: #BD5B51;
         color: #BD5B51;
-        background-color: transparent; }
-    .container .page-container .body article header.entry-header blockquote:before {
-      content: open-quote;
-      font-size: 4em;
-      line-height: 0.1em;
-      margin-right: 0.15em;
-      vertical-align: -0.4em; }
-    .container .page-container .body article header.entry-header blockquote:after {
-      content: close-quote;
-      font-size: 4em;
-      line-height: 0.1em;
-      margin-left: 0.15em;
-      vertical-align: -0.6em; }
-    .container .page-container .body article header.entry-header blockquote p {
-      display: inline;
-      font-size: 1.5em;
-      font-weight: 500;
-      font-family: "Sanchez"; }
+        background-color: #D9A097; }
+      .container .page-container .body article header.entry-header .rating-header {
+        margin: 6px 0 0 0 !important; }
+        .container .page-container .body article header.entry-header .rating-header .great {
+          border-bottom-color: none;
+          color: #2e8445;
+          background-color: transparent;
+          font-weight: 600; }
+        .container .page-container .body article header.entry-header .rating-header .good {
+          border-bottom-color: none;
+          color: #85AF4B;
+          background-color: transparent;
+          font-weight: 600; }
+        .container .page-container .body article header.entry-header .rating-header .average {
+          border-bottom-color: none;
+          color: #B5BA50;
+          background-color: transparent;
+          font-weight: 600; }
+        .container .page-container .body article header.entry-header .rating-header .bad {
+          border-bottom-color: none;
+          color: #BD9751;
+          background-color: transparent;
+          font-weight: 600; }
+        .container .page-container .body article header.entry-header .rating-header .poor {
+          border-bottom-color: none;
+          color: #BD5B51;
+          background-color: transparent;
+          font-weight: 600; }
+      .container .page-container .body article header.entry-header .rating {
+        margin: 0 0 20px 0; }
+        .container .page-container .body article header.entry-header .rating h1 {
+          font-size: 5em;
+          line-height: 100px;
+          font-weight: 600;
+          font-family: "Sanchez";
+          padding: 20px 10px;
+          border-bottom-width: 5px;
+          border-bottom-style: solid;
+          text-align: center; }
+      .container .page-container .body article header.entry-header blockquote {
+        font-size: 1.5em;
+        font-weight: 500;
+        font-family: "Sanchez";
+        padding: 5px 10px;
+        color: #aeaeae;
+        quotes: "\201C" "\201D" "\2018" "\2019";
+        text-align: center;
+        border: none;
+        margin: 0 15px; }
+        .container .page-container .body article header.entry-header blockquote .great {
+          border-bottom-color: none;
+          color: #2e8445;
+          background-color: transparent; }
+        .container .page-container .body article header.entry-header blockquote .good {
+          border-bottom-color: none;
+          color: #85AF4B;
+          background-color: transparent; }
+        .container .page-container .body article header.entry-header blockquote .average {
+          border-bottom-color: none;
+          color: #B5BA50;
+          background-color: transparent; }
+        .container .page-container .body article header.entry-header blockquote .bad {
+          border-bottom-color: none;
+          color: #BD9751;
+          background-color: transparent; }
+        .container .page-container .body article header.entry-header blockquote .poor {
+          border-bottom-color: none;
+          color: #BD5B51;
+          background-color: transparent; }
+      .container .page-container .body article header.entry-header blockquote:before {
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.075em;
+        vertical-align: -0.4em; }
+      .container .page-container .body article header.entry-header blockquote:after {
+        content: close-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-left: 0.075em;
+        vertical-align: -0.6em; }
+      .container .page-container .body article header.entry-header blockquote p {
+        display: inline;
+        font-size: 1.5em;
+        font-weight: 500;
+        font-family: "Sanchez"; }
     .container .page-container .body article div.entry-content p {
       position: relative;
       float: none;
@@ -5439,20 +5558,11 @@ header .divider {
       font-size: 2.25em; }
     .container .page-container .body article h5 {
       margin-bottom: 6px;
-      color: #AEAEAE;
+      color: #aeaeae;
       font-size: .9em;
       line-height: 1em;
       font-weight: 400;
       text-transform: uppercase; }
-    .container .page-container .body article .entry-meta ul li {
-      margin-bottom: 12px;
-      font-family: "Sanchez";
-      color: #AEAEAE;
-      font-size: .9em;
-      line-height: 1em;
-      font-weight: 400;
-      text-transform: uppercase;
-      list-style: none; }
     .container .page-container .body article .divider {
       background-color: #47a761;
       margin-bottom: 10px;
@@ -5522,14 +5632,14 @@ header .divider {
         position: relative;
         float: left;
         font-size: 16px;
-        color: #AEAEAE;
+        color: #aeaeae;
         padding-left: 27.5px; }
         .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-reply .arrow-right {
           width: 0;
           height: 0;
           border-top: 5px solid transparent;
           border-bottom: 5px solid transparent;
-          border-left: 10px solid #AEAEAE;
+          border-left: 10px solid #aeaeae;
           position: absolute;
           left: 10px;
           top: 50%;
@@ -5538,7 +5648,7 @@ header .divider {
       .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-metadata {
         text-align: right; }
         .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-metadata time {
-          color: #AEAEAE; }
+          color: #aeaeae; }
     .container .page-container .sidebar .collapse {
       padding: 5px 15px 0 15px; }
     .container .page-container .sidebar .social-media {
@@ -5556,7 +5666,7 @@ header .divider {
       background-color: #47a761;
       border-top: 10px solid #2e8445;
       padding: 10px;
-      border-radius: 5px; }
+      /*         border-radius: 5px; */ }
       .container .page-container .sidebar aside .avatar {
         height: 60px;
         width: 60px; }
@@ -5568,7 +5678,7 @@ header .divider {
       .container .page-container .sidebar aside a {
         color: #daffe9; }
       .container .page-container .sidebar aside a:hover {
-        color: #AEAEAE; }
+        color: #aeaeae; }
       .container .page-container .sidebar aside h1 {
         color: #daffe9;
         font-size: 1.75em;
@@ -5664,6 +5774,11 @@ header .divider {
   .container > footer {
     background-color: #47a761;
     border-top: 10px solid #2e8445; }
+    .container > footer .widget.aevidi_widget_recent_posts > ul {
+      text-align: left; }
+      @media screen and (max-width: 757px) {
+        .container > footer .widget.aevidi_widget_recent_posts > ul {
+          text-align: center; } }
     .container > footer #footer {
       padding: 15px; }
       .container > footer #footer .aevidi_widget_recent_comments > ul#recentcomments > li.recentcomments {
@@ -5671,13 +5786,13 @@ header .divider {
         padding: 10px;
         background-color: #2e8445;
         margin: 10px 0;
-        border-radius: 5px;
+        /*             border-radius: 5px; */
         width: 100%; }
         .container > footer #footer .aevidi_widget_recent_comments > ul#recentcomments > li.recentcomments div.user-box {
           position: relative;
           padding: 0 7.5px 7.5px 0;
           text-align: center;
-          border-radius: 5px; }
+          /*               border-radius: 5px; */ }
           .container > footer #footer .aevidi_widget_recent_comments > ul#recentcomments > li.recentcomments div.user-box h5 {
             color: #daffe9;
             font-weight: 600;
@@ -5697,7 +5812,7 @@ header .divider {
       .container > footer .copyright a {
         color: #daffe9; }
       .container > footer .copyright a:hover {
-        color: #AEAEAE; }
+        color: #aeaeae; }
 
 /* Centering Classes */
 /* This parent can be any width and height */

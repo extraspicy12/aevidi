@@ -11,9 +11,30 @@
   	<header class="entry-header">
   		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
   		<?php if ( 'post' == get_post_type() || 'review' == get_post_type() ) : ?>
-  		<h5>
-  			<?php twodudesfood_posted_on(); ?>
-  		</h5><!-- .entry-meta -->
+  		<div class="entry-meta">
+    		<ul>
+    			<?php if ( 'review' == get_post_type() ) :
+            global $post;
+            $custom = get_post_custom($post->ID);
+            $rating = $custom["rating"][0];
+            $lettergrade = substr($rating, 0, 1);
+            $class;
+            if (strtolower($lettergrade) == "a")
+              $class = "great";
+            else if (strtolower($lettergrade) == "b")
+              $class = "good";
+            else if (strtolower($lettergrade) == "c")
+              $class = "average";
+            else if (strtolower($lettergrade) == "d")
+              $class = "bad";
+            else
+              $class = "poor";
+          ?>
+          <li class="rating-header">Rating: <span class="<?php echo $class; ?>"><?php echo $rating; ?></span></li>
+    			<?php endif; ?>
+    			<li style="margin-bottom: 0;"><?php twodudesfood_posted_on(); ?></li>
+    		</ul><!-- .entry-meta -->
+  		</div>
   		<?php endif; ?>
   	</header><!-- .entry-header -->
 

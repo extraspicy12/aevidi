@@ -50,17 +50,19 @@
   	  </div>
 	  </div>
 
+    <?php if ( has_post_thumbnail() ): ?>
     <div class="row" style="margin-bottom: 24px;">
       <div class="small-12 columns">
-              <?php if ( has_post_thumbnail() ): ?><img src="<?php bloginfo('stylesheet_directory'); ?>/timthumb.php?src=<?php
+              <img src="<?php bloginfo('stylesheet_directory'); ?>/timthumb.php?src=<?php
                 $image_id = get_post_thumbnail_id();
                 $image_url = wp_get_attachment_image_src($image_id,'full');
                 echo $image_url[0];
                 ?>&w=698&zc=1&q=100&c=1&a=t"
                 alt="<?php the_title(); ?>"
-              /><?php endif; ?>
+              />
       </div>
     </div>
+    <?php endif; ?>
 
 	  <div class="row" class="featured-quote">
   	  <div class="large-12 columns">

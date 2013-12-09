@@ -15,30 +15,32 @@ $header: #2e8445;
 $sidecontainer: #92b999;
 $accent: #47a761;
 $offwhite: #DAFFE9;
+$gray: #AEAEAE;
 
-header .divider {
-  display: none;
-}
 .divider.white {
   background-color: white;
   display: block;
   padding: 5px;
 }
 @media screen and (max-width: 757px) {
-  header .divider {
-    display: block;
-    padding: 5px;
-    background-color: $header;
+  .divider.white {
+    display: none;
   }
 }
 
 .container {
+  time.updated:before {
+    content: " (Updated on ";
+  }
+  time.updated:after {
+    content: ")";
+  }
   a {
     transition: all .125s ease-in-out;
   }
   a:hover {
     transition: all .125s ease-in-out;
-    color: #AEAEAE;
+    color: $gray;
   }
   .button-primary, #submit {
     @include button-base;
@@ -304,6 +306,9 @@ header .divider {
         }
       }
       .slider {
+        ol.orbit-bullets {
+          margin-left: 15px;
+        }
         ul {
           li {
             img {
@@ -320,56 +325,202 @@ header .divider {
           }
           h5 {
             margin-top: 0;
-            color: #AEAEAE;
+            color: $gray;
             font-size: .75em;
             font-weight: 400;
             text-transform: uppercase;
           }
         }
       }
-      article {
+      article.page {
         header.entry-header {
+          text-align: center;
+        }
+      }
+      article {
+        #restaurant-reviews {
+          #sorting-module {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            #sort-by-values {
+              padding-bottom: 5px;
+              .sort-by-x {
+                display: none;
+              }
+              > ul {
+                margin-bottom: 0;
+                @media screen and (max-width: 757px) {
+                  text-align: center;
+                }
+                li {
+                  margin-bottom: 6px;
+                  font-family: "Sanchez";
+                  color: $gray;
+                  font-size: .9em;
+                  line-height: 1em;
+                  font-weight: 400;
+                  text-transform: uppercase;
+                  list-style: none;
+                  width: 25%;
+                  float: left;
+                  position: relative;
+                  @media screen and (max-width: 757px) {
+                    padding: 0 5px;
+                    width: 33.33333%;
+                  }
+                  a {
+                    color: $gray;
+                    font-weight: 400;
+                  }
+                  a.active {
+                    color: $header;
+                    font-weight: 600;
+                  }
+                  a:hover {
+                    color: $header;
+                  }
+                }
+              }
+            }
+            #sort-by-categories {
+              border-right: 3px solid $header;
+              padding-bottom: 5px;
+              @media screen and (max-width: 757px) {
+                border-left: 3px solid $header;
+              }
+              > h4 {
+                margin-top: 0;
+                line-height: 20px;
+                font-size: 20px;
+                @media screen and (max-width: 757px) {
+                  text-align: center;
+                  margin-bottom: 20px;
+                }
+              }
+              ul {
+                margin-bottom: 0;
+                @media screen and (max-width: 757px) {
+                  text-align: center;
+                }
+                li {
+                  margin-bottom: 12px;
+                  font-family: "Sanchez";
+                  color: $gray;
+                  font-size: .9em;
+                  line-height: 1em;
+                  font-weight: 400;
+                  text-transform: uppercase;
+                  list-style: none;
+                  width: 100%;
+                  float: left;
+                  position: relative;
+                  @media screen and (max-width: 757px) {
+                    width: 50%;
+                  }
+                  a {
+                    color: $gray;
+                    font-weight: 400;
+                  }
+                  a.active {
+                    color: $header;
+                    font-weight: 600;
+                  }
+                  a:hover {
+                    color: $header;
+                  }
+                }
+              }
+            }
+          }
+          #sort-button-holder {
+            #clear-holder {
+              text-align: right;
+            }
+            #sort-holder {
+              text-align: left;
+            }
+          }
+        }
+        header.entry-header {
+          .entry-meta ul {
+            margin-bottom: 0;
+            li {
+              margin-bottom: 12px;
+              font-family: "Sanchez";
+              color: $gray;
+              font-size: .9em;
+              line-height: 1em;
+              font-weight: 400;
+              text-transform: uppercase;
+              list-style: none;
+            }
+          }
+          text-align: left;
           h1 {
             font-weight: 500;
             font-size: 3em;
             margin-bottom: 12px;
           }
-          time.updated:before {
-            content: " (Updated on ";
-          }
-          time.updated:after {
-            content: ")";
-          }
-          .great {
+          h1.great {
             border-bottom-color: $header;
             color: $header;
             background-color: $offwhite;
           }
-          .good {
+          h1.good {
             border-bottom-color: #85AF4B;
             color: #85AF4B;
             background-color: #B4D091;
           }
-          .average {
+          h1.average {
             border-bottom-color: #B5BA50;
             color: #B5BA50;
             background-color: #D3D796;
           }
-          .bad {
+          h1.bad {
             border-bottom-color: #BD9751;
             color: #BD9751;
             background-color: #D9C397;
           }
-          .poor {
+          h1.poor {
             border-bottom-color: #BD5B51;
             color: #BD5B51;
             background-color: #D9A097;
           }
-          .rating {
-            margin: 30px 0;
-            @media screen and (max-width: 757px) {
-              margin: 15px 0;
+          .rating-header {
+            margin: 6px 0 0 0 !important;
+            .great {
+              border-bottom-color: none;
+              color: $header;
+              background-color: transparent;
+              font-weight: 600;
             }
+            .good {
+              border-bottom-color: none;
+              color: #85AF4B;
+              background-color: transparent;
+              font-weight: 600;
+            }
+            .average {
+              border-bottom-color: none;
+              color: #B5BA50;
+              background-color: transparent;
+              font-weight: 600;
+            }
+            .bad {
+              border-bottom-color: none;
+              color: #BD9751;
+              background-color: transparent;
+              font-weight: 600;
+            }
+            .poor {
+              border-bottom-color: none;
+              color: #BD5B51;
+              background-color: transparent;
+              font-weight: 600;
+            }
+          }
+          .rating {
+            margin: 0 0 20px 0;
             h1 {
               font-size: 5em;
               line-height: 100px;
@@ -386,10 +537,11 @@ header .divider {
             font-weight: 500;
             font-family: "Sanchez";
             padding: 5px 10px;
-            color: #AEAEAE;
+            color: $gray;
             quotes: "\201C""\201D""\2018""\2019";
             text-align: center;
             border: none;
+            margin: 0 15px;
             .great {
               border-bottom-color: none;
               color: $header;
@@ -420,14 +572,14 @@ header .divider {
             content: open-quote;
             font-size: 4em;
             line-height: 0.1em;
-            margin-right: 0.15em;
+            margin-right: 0.075em;
             vertical-align: -0.4em;
           }
           blockquote:after {
             content: close-quote;
             font-size: 4em;
             line-height: 0.1em;
-            margin-left: 0.15em;
+            margin-left: 0.075em;
             vertical-align: -0.6em;
           }
           blockquote p {
@@ -470,21 +622,11 @@ header .divider {
         }
         h5 {
           margin-bottom: 6px;
-          color: #AEAEAE;
+          color: $gray;
           font-size: .9em;
           line-height: 1em;
           font-weight: 400;
           text-transform: uppercase;
-        }
-        .entry-meta ul li {
-          margin-bottom: 12px;
-          font-family: "Sanchez";
-          color: #AEAEAE;
-          font-size: .9em;
-          line-height: 1em;
-          font-weight: 400;
-          text-transform: uppercase;
-          list-style: none;
         }
         p {}
         .divider {
@@ -576,14 +718,14 @@ header .divider {
                 position: relative;
                 float: left;
                 font-size: 16px;
-                color: #AEAEAE;
+                color: $gray;
                 padding-left: 27.5px;
                 .arrow-right {
                   	width: 0;
                   	height: 0;
                   	border-top: 5px solid transparent;
                   	border-bottom: 5px solid transparent;
-                  	border-left: 10px solid #AEAEAE;
+                  	border-left: 10px solid $gray;
                     position: absolute;
                     left: 10px;
                     top: 50%;  /* added */
@@ -593,7 +735,7 @@ header .divider {
               div.comment-metadata {
                 text-align: right;
                 time {
-                  color: #AEAEAE;
+                  color: $gray;
                 }
               }
             }
@@ -623,7 +765,7 @@ header .divider {
         background-color: $accent;
         border-top: 10px solid $header;
         padding: 10px;
-        border-radius: 5px;
+/*         border-radius: 5px; */
         .avatar {
           height: 60px;
           width: 60px;
@@ -639,7 +781,7 @@ header .divider {
           color: $offwhite;
         }
         a:hover{
-          color: #AEAEAE;
+          color: $gray;
         }
         h1 {
           color: $offwhite;
@@ -739,6 +881,12 @@ header .divider {
     }
   }
   > footer {
+    .widget.aevidi_widget_recent_posts > ul {
+      text-align: left;
+      @media screen and (max-width: 757px) {
+        text-align: center;
+      }
+    }
     background-color: $accent;
     border-top: 10px solid $header;
     #footer {
@@ -750,13 +898,13 @@ header .divider {
             padding: 10px;
             background-color: $header;
             margin: 10px 0;
-            border-radius: 5px;
+/*             border-radius: 5px; */
             width: 100%;
             div.user-box {
               position: relative;
               padding: 0 7.5px 7.5px 0;
               text-align: center;
-              border-radius: 5px;
+/*               border-radius: 5px; */
               h5 {
                 color: $offwhite;
                 font-weight: 600;
@@ -789,7 +937,7 @@ header .divider {
         color: $offwhite;
       }
       a:hover {
-        color: #AEAEAE;
+        color: $gray;
       }
     }
   }

@@ -16,11 +16,10 @@ get_header(); ?>
 <!-- Implement slider -->
 
   <div class="row slider">
-  <div class="large-12 columns">
     <ul data-orbit>
 
   <?php
-  $query = new WP_Query( 'post_type=any&nopaging=true' );
+  $query = new WP_Query( 'post_type=any&nopaging=true&tag=featured' );
   $count = 0;
   if ( $query->have_posts() ) :
     while ( $query->have_posts() && $count < 5 ) : $query->the_post();
@@ -48,7 +47,6 @@ get_header(); ?>
   ?>
     </ul>
   </div>
-  </div>
 
 		<?php
 		if ( have_posts() ) :
@@ -59,7 +57,7 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					get_template_part( 'content' );
 				?>
 
 			<?php endwhile; ?>
