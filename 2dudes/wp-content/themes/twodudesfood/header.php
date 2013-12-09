@@ -9,6 +9,9 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<!--
+Created by Eric Segev, 2013
+-->
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -32,7 +35,7 @@
         <div class="medium-4 columns hide-for-small no-pad">
           <div class="top-nav">
             <ul>
-              <li><a href="#">HOME</a></li><li><a href="#">ABOUT</a></li><li><a href="#">CONTACT</a></li>
+              <li><a href="#">ABOUT</a></li><li><a href="#">PRESS</a></li><li><a href="#">CONTACT</a></li>
             </ul>
           </div>
         </div>
@@ -51,7 +54,6 @@
         </ul>
       </nav>
       <a class="toggleMenu" href="#">Menu</a>
-<!--       <div class="bottom"></div> -->
     </header>
 
     <div class="page-container row">

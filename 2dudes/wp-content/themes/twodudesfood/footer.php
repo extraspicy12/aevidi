@@ -36,6 +36,9 @@
   		</div>
     </div>
     </div>
+  <!--
+  Created by Eric Segev, 2013
+  -->
   </footer><!-- #colophon -->
 </div><!-- #page -->
 

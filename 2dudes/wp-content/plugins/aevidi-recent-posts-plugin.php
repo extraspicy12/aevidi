@@ -37,7 +37,7 @@ class aeVidi_Recent_Posts extends WP_Widget {
 		ob_start();
 		extract($args);
 
-		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts' );
+		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts & Reviews' );
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
 		$number = ( ! empty( $instance['number'] ) ) ? absint( $instance['number'] ) : 10;
 		if ( ! $number )
@@ -49,7 +49,7 @@ class aeVidi_Recent_Posts extends WP_Widget {
 ?>
 		<?php echo $before_widget; ?>
 		<?php if ( $title ) echo $before_title . $title . $after_title; ?>
-		<ul>
+		<ul class="aevidi-recent-pp">
 		<?php while ( $r->have_posts() ) : $r->the_post(); ?>
 			<li>
 				<a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a>

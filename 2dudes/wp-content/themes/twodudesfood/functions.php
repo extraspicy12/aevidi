@@ -254,6 +254,24 @@ function ucc_getarchives_where_filter( $where , $r ) {
 }
 add_filter( 'getarchives_where' , 'ucc_getarchives_where_filter' , 10 , 2 );
 
+function set_default_review_tags( $post_id, $post) {
+  if ($post->post_type == 'review'
+    && $post->post_status == 'publish') {
+      wp_set_post_tags( $post_id, 'retaurant review', true );
+    }
+  }
+add_action('save_post','set_default_review_tags', 10, 2);
+
+function set_uncategorized_reviews_default( $post_id, $post ) {
+    if ( $post->post_type == 'review'
+        && 'publish' === $post->post_status ) {
+        $terms = get_the_term_list( $post_id, 'reviews', '', ' ', ' ' );
+        if ( empty( $terms ) )
+            wp_set_object_terms( $post_id, 'Uncategorized', 'reviews' );
+    }
+}
+add_action( 'save_post', 'set_uncategorized_reviews_default', 100, 2 );
+
 /*
 function namespace_add_custom_types( $query ) {
   if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {

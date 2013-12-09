@@ -55,7 +55,6 @@ class aeVidi_widget_categories extends WP_Widget {
 <?php
 		$cat_args['title_li'] = '';
 		$asd = wp_list_categories(apply_filters('aeVidi_widget_categories_args', $cat_args));
-		foreach ($asd as $a) echo '1';
 ?>
 		</ul>
 <?php
