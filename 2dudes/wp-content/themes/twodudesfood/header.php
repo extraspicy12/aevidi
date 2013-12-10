@@ -58,7 +58,7 @@ Created by Eric Segev, 2013
 
     <div class="page-container row">
 
-      <div class="divider white"></div>
+<!--       <div class="divider white"></div> -->
 
       <main class="body medium-9 columns" role="main">
 

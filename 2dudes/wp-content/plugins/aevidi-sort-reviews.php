@@ -9,9 +9,11 @@
  */
 
 function sortReviews() {
-  $categories = get_terms('reviews', array());
-  foreach (get_terms('reviews', array()) as $key)
-    echo $key->name;
+  if ('sortReviews' != $_POST['submit'])
+    die();
+  $taxonomy = $_POST['sortBy'];
+  $values = $_POST['values'];
+  echo $taxonomy;
   die();
 }
 add_action( 'wp_ajax_nopriv_sortReviews', 'sortReviews' );

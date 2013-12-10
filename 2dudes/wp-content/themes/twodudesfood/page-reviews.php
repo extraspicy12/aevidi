@@ -11,14 +11,11 @@
  */
 
 get_header();
-wp_enqueue_script( 'my-ajax-request', get_template_directory_uri() . '/2dudesfood/javascripts/vendor/ajax.js', array( 'jquery' ) );
-
-// declare the URL to the file that handles the AJAX request (wp-admin/admin-ajax.php)
-wp_localize_script( 'my-ajax-request', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 
 ?>
 
 	<div id="primary" class="content-area">
+    <div id="loader"><img src="<?php echo get_template_directory_uri(); ?>/2dudesfood/stylesheets/495.GIF" alt="495" width="128" height="128" /></div>
 		<main id="main" class="site-main" role="main">
       <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div id="restaurant-reviews">
@@ -58,7 +55,6 @@ wp_localize_script( 'my-ajax-request', 'MyAjax', array( 'ajaxurl' => admin_url( 
           ?>
             </ul>
           </div>
-
         	<div class="entry-content">
             <div class="row" id="sorting-module">
               <div class="medium-3 columns" id="sort-by-categories">
@@ -99,13 +95,15 @@ wp_localize_script( 'my-ajax-request', 'MyAjax', array( 'ajaxurl' => admin_url( 
             </div>
             <div class="row" id="sort-button-holder">
               <div class="small-6 medium-4 columns" id="sort-holder">
-                <a class="button" id="sort-submit">Search</a>
+                <a class="button" id="sort-submit" value="sortReviews">Search</a>
               </div>
               <div class="small-6 medium-4 columns medium-offset-4" id="clear-holder">
                 <a class="button" id="clear-values">Clear</a>
               </div>
             </div>
-            <div class="row" id="sorted-reviews">
+            <div class="row">
+              <div class="large-12 columns" id="sorted-reviews">
+              </div>
             </div>
         	</div>
 
@@ -113,6 +111,10 @@ wp_localize_script( 'my-ajax-request', 'MyAjax', array( 'ajaxurl' => admin_url( 
       </article>
 		</main><!-- #main -->
 	</div><!-- #primary -->
+<?php wp_enqueue_script( 'my-ajax-request', get_template_directory_uri() . '/2dudesfood/javascripts/vendor/ajax.js', array( 'jquery' ) );
 
+// declare the URL to the file that handles the AJAX request (wp-admin/admin-ajax.php)
+wp_localize_script( 'my-ajax-request', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

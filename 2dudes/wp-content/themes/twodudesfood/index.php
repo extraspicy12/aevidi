@@ -19,7 +19,7 @@ get_header(); ?>
     <ul data-orbit>
 
   <?php
-  $query = new WP_Query( 'post_type=any&nopaging=true&tag=featured' );
+  $query = new WP_Query( 'post_type=any&nopaging=true' );
   $count = 0;
   if ( $query->have_posts() ) :
     while ( $query->have_posts() && $count < 5 ) : $query->the_post();

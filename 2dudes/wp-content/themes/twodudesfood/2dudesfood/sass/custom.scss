@@ -11,6 +11,10 @@ body,li,ul,p {
   font-family: "Open Sans";
 }
 
+h1.site-title {
+ letter-spacing: 3px;
+}
+
 $header: #2e8445;
 $sidecontainer: #92b999;
 $accent: #47a761;
@@ -26,6 +30,12 @@ $gray: #AEAEAE;
   .divider.white {
     display: none;
   }
+}
+#loader {
+  display: none;
+  text-align: center;
+  margin-top: 33%;
+  top: -128px;
 }
 
 .container {
@@ -286,9 +296,8 @@ $gray: #AEAEAE;
       }
     }
   }
-
   .page-container {
-    padding: 0 15px 15px 15px;
+    padding: 0 0 15px 15px;
     @media screen and (max-width:757px) {
       padding: 0;
     }
@@ -340,7 +349,7 @@ $gray: #AEAEAE;
       article {
         #restaurant-reviews {
           #sorting-module {
-            margin-bottom: 10px;
+            margin: 10px 0;
             text-transform: uppercase;
             #sort-by-values {
               padding-bottom: 5px;

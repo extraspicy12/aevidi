@@ -5,20 +5,23 @@ $(document).ready(function() {
   var ratingValues = {arr: new Array()};
   var nameValues = {arr: new Array()};
   var active = nameValues;
+  $("#loader").show();
+  $("#main").hide();
   $("#sort-by-values #sort-by-name").show();
   $("#sort-by-categories #sorting-categories #name-key").addClass('active');
-
+  $("#sort-button-holder #sort-submit").html("Search by "+sortBy);
 
   getCategoryValues();
   getLocationValues();
   getNameValues();
   getRatingValues();
   bindAnchors();
-/*   sortPosts(); */
+  sortReviews();
 
   function bindAnchors() {
     $("#sort-submit").on("click", function(e) {
         e.preventDefault();
+        sortReviews();
     });
 
     $("#clear-values").on("click", function(e) {
@@ -63,7 +66,12 @@ $(document).ready(function() {
         $(this).addClass("active");
         $("#sort-by-values > ul").hide();
         $("#sort-by-values #sort-by-"+sortBy).show();
+        $("#sort-button-holder #sort-submit").html("Search by "+sortBy);
       }
+    });
+    $("#loader").fadeOut( 400, function() {
+      $("#main").fadeIn(400);
+      $(window).resize();
     });
   }
 
@@ -123,15 +131,21 @@ $(document).ready(function() {
     });
   }
 
-  function sortPosts() {
-    $.post (
-      MyAjax.ajaxurl, {
-        action: 'sortReviews',
-        sortBy: sortBy,
-        values: active.arr
-      }, function ( html ) {
-        $("#sort-by-values #sort-by-"+sortBy).html( html );
-      }, "html" );
+  function sortReviews() {
+      $.ajax ({
+        url: MyAjax.ajaxurl,
+        data: {
+          action: 'sortReviews',
+          submit: $("#sort-button-holder #sort-submit").attr('value'),
+          sortBy: sortBy,
+          values: active.arr
+        },
+        async: true,
+        type: "POST",
+        dataType: "html"
+      }).success( function( html) {
+          $("#sorted-reviews").html( html );
+      });
     }
 
 });
