@@ -5077,9 +5077,6 @@ h1, h2, h3, h4, h5, ul li a, input, textarea, a.button {
 body, li, ul, p {
   font-family: "Open Sans"; }
 
-h1.site-title {
-  letter-spacing: 3px; }
-
 .divider.white {
   background-color: white;
   display: block;
