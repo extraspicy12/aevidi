@@ -15,6 +15,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
+<!-- 		<div id="loader"></div> -->
     <div id="loader"><img src="<?php echo get_template_directory_uri(); ?>/2dudesfood/stylesheets/495.GIF" alt="495" width="128" height="128" /></div>
 		<main id="main" class="site-main" role="main">
       <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -95,15 +96,13 @@ get_header();
             </div>
             <div class="row" id="sort-button-holder">
               <div class="small-6 medium-4 columns" id="sort-holder">
-                <a class="button" id="sort-submit" value="sortReviews">Search</a>
+                <a class="button" id="sort-submit">Search</a>
               </div>
               <div class="small-6 medium-4 columns medium-offset-4" id="clear-holder">
                 <a class="button" id="clear-values">Clear</a>
               </div>
             </div>
-            <div class="row">
-              <div class="large-12 columns" id="sorted-reviews">
-              </div>
+            <div class="row" id="sorted-reviews">
             </div>
         	</div>
 
