@@ -210,7 +210,7 @@ function review_register() {
       'description'         => __( 'Reviews' ),
       'labels'              => $labels,
       'supports'            => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', ),
-      'taxonomies'          => array( 'reviews', 'post_tag'),
+      'taxonomies'          => array( 'atmosphere', 'cuisine', 'location', 'rating', 'price', 'post_tag'),
       'hierarchical'        => false,
       'public'              => true,
       'show_ui'             => true,
@@ -239,7 +239,6 @@ function aevidi_build_taxonomies() {
     register_taxonomy( 'location', array('review'), array( 'hierarchical' => true, 'label' => 'Review Locations', "singular_label" => "Location", 'query_var' => true, 'rewrite' => true ) );
     register_taxonomy( 'price', array('review'), array( 'hierarchical' => true, 'label' => 'Review Prices', "singular_label" => "Price", 'query_var' => true, 'rewrite' => true ) );
     register_taxonomy( 'rating', array('review'), array( 'hierarchical' => true, 'label' => 'Review Ratings', "singular_label" => "Rating", 'query_var' => true, 'rewrite' => true ) );
-
 }
 add_action( 'init', 'aevidi_build_taxonomies', 0 );
 

@@ -21,18 +21,20 @@ $(document).ready(function() {
   getDateValues();
   getRatingValues();
   bindAnchors();
-  sortReviews();
+/*   sortReviews(); */
 
   function bindAnchors() {
     $("#sort-submit").on("click", function(e) {
-        e.preventDefault();
-        sortReviews();
+      e.preventDefault();
+      sortReviews();
     });
 
     $("#clear-values").on("click", function(e) {
         e.preventDefault();
-        active = new Array();
-       $("#sort-by-values #sort-by-"+sortBy).find("li a").removeClass('active');
+        if (sortBy != "date" && sortBy != "name") {
+          active = new Array();
+         $("#sort-by-values #sort-by-"+sortBy).find("li a").removeClass('active');
+       }
     })
 
     $("#sort-by-values .sort-by-x li a").on("click", function(e) {
@@ -199,6 +201,26 @@ $(document).ready(function() {
         dataType: "html"
       }).success( function( html) {
           $("#sorted-reviews").html( html );
+      });
+    }
+
+  function sortReviews2() {
+      $.ajax ({
+        url: MyAjax.ajaxurl,
+        data: {
+          action: 'sortReviews2',
+          submit: $("#sort-button-holder #sort-submit").attr('value'),
+          sortBy: sortBy,
+          values: active
+        },
+        async: true,
+        type: "POST",
+        dataType: "html"
+      }).success( function( html ) {
+        if (html == "false")
+          alert("Please enter data to filter selection!");
+        else
+          $("#sort-form").append(html).submit();
       });
     }
 

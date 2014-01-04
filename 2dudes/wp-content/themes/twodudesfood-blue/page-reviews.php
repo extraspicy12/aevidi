@@ -88,7 +88,10 @@ get_header();
             </div>
             <div class="row" id="sort-button-holder">
               <div class="small-6 medium-4 columns" id="sort-holder">
-                <a class="button" id="sort-submit" value="sortReviews">Search</a>
+                <form action="../" method="GET" id="sort-form">
+                  <div id="sort-values"></div>
+                  <a class="button" id="sort-submit" value="sortReviews">Search</a>
+                </form>
               </div>
               <div class="small-6 medium-4 columns medium-offset-4" id="clear-holder">
                 <a class="button" id="clear-values">Clear</a>
