@@ -22,6 +22,7 @@ function sortReviews() {
   else {
    if ($taxonomy == "name")
     $query = new WP_Query(array('nopaging' => true, 'post_type' => 'review', 'orderby' => 'title', 'order' => $values));
+/*     $str = "nopaging=true&post_type=review&orderby=title&order=".$values; */
   else if ($taxonomy == "date")
     $query = new WP_Query(array('nopaging' => true, 'post_type' => 'review', 'orderby' => 'date', 'order' => $values));
   else
@@ -39,6 +40,27 @@ function sortReviews() {
 }
 add_action( 'wp_ajax_nopriv_sortReviews', 'sortReviews' );
 add_action( 'wp_ajax_sortReviews', 'sortReviews' );
+
+function sortReviews2() {
+/*   echo '<input type="hidden" name="nopaging" value="false"><input type="hidden" name="posts_per_page" value="5">'; */
+  $taxonomy = $_POST['sortBy'];
+  $values = $_POST['values'];
+  $values = implode(",", $values);
+  if ($values == null)
+			echo 'false';
+  else {
+    echo '<input type="hidden" name="post_type" value="review">';
+   if ($taxonomy == "name")
+    echo '<input type="hidden" name="orderby" value="title"><input type="hidden" name="order" value="'.$values.'">';
+  else if ($taxonomy == "date")
+    echo '<input type="hidden" name="orderby" value="date"><input type="hidden" name="order" value="'.$values.'">';
+  else
+    echo '<input type="hidden" name="orderby" value="'.$taxonomy.'"><input type="hidden" name="'.$taxonomy.'" value="'.$values.'"><input type="hidden" name="order" value="asc">';
+  }
+  die();
+}
+add_action( 'wp_ajax_nopriv_sortReviews2', 'sortReviews2' );
+add_action( 'wp_ajax_sortReviews2', 'sortReviews2' );
 
 function getCuisineValues() {
   foreach (get_terms('cuisine', array()) as $key)

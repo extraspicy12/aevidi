@@ -5084,6 +5084,8 @@ h1.site-title {
   font-family: "Roboto Condensed";
   font-size: 70px;
   margin-bottom: 14px; }
+  h1.site-title a {
+    color: #7abb00 !important; }
 
 .divider.white {
   background-color: white;
@@ -5146,7 +5148,7 @@ h1.site-title {
     margin-top: 25px;
     text-align: center; }
   .container > header {
-    background-color: #3c8eda; }
+    background-color: #111111; }
     .container > header h1 {
       font-weight: 400; }
     .container > header .row {
@@ -5175,19 +5177,19 @@ h1.site-title {
           .container > header .top-nav ul li a {
             color: white;
             display: block;
-            background-color: #81bef7;
+            background-color: #9bcc3f;
             transition: all .2s ease-in-out;
             padding: 7.5px; }
           .container > header .top-nav ul li a:hover {
             transition: all .2s ease-in-out;
-            color: #81bef7;
+            color: #9bcc3f;
             background-color: #aed8ff; }
         .container > header .top-nav ul li:nth-child(1) a {
           border-bottom-left-radius: 5px; }
         .container > header .top-nav ul li:nth-child(3) a {
           border-bottom-right-radius: 5px; }
     .container > header .bottom {
-      background-color: #81bef7;
+      background-color: #9bcc3f;
       padding: 10px 0 0 0; }
       .container > header .bottom .search-toggle {
         display: none;
@@ -5200,8 +5202,8 @@ h1.site-title {
             margin: 0; }
     @media screen and (max-width: 757px) {
       .container > header .bottom {
-        background-color: #3c8eda;
-        border-bottom: 5px solid #81bef7; }
+        background-color: #7abb00;
+        border-bottom: 5px solid #9bcc3f; }
         .container > header .bottom .search-toggle {
           display: block; } }
   .container .page-container {
@@ -5220,7 +5222,7 @@ h1.site-title {
       .container .page-container nav .menu > ul:first-of-type {
         list-style: none;
         *zoom: 1;
-        background: #3c8eda;
+        background: #7abb00;
         position: relative;
         float: left;
         width: 93%;
@@ -5237,7 +5239,7 @@ h1.site-title {
           *zoom: 1;
           display: block; }
         .container .page-container nav .menu > ul:first-of-type > li.current_page_item a {
-          background-color: #81bef7; }
+          background-color: #9bcc3f; }
         .container .page-container nav .menu > ul:first-of-type > li {
           float: left;
           z-index: 200;
@@ -5250,16 +5252,16 @@ h1.site-title {
             left: 100%;
             top: 0; }
           .container .page-container nav .menu > ul:first-of-type li a {
-            background-color: #3c8eda; }
+            background-color: #7abb00; }
           .container .page-container nav .menu > ul:first-of-type li a:hover {
-            background-color: #81bef7; }
+            background-color: #9bcc3f; }
           .container .page-container nav .menu > ul:first-of-type li ul {
             position: absolute;
             left: -9999px;
             z-index: 100;
             width: 100%; }
             .container .page-container nav .menu > ul:first-of-type li ul li a {
-              background-color: #3c8eda;
+              background-color: #7abb00;
               position: relative;
               z-index: 100; }
             .container .page-container nav .menu > ul:first-of-type li ul li li a {
@@ -5278,9 +5280,9 @@ h1.site-title {
         .container .page-container nav .menu > ul:first-of-type > li.hover > ul, .container .page-container nav .menu > ul:first-of-type li li.hover ul {
           position: static; }
         .container .page-container nav .menu > ul:first-of-type > li > ul > li a {
-          background-color: #81bef7; }
+          background-color: #9bcc3f; }
         .container .page-container nav .menu > ul:first-of-type > li > ul > li > ul > li a {
-          background-color: #3c8eda !important; } }
+          background-color: #7abb00 !important; } }
       .container .page-container nav .menu > ul:first-of-type:before, .container .page-container nav .menu > ul:first-of-type:after {
         content: " ";
         display: table; }
@@ -5322,7 +5324,7 @@ h1.site-title {
         height: 100%;
         width: 100%;
         padding: 5px;
-        background: #81bef7 url(../stylesheets/search.png) no-repeat center center; }
+        background: #9bcc3f url(../stylesheets/search.png) no-repeat center center; }
     @media screen and (max-width: 757px) {
       .container .page-container .search-ul {
         display: none; } }
@@ -5385,16 +5387,16 @@ h1.site-title {
               color: #aeaeae;
               font-weight: 400; }
             .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values > ul li a.active {
-              color: #3c8eda;
+              color: #7abb00;
               font-weight: 600; }
             .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-values > ul li a:hover {
-              color: #3c8eda; }
+              color: #7abb00; }
       .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories {
-        border-right: 3px solid #3c8eda;
+        border-right: 3px solid #7abb00;
         padding-bottom: 5px; }
         @media screen and (max-width: 757px) {
           .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories {
-            border-left: 3px solid #3c8eda;
+            border-left: 3px solid #7abb00;
             margin-bottom: 25px; } }
         .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories > h4 {
           margin-top: 0;
@@ -5428,10 +5430,10 @@ h1.site-title {
               color: #aeaeae;
               font-weight: 400; }
             .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories ul li a.active {
-              color: #3c8eda;
+              color: #7abb00;
               font-weight: 600; }
             .container .page-container .body article #restaurant-reviews #sorting-module #sort-by-categories ul li a:hover {
-              color: #3c8eda; }
+              color: #7abb00; }
     .container .page-container .body article #restaurant-reviews #sort-button-holder #clear-holder {
       text-align: right; }
     .container .page-container .body article #restaurant-reviews #sort-button-holder #sort-holder {
@@ -5523,7 +5525,7 @@ h1.site-title {
         margin: 0 15px; }
         .container .page-container .body article header.entry-header blockquote .great {
           border-bottom-color: none;
-          color: #3c8eda;
+          color: #7abb00;
           background-color: transparent; }
         .container .page-container .body article header.entry-header blockquote .good {
           border-bottom-color: none;
@@ -5593,7 +5595,7 @@ h1.site-title {
       font-weight: 400;
       text-transform: uppercase; }
     .container .page-container .body article .divider {
-      background-color: #81bef7;
+      background-color: #9bcc3f;
       margin-bottom: 10px;
       height: 3px;
       width: 100%; }
@@ -5656,7 +5658,7 @@ h1.site-title {
         float: left;
         font-size: 24px; }
         .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-author span.author-name {
-          color: #3c8eda; }
+          color: #7abb00; }
       .container .page-container .body #comments ol.comment-list li.comment footer.comment-meta div.comment-reply {
         position: relative;
         float: left;
@@ -5697,8 +5699,8 @@ h1.site-title {
           filter: alpha(opacity=70); }
       .container .page-container .sidebar aside {
         margin: 0 0 15px 0;
-        background-color: #81bef7;
-        border-top: 10px solid #3c8eda;
+        background-color: #9bcc3f;
+        border-top: 10px solid #7abb00;
         padding: 10px;
         /*         border-radius: 5px; */ }
         .container .page-container .sidebar aside .avatar {
@@ -5719,8 +5721,8 @@ h1.site-title {
           font-weight: 500;
           text-align: center; }
       .container .page-container .sidebar .widget_wp_sidebarlogin {
-        background-color: #81bef7;
-        border-top: 10px solid #3c8eda;
+        background-color: #9bcc3f;
+        border-top: 10px solid #7abb00;
         padding: 10px; }
         .container .page-container .sidebar .widget_wp_sidebarlogin ul {
           padding-left: 0;
@@ -5782,11 +5784,11 @@ h1.site-title {
         .container .page-container .sidebar .user-area-logged-out .section-container section {
           border: none; }
           .container .page-container .sidebar .user-area-logged-out .section-container section p.title {
-            border-top: 10px solid #3c8eda;
+            border-top: 10px solid #7abb00;
             border-left: none;
             border-right: none;
             border-bottom: none;
-            background-color: #81bef7; }
+            background-color: #9bcc3f; }
             .container .page-container .sidebar .user-area-logged-out .section-container section p.title a {
               color: white;
               font-weight: 350;
@@ -5794,7 +5796,7 @@ h1.site-title {
               padding: 7.5px 20px; }
           .container .page-container .sidebar .user-area-logged-out .section-container section div.content {
             padding: 7.5px 20px;
-            background-color: #81bef7;
+            background-color: #9bcc3f;
             border: none; }
             .container .page-container .sidebar .user-area-logged-out .section-container section div.content input {
               margin-top: 10px;
@@ -5806,8 +5808,8 @@ h1.site-title {
             .container .page-container .sidebar .user-area-logged-out .section-container section div.content .button {
               margin: 10px 0 0 0; }
   .container footer#footer {
-    background-color: #81bef7;
-    border-top: 10px solid #3c8eda;
+    background-color: #9bcc3f;
+    border-top: 10px solid #7abb00;
     padding: 15px; }
     .container footer#footer a {
       color: white; }
@@ -5822,7 +5824,7 @@ h1.site-title {
     .container footer#footer .aevidi_widget_recent_comments > ul#recentcomments > li.recentcomments {
       list-style: none;
       padding: 10px;
-      background-color: #3c8eda;
+      background-color: #7abb00;
       margin: 10px 0;
       /*             border-radius: 5px; */
       width: 100%; }
@@ -5842,7 +5844,7 @@ h1.site-title {
     .container footer#footer ul li a {
       color: white; }
   .container .copy {
-    background-color: #3c8eda;
+    background-color: #7abb00;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
