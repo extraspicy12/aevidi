@@ -31,12 +31,12 @@
     </div>
 	  </div>
 	  <div class="row site-footer site-map">
-      <div class="element"><a href="#"><div>ABOUT</div></a></div>
-      <div class="element"><a href="#"><div>FOOD REVIEWS</div></a></div>
-      <div class="element"><a href="#"><div>NEWS</div></a></div>
-      <div class="element"><a href="#"><div>FEATURED FOODIES</div></a></div>
-      <div class="element"><a href="#"><div>DEALS</div></a></div>
-      <div class="element"><a href="#"><div>CONNECT</div></a></div>
+      <div class="medium-2 small-6 columns element"><a href="#"><div class="about"></div></a></div>
+      <div class="medium-2 small-6 columns element"><a href="#"><div class="reviews"></div></a></div>
+      <div class="medium-2 small-6 columns element"><a href="#"><div class="ffoodies"></div></a></div>
+      <div class="medium-2 small-6 columns element"><a href="#"><div class="news"></div></a></div>
+      <div class="medium-2 small-6 columns element"><a href="#"><div class="deals"></div></a></div>
+      <div class="medium-2 small-6 columns element"><a href="mailto:2dudes@something"><div class="contact"></div></a></div>
 	  </div>
   </footer>
   <div class="copy">

@@ -98,6 +98,7 @@ get_header();
               </div>
             </div>
             <div class="row">
+              <div id="loader2" style="display: none; text-align: center;"><img src="<?php echo get_template_directory_uri(); ?>/2dudesfood/stylesheets/495.GIF" alt="495" width="128" height="128" /></div>
               <div class="large-12 columns" id="sorted-reviews">
               </div>
             </div>

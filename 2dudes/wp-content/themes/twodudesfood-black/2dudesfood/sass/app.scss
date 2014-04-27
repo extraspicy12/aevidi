@@ -76,6 +76,9 @@ footer#footer {
   }
   > div {
     padding: 0 45px;
+    @media screen and (max-width: 757px) {
+      padding: 0;
+    }
 
   }
   a {
@@ -1097,24 +1100,65 @@ footer#footer {
 }
 
 .site-map {
-  @extend .hide-for-small;
-  margin-top: 25px;
-  height: 70px;
-  .element { @include grid-column(2);
+  height: auto;
+  .element {
     display: block;
-    height: 100%;
-    padding: 0 5px;
+    height: 76px;
+    padding: 5px 5px;
+    margin: 5px 0 !important;
     a {
       border-radius: 1px;
       display: block;
       background-color: $offblack;
-      height: 70px;
+      height: 76px;
       width: 100%;
-      line-height: 70px;
+      padding: 6px 0;
+      line-height: 76px;
       text-align: center;
+      transition: all .125s ease-in-out;
+      div {
+        margin: 0 auto;
+        background-image: url('../stylesheets/mockup-footermenu-white.png');
+        background-repeat: no-repeat;
+        height: 64px;
+        text-align: left;
+      }
+      .about {
+        background-position: 0 0;
+        width: 46px;
+      }
+      .reviews {
+        background-position: -180px 0;
+        width: 98px;
+      }
+      .ffoodies {
+        background-position: -306px 0;
+        width: 120px;
+      }
+      .news {
+        background-position: -470px 0;
+        width: 40px;
+      }
+      .deals {
+        background-position: -564px 0;
+        width: 44px;
+      }
+      .contact {
+        background-position: -88px 0;
+        width: 60px;
+      }
+    }
+    a:hover {
+      transition: all .125s ease-in-out;
+      background-color: $accent;
+      color: #222222 !important;
+      div {
+        background-image: url('../stylesheets/mockup-footermenu-black.png');
+      }
     }
   }
 }
+
 
 /* Centering Classes */
 
