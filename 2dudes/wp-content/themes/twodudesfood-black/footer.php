@@ -30,6 +30,14 @@
       <?php endif; ?>
     </div>
 	  </div>
+	  <div class="row site-footer site-map">
+      <div class="element"><a href="#"><div>ABOUT</div></a></div>
+      <div class="element"><a href="#"><div>FOOD REVIEWS</div></a></div>
+      <div class="element"><a href="#"><div>NEWS</div></a></div>
+      <div class="element"><a href="#"><div>FEATURED FOODIES</div></a></div>
+      <div class="element"><a href="#"><div>DEALS</div></a></div>
+      <div class="element"><a href="#"><div>CONNECT</div></a></div>
+	  </div>
   </footer>
   <div class="copy">
   <div class="row">

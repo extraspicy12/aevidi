@@ -7,7 +7,7 @@
  * @package TwoDudesFood
  */
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> >
 <head>
 <!--
 Created by Eric Segev, 2013
@@ -27,15 +27,13 @@ Created by Eric Segev, 2013
     <header role="banner">
       <div class="row no-pad block" id="header">
         <div class="medium-8 columns centered logo">
-          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" style="color: #222222;"><?php bloginfo( 'name' ); ?></a>
-          <?php /**<main class="body large-9 columns" role="main">**/ ?>
-          </h1>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-title" rel="home" style="color: #222222;"><img src="<?php bloginfo('stylesheet_directory'); ?>/2dudesfood/stylesheets/header.png" alt="header"></a>
         </div>
 
         <div class="medium-4 columns hide-for-small no-pad">
           <div class="top-nav">
             <ul>
-              <li><a href="#">ABOUT</a></li><li><a href="#">PRESS</a></li><li><a href="#">CONTACT</a></li>
+              <li><a class="text" href="#">About</a></li><li><a>|</a></li><li><a href="#" class="text">Press</a></li><li><a>|</a></li><li><a href="#" class="text">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -62,7 +60,7 @@ Created by Eric Segev, 2013
       <nav class="row" role="navigation" style="margin-left: 0px; margin-right: 0px;">
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu' ) ); ?>
         <ul class="search-ul">
-          <li class="search-toggle-button"><a href="#"></a></li>
+          <li class="search-toggle-button"><a href="#">Search <img id="srch" src="<?php bloginfo('stylesheet_directory'); ?>/2dudesfood/stylesheets/search.png" alt="search"></a></li>
         </ul>
       </nav>
       <a class="toggleMenu" href="#">Menu</a>

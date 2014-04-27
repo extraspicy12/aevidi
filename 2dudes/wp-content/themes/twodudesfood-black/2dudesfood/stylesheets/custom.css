@@ -1,438 +1,97 @@
-/* line 6, ../sass/custom.scss */
-header .divider {
-  display: none;
-}
+/*
+Syntax error: Undefined mixin 'button-base'.
+        on line 162 of /Applications/MAMP/htdocs/aevidi/2dudes/wp-content/themes/twodudesfood-black/2dudesfood/sass/custom.scss, in `button-base'
+        from line 162 of /Applications/MAMP/htdocs/aevidi/2dudes/wp-content/themes/twodudesfood-black/2dudesfood/sass/custom.scss
 
-/* line 9, ../sass/custom.scss */
-.divider.white {
-  background-color: white;
-  display: block;
-  padding: 5px;
-}
-
-@media screen and (max-width: 758px) {
-  /* line 15, ../sass/custom.scss */
-  header .divider {
-    display: block;
-    padding: 5px;
-    background-color: #2e8445;
-  }
-}
-/* line 22, ../sass/custom.scss */
-.container {
-  background-color: #daffe9;
-}
-/* line 24, ../sass/custom.scss */
-.container > header {
-  background-color: white;
-  background-color: #2e8445;
-}
-/* line 26, ../sass/custom.scss */
-.container > header h1 {
-  font-weight: 400;
-}
-/* line 30, ../sass/custom.scss */
-.container > header .row {
-  padding: 0 15px;
-}
-/* line 33, ../sass/custom.scss */
-.container > header .logo {
-  padding: 10px 0;
-}
-/* line 36, ../sass/custom.scss */
-.container > header .top-nav {
-  position: relative;
-  float: right;
-}
-/* line 39, ../sass/custom.scss */
-.container > header .top-nav ul {
-  position: relative;
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-/* line 44, ../sass/custom.scss */
-.container > header .top-nav ul li {
-  list-style: none;
-  font-size: .85em;
-  margin: 0;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  position: relative;
-  float: left;
-}
-/* line 55, ../sass/custom.scss */
-.container > header .top-nav ul li a {
-  color: white;
-  display: block;
-  background-color: #47a761;
-  transition: all .2s ease-in-out;
-  padding: 7.5px;
-}
-/* line 62, ../sass/custom.scss */
-.container > header .top-nav ul li a:hover {
-  transition: all .2s ease-in-out;
-  color: #daffe9;
-  background-color: #92b999;
-}
-/* line 70, ../sass/custom.scss */
-.container > header .bottom {
-  background-color: #47a761;
-  padding: 10px 0 0 0;
-}
-/* line 73, ../sass/custom.scss */
-.container > header .bottom .search-toggle {
-  display: none;
-  padding: 0 10px;
-}
-/* line 76, ../sass/custom.scss */
-.container > header .bottom .search-toggle form {
-  margin-bottom: 0 !important;
-}
-/* line 79, ../sass/custom.scss */
-.container > header .bottom .search-toggle .search-bar {
-  padding: 0 0 10px 0;
-}
-/* line 81, ../sass/custom.scss */
-.container > header .bottom .search-toggle .search-bar input, .container > header .bottom .search-toggle .search-bar a {
-  margin: 0;
-}
-@media screen and (max-width: 758px) {
-  /* line 88, ../sass/custom.scss */
-  .container > header .bottom {
-    background-color: #2e8445;
-    border-bottom: 5px solid #47a761;
-  }
-  /* line 91, ../sass/custom.scss */
-  .container > header .bottom .search-toggle {
-    display: block;
-  }
-}
-/* line 96, ../sass/custom.scss */
-.container > header .toggleMenu {
-  display: none;
-  background: #92b999;
-  padding: 15px 15px;
-  color: white;
-  width: 100%;
-  position: relative;
-}
-/* line 104, ../sass/custom.scss */
-.container > header .toggleMenu:after {
-  content: "";
-  background: url("../stylesheets/nav-icon.png") no-repeat;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  position: absolute;
-  right: 15px;
-  top: 13px;
-}
-@media screen and (max-width: 758px) {
-  /* line 115, ../sass/custom.scss */
-  .container > header .toggleMenu {
-    display: block;
-  }
-}
-/* line 120, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type {
-  list-style: none;
-  *zoom: 1;
-  background: #2e8445;
-  position: relative;
-  float: left;
-  width: 90%;
-  margin-bottom: 0;
-  display: block;
-}
-/* line 129, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type ul {
-  list-style: none;
-  width: 9em;
-  margin: 0;
-  padding: 0;
-}
-/* line 135, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type a {
-  padding: 10px 15px;
-  color: white;
-  *zoom: 1;
-  display: block;
-}
-/* line 141, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type > li {
-  float: left;
-  z-index: 200;
-  display: block;
-}
-/* line 146, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type > li.hover > ul {
-  left: 0;
-}
-/* line 149, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type li {
-  position: relative;
-}
-/* line 151, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type li li.hover ul {
-  left: 100%;
-  top: 0;
-}
-/* line 155, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type li a {
-  background-color: #2e8445;
-}
-/* line 158, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type li a:hover {
-  background-color: #47a761;
-}
-/* line 161, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type li ul {
-  position: absolute;
-  left: -9999px;
-  z-index: 100;
-  width: 100%;
-}
-/* line 167, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type li ul li a {
-  border-top: 1px solid black;
-  background-color: #2e8445;
-  position: relative;
-  z-index: 100;
-}
-/* line 174, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type li ul li li a {
-  border-top: 1px solid black;
-  background-color: #92b999;
-  z-index: 200;
-}
-@media screen and (max-width: 758px) {
-  /* line 185, ../sass/custom.scss */
-  .container > header nav .menu > ul:first-of-type {
-    width: 100%;
-    display: none;
-  }
-  /* line 189, ../sass/custom.scss */
-  .container > header nav .menu > ul:first-of-type > li {
-    float: none;
-    width: 100%;
-  }
-  /* line 193, ../sass/custom.scss */
-  .container > header nav .menu > ul:first-of-type ul {
-    display: block;
-    width: 100%;
-  }
-  /* line 197, ../sass/custom.scss */
-  .container > header nav .menu > ul:first-of-type > li.hover > ul, .container > header nav .menu > ul:first-of-type li li.hover ul {
-    position: static;
-  }
-}
-/* line 201, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type:before, .container > header nav .menu > ul:first-of-type:after {
-  content: " ";
-  display: table;
-}
-/* line 205, ../sass/custom.scss */
-.container > header nav .menu > ul:first-of-type:after {
-  clear: both;
-}
-/* line 209, ../sass/custom.scss */
-.container > header .search-ul {
-  list-style: none;
-  position: relative;
-  float: left;
-  width: 10%;
-  height: 46px;
-  margin: 0;
-  padding: 0;
-  overflow: none;
-  display: block;
-}
-/* line 219, ../sass/custom.scss */
-.container > header .search-ul .search-toggle-button {
-  position: relative;
-  float: right;
-  display: block;
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  background: #47a761 url(../stylesheets/search.png) no-repeat center center;
-}
-@media screen and (max-width: 758px) {
-  /* line 230, ../sass/custom.scss */
-  .container > header .search-ul {
-    display: none;
-  }
-}
-/* line 236, ../sass/custom.scss */
-.container .page-container {
-  padding: 0 15px 15px 15px;
-  background-color: white;
-}
-/* line 243, ../sass/custom.scss */
-.container .page-container .body .slider ul li img {
-  min-width: 100%;
-  height: auto;
-}
-/* line 250, ../sass/custom.scss */
-.container .page-container .body .slider .orbit-caption h3 {
-  color: white;
-  margin-bottom: 0;
-  font-weight: 400;
-}
-/* line 255, ../sass/custom.scss */
-.container .page-container .body .slider .orbit-caption h5 {
-  margin-top: 0;
-  color: #AEAEAE;
-  font-size: .75em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-/* line 264, ../sass/custom.scss */
-.container .page-container .body article {
-  margin-bottom: 30px;
-}
-/* line 266, ../sass/custom.scss */
-.container .page-container .body article h2 {
-  margin-bottom: 0;
-  font-weight: 400;
-}
-/* line 270, ../sass/custom.scss */
-.container .page-container .body article h5 {
-  margin-top: 0;
-  color: #AEAEAE;
-  font-size: .9em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-/* line 278, ../sass/custom.scss */
-.container .page-container .body article .divider {
-  background-color: #47a761;
-  margin-bottom: 10px;
-  height: 3px;
-  width: 100%;
-}
-/* line 287, ../sass/custom.scss */
-.container .page-container .sidebar .collapse {
-  padding: 5px 15px 0 15px;
-}
-/* line 290, ../sass/custom.scss */
-.container .page-container .sidebar .social-media {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-/* line 293, ../sass/custom.scss */
-.container .page-container .sidebar .social-media a {
-  transition: all .2s ease-in-out;
-}
-/* line 296, ../sass/custom.scss */
-.container .page-container .sidebar .social-media a:hover {
-  transition: all .2s ease-in-out;
-  opacity: .7;
-  filter: alpha(opacity=70);
-}
-/* line 303, ../sass/custom.scss */
-.container .page-container .sidebar .user-area-logged-out .section-container {
-  border: none;
-}
-/* line 305, ../sass/custom.scss */
-.container .page-container .sidebar .user-area-logged-out .section-container section {
-  border: none;
-}
-/* line 307, ../sass/custom.scss */
-.container .page-container .sidebar .user-area-logged-out .section-container section p.title {
-  border-top: 10px solid #2e8445;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  background-color: #47a761;
-}
-/* line 313, ../sass/custom.scss */
-.container .page-container .sidebar .user-area-logged-out .section-container section p.title a {
-  color: #daffe9;
-  font-weight: 350;
-  font-size: 1.25em;
-  padding: 7.5px 20px;
-}
-/* line 320, ../sass/custom.scss */
-.container .page-container .sidebar .user-area-logged-out .section-container section div.content {
-  padding: 7.5px 20px;
-  background-color: #47a761;
-  border: none;
-}
-/* line 324, ../sass/custom.scss */
-.container .page-container .sidebar .user-area-logged-out .section-container section div.content input {
-  margin-top: 10px;
-  margin-bottom: 3px;
-  background-color: #daffe9;
-}
-/* line 329, ../sass/custom.scss */
-.container .page-container .sidebar .user-area-logged-out .section-container section div.content label {
-  color: #daffe9;
-  font-weight: 200;
-}
-/* line 333, ../sass/custom.scss */
-.container .page-container .sidebar .user-area-logged-out .section-container section div.content .button {
-  margin: 10px 0 0 0;
-}
-/* line 342, ../sass/custom.scss */
-.container > footer {
-  background-color: #47a761;
-  border-top: 10px solid #2e8445;
-}
-/* line 345, ../sass/custom.scss */
-.container > footer #footer {
-  padding: 20px 15px 30px 15px;
-}
-/* line 348, ../sass/custom.scss */
-.container > footer .copyright {
-  background-color: #2e8445;
-  padding: 10px 0px;
-}
-/* line 351, ../sass/custom.scss */
-.container > footer .copyright a {
-  color: #92b999;
-}
-/* line 354, ../sass/custom.scss */
-.container > footer .copyright a:hover {
-  color: #daffe9;
-}
-/* line 357, ../sass/custom.scss */
-.container > footer .copyright .row {
-  padding: 0 30px;
-}
-
-/* Centering Classes */
-/* This parent can be any width and height */
-/* line 367, ../sass/custom.scss */
-.block {
-  text-align: center;
-}
-
-/* The ghost, nudged to maintain perfect centering */
-/* line 372, ../sass/custom.scss */
-.block:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em;
-  /* Adjusts for spacing */
-}
-
-/* The element to be centered, can
-   also be of any width and height */
-/* line 382, ../sass/custom.scss */
-.centered {
-  display: inline-block;
-  vertical-align: middle;
-  width: 300px;
-}
-
-/* line 387, ../sass/custom.scss */
-.no-pad {
-  padding: 0 !important;
-}
+Backtrace:
+/Applications/MAMP/htdocs/aevidi/2dudes/wp-content/themes/twodudesfood-black/2dudesfood/sass/custom.scss:162:in `button-base'
+/Applications/MAMP/htdocs/aevidi/2dudes/wp-content/themes/twodudesfood-black/2dudesfood/sass/custom.scss:162
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.10/lib/sass/../sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `to_proc'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:30:in `temporary_multipath_handler'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:27:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:27:in `temporary_multipath_handler'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:16:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:16:in `run'
+/Library/Ruby/Gems/1.8/gems/rb-fsevent-0.9.3/lib/rb-fsevent/fsevent.rb:43:in `call'
+/Library/Ruby/Gems/1.8/gems/rb-fsevent-0.9.3/lib/rb-fsevent/fsevent.rb:43:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:20:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:30
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'button-base'.\A         on line 162 of /Applications/MAMP/htdocs/aevidi/2dudes/wp-content/themes/twodudesfood-black/2dudesfood/sass/custom.scss, in `button-base'\A         from line 162 of /Applications/MAMP/htdocs/aevidi/2dudes/wp-content/themes/twodudesfood-black/2dudesfood/sass/custom.scss"; }
