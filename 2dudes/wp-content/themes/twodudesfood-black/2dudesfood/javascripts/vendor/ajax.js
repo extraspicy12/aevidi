@@ -198,8 +198,12 @@ $(document).ready(function() {
         },
         async: true,
         type: "POST",
-        dataType: "html"
-      }).success( function( html) {
+        dataType: "html",
+        beforeSend: function( html ) {
+          $("#loader2").show();
+        }
+      }).success( function( html ) {
+          $("#loader2").hide();
           $("#sorted-reviews").html( html );
       });
     }
