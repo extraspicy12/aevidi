@@ -72,11 +72,11 @@ $(document).ready(function() {
   });
   $(".search-toggle-button").mouseover(function(){
     if ($(".search-toggle").css("display") == "none")
-      $(".search-toggle-button/* , .bottom */").stop().animate({backgroundColor: '#333333'}, 200);
+      $(".search-toggle-button/* , .bottom */").stop().animate({backgroundColor: '#333333'}, 75);
   });
   $(".search-toggle-button").mouseout(function(){
     if ($(".search-toggle").css("display") == "none")
-      $(".search-toggle-button/* , .bottom */").stop().animate({backgroundColor: '#9BCC3F'}, 200);
+      $(".search-toggle-button/* , .bottom */").stop().animate({backgroundColor: '#9BCC3F'}, 75);
   });
   $(".search-toggle-button").click(function(){
     if ($(".search-toggle").css("display") == "none") {
